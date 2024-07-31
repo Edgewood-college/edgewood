@@ -67,7 +67,7 @@ function App() {
     <div className="main-page-wrapper">
       <Routes>
         <Route path="/">
-          <Route index element={<Insurance />} />
+          <Route index element={<RealEstate />} />
           <Route path="home/web-hosting" element={<WebHosting />} />
           <Route path="home/education" element={<Education />} />
           <Route path="home/charity" element={<Charity />} />
