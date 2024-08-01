@@ -34,7 +34,7 @@ const Header5 = () => {
             </Link>
           </div>
           {/* End logo */}
-          <div className="right-widget d-flex align-items-center order-lg-3">
+          {/* <div className="right-widget d-flex align-items-center order-lg-3">
             <form
               action="#"
               className="header-search-two position-relative me-4 me-xxl-5 d-none d-xl-block"
@@ -58,7 +58,7 @@ const Header5 = () => {
             >
               Sign Up
             </Link>
-          </div>
+          </div> */}
           {/* /.right-widget */}
 
           <MainMenu />

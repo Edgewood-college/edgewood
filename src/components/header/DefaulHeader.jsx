@@ -34,18 +34,18 @@ const DefaulHeader = () => {
             </Link>
           </div>
           <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
-            <Link
+            {/* <Link
               to="/login"
               className="login-btn-three rounded-circle tran3s me-3"
             >
               <i className="bi bi-person" />
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               to="/contact/contact-v1"
               className="btn-twentyOne fw-500 tran3s d-none d-lg-block"
             >
               Contact us
-            </Link>
+            </Link> */}
           </div>{" "}
           {/* /.right-widget */}
           <MainMenu />

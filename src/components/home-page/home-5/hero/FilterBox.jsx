@@ -51,8 +51,8 @@ const FilterBox = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="search-area">
-      <div className="row gx-0 align-items-center">
+    <form onSubmit={handleSubmit} className="search-area ">
+      <div className="row hidden gx-0 align-items-center ">
         {Object.entries(formOptions).map(([key, { title, options }]) => (
           <div className="col-lg-3" key={key}>
             <div className="input-block">

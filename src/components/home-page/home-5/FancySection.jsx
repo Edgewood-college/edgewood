@@ -1,3 +1,4 @@
+
 const FancySection = () => {
   return (
     <div className="fancy-feature-fortyNine pt-110 pb-90 xl-pt-70 lg-pb-60 zn2 position-relative">
@@ -5,12 +6,12 @@ const FancySection = () => {
         <div className="row">
           <div className="col-lg-6 col-md-7 ms-auto" data-aos="fade-left">
             <h2 className="title text-white fw-bold">
-              Expert. Afford<span>able.</span> Quality.
+               <span>EDGEWOOD.</span> .
             </h2>
             <div className="row">
               <div className="col-xl-8 col-lg-10 ms-auto">
                 <p className="text-lg text-white mt-55 lg-mt-20">
-                  Ou spaces are designed around socialization.
+                  Uncovering the potentials in our children.
                 </p>
               </div>
             </div>
@@ -39,7 +40,7 @@ const FancySection = () => {
           className="lazy-img arrow"
         />
       </a>
-      <div className="clip-text-two fw-bold wow fadeInUp">Jano</div>
+      {/* <div className="clip-text-two fw-bold wow fadeInUp">Jano</div> */}
     </div>
   );
 };

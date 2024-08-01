@@ -615,8 +615,8 @@ const portfolio = [
     id: 52,
     category: "branding illustration",
     image: "/images/gallery/img_01.jpg",
-    name: "Product Analysis",
-    tag: "Branding",
+    name: "Alumni",
+    tag: "Our Alumni",
     projectInfo: {
       date: "23 July, 2020",
       clientName: "Mariona Adisson, USA",
@@ -627,8 +627,8 @@ const portfolio = [
     id: 53,
     category: "design logo",
     image: "/images/gallery/img_02.jpg",
-    name: "UI, UX Design",
-    tag: "Design",
+    name: "Careers",
+    tag: "Careers Opportunities", 
     projectInfo: {
       date: "23 July, 2020",
       clientName: "Mariona Adisson, USA",
@@ -639,8 +639,8 @@ const portfolio = [
     id: 54,
     category: "branding design illustration",
     image: "/images/gallery/img_03.jpg",
-    name: "Content Marketing",
-    tag: "Illustration",
+    name: "Newsletter",
+    tag: "Get the latest news",
     projectInfo: {
       date: "23 July, 2020",
       clientName: "Mariona Adisson, USA",
@@ -651,8 +651,8 @@ const portfolio = [
     id: 55,
     category: "design logo",
     image: "/images/gallery/img_04.jpg",
-    name: "Market System",
-    tag: "Logo",
+    name: "Gallery",
+    tag: "Image Gallery",
     projectInfo: {
       date: "23 July, 2020",
       clientName: "Mariona Adisson, USA",

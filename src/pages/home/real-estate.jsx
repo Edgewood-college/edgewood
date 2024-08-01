@@ -12,6 +12,7 @@ import Faq from "../../components/home-page/home-5/Faq";
 import CallToActions from "../../components/home-page/home-5/CallToActions";
 import Footer from "../../components/home-page/home-5/footer";
 import { Link } from "react-router-dom";
+import Portfolio from "@/components/home-page/home-9/Portfolio";
 
 const RealEstate = () => {
   return (
@@ -37,51 +38,17 @@ const RealEstate = () => {
 			*/}
       <div className="fancy-feature-fortySix position-relative">
         <div className="container">
-          <div className="line-bg-wrapper position-relative pt-200 pb-180 lg-pt-120 md-pb-130">
-            <div className="row align-items-center">
-              <div className="col-lg-6" data-aos="fade-right">
-                <div className="title-style-eleven md-mb-20">
-                  <h2 className="main-title tx-dark">
-                    Service we provide with care.
-                  </h2>
-                </div>
+          <div className="fancy-feature-fortyEight position-relative">
+            <div className="container">
+              <div className="line-bg-wrapper position-relative pt-200 pb-200 lg-pt-120 lg-pb-110">
+                <About />
               </div>
-              <div className="col-lg-5 ms-auto " data-aos="fade-left">
-                <p className="text-lg m0">
-                  Inciddnt ut labore et dolor magna aliu. enim ad mim venam,
-                  quis nostru labore elit lorem dus amet lorem.
-                </p>
-              </div>
+              {/* /.line-bg-wrapper */}
             </div>
-            {/* End .row */}
-
-            <div className="row gx-xxl-5 pt-90 lg-pt-40 md-pt-20">
-              <Property />
-            </div>
-            {/* End .row */}
-
-            <Quote />
-            {/* /.quote-wrapper */}
-
-            <img
-              src="/images/assets/sticker_01.png"
-              alt="sticker"
-              className="lazy-img shapes shape-one"
-            />
-            <div className="shapes shape-two" />
-            <img
-              src="/images/shape/shape_162.svg"
-              alt="sticker"
-              className="lazy-img shapes shape-three"
-            />
-            <img
-              src="/images/assets/sticker_02.png"
-              alt="sticker"
-              className="lazy-img shapes shape-four"
-            />
-            <div className="shapes shape-five" />
-            <div className="shapes shape-six" />
+            {/* /.container */}
           </div>
+
+
           {/* /.line-bg-wrapper */}
         </div>
         {/* /.container */}
@@ -94,8 +61,53 @@ const RealEstate = () => {
 			*/}
       <div className="fancy-feature-fortySeven zn2 position-relative pt-130 pb-160 lg-pt-100 lg-pb-100">
         <div className="container">
-          <FilterProperty />
+          {/* <FilterProperty /> */}
         </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-7" data-aos="fade-right">
+              <div className="title-style-five mb-65 md-mb-40">
+                <div className="sc-title-two fst-italic position-relative">
+                  More About us.
+                </div>
+                {/* <h2 className="main-title fw-500 tx-dark">
+                  We’r the top rated agency.
+                </h2> */}
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-xl-8 col-lg-9 ms-auto">
+              <div className="ps-xxl-5" data-aos="fade-left">
+                {/* <h6 className="mb-30">Our History &amp; Goal.</h6> */}
+                <p className="text- tx-dark">
+                  Welcome to Edgewood College (Secondary), the leading secondary school and sixth form college with an established tradition of excellence. Alongside academic brilliance, learners are mentored to be the best they can for God and humanity. They are taught to be selfless and exemplary leaders.
+                </p>
+                <p className="text- tx-dark">
+                  Strong discipline, Christian values, and a culture of excellence are the hallmark of our college. Learners are taught by professional educators in the heart of Lekki Phase 1, Lagos. The Edgewood experience is both rewarding and enjoyable, as learners are given the ‘edge’ above their peers.
+                </p>
+                <p className="text- tx-dark">
+                  Though this website provide details of our rich curriculum, our secondary school, A Level programme, University Foundation Programme, Medical Foundation Programme, we encourage you to contact or visit us if you need information or advice.
+                </p>
+                {/* <div className="row">
+                  <Counter />
+                </div> */}
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* /.container */}
+
+        <img
+          src="/images/shape/shape_171.svg"
+          alt="shape"
+          className="lazy-img shapes shape-one"
+        />
+        <img
+          src="/images/shape/shape_172.svg"
+          alt="shape"
+          className="lazy-img shapes shape-two"
+        />
         {/* /.container */}
 
         <img
@@ -110,22 +122,22 @@ const RealEstate = () => {
 				Feature Section Forty Eight
 			============================================== 
 			*/}
-      <div className="fancy-feature-fortyEight position-relative">
+      {/* <div className="fancy-feature-fortyEight position-relative">
         <div className="container">
           <div className="line-bg-wrapper position-relative pt-200 pb-200 lg-pt-120 lg-pb-110">
             <About />
           </div>
-          {/* /.line-bg-wrapper */}
+  
         </div>
-        {/* /.container */}
-      </div>
+        
+      </div> */}
 
       {/* 
 			=============================================
 				Feature Section Forty Nine
 			============================================== 
 			*/}
-      <FancySection />
+
 
       {/*
 			=====================================================
@@ -199,7 +211,7 @@ const RealEstate = () => {
           data-aos="fade-up"
         />
       </div>
-
+      <FancySection />
       {/* 
 			=============================================
 				Blog Section Six
@@ -208,16 +220,16 @@ const RealEstate = () => {
       <div className="blog-section-six position-relative zn2 pt-150 pb-200 lg-pt-90 lg-pb-100">
         <div className="container">
           <div className="position-relative">
-            <div className="title-style-five text-center text-sm-start mb-30 lg-mb-10">
+            {/* <div className="title-style-five text-center text-sm-start mb-30 lg-mb-10">
               <h2 className="main-title fw-500 tx-dark">Our Blog</h2>
-            </div>
+            </div> */}
             {/* /.title-style-five */}
 
-            <div className="row gx-xxl-5">
+            {/* <div className="row gx-xxl-5">
               <Blog />
-            </div>
+            </div> */}
             {/* End .row */}
-
+            <Portfolio />
             <div className="btn-holder text-center">
               <div className="btn-eighteen position-relative d-inline-block tx-dark">
                 <Link to="/blog/blog-v1" className="fw-500 tran3s">

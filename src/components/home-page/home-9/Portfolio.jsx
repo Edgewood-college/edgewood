@@ -7,7 +7,6 @@ import items from "../../../data/portfolio";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("*");
-
   const filteredItems =
     filter === "*"
       ? items.slice(51, 55)
@@ -20,22 +19,22 @@ const Portfolio = () => {
           <div className="col-lg-4">
             <div className="title-style-five text-center text-lg-start md-mb-20">
               <h2 className="main-title font-recoleta fw-500 tx-dark">
-                My
+                Discover &
                 <span className="d-inline-block position-relative">
-                  Recent
+                  Explore
                   <span
                     className="mark-bg"
                     style={{ backgroundColor: "#D9F5F8" }}
                   />
                 </span>
-                Work.
+                
               </h2>
             </div>
             {/* /.title-style-five */}
           </div>
           {/* End .col-lg-4 */}
 
-          <div className="col-lg-8">
+          {/* <div className="col-lg-8">
             <ul className="style-none text-center text-lg-end isotop-menu-wrapper g-control-nav-one">
               <li
                 className={filter === "*" ? "is-checked" : ""}
@@ -69,7 +68,7 @@ const Portfolio = () => {
                 Illustration
               </li>
             </ul>
-          </div>
+          </div> */}
           {/* End .col-8 */}
         </div>
         {/* End .row */}
@@ -86,7 +85,7 @@ const Portfolio = () => {
                     <img src={item.image} alt={item.name} className="w-100" />
                   </div>
                   <Link
-                    to={`/portfolio/${item.id}`}
+                    to={`/resource/${item.id}`}
                     className="title tran3s d-flex flex-column justify-content-center align-items-center"
                   >
                     <span className="tag">{item.tag}</span>

@@ -9,7 +9,7 @@ const index = () => {
         <div className="ps-xl-4">
           <Intro />
           <div className="row justify-content-between">
-            <Counter />
+            {/* <Counter /> */}
           </div>
         </div>
       </div>

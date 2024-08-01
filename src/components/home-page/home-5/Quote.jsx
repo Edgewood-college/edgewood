@@ -10,11 +10,10 @@ const Quote = () => {
             <img src="/images/icon/icon_138.svg" alt="" className="lazy-img" />
           </div>
           <p className="tx-dark mt-25 mb-30 fw-500">
-            “Apartment floor will become Bluelofts live-work centers in Dallas
-            tower”
+            "The Edgewood experience is both rewarding and enjoyable, as learners are given the ‘edge’ above their peers."
           </p>
           <h6 className="fw-normal fst-italic tx-dark opacity-50 fs-20">
-            Marvin S.
+            Edgewood editor.
           </h6>
         </div>
       </div>

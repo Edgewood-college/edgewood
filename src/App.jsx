@@ -56,13 +56,18 @@ import ContactV2 from "./pages/contact/contact-v2";
 import ContactV3 from "./pages/contact/contact-v3";
 import ContactV4 from "./pages/contact/contact-v4";
 import ScrollTopBehaviour from "./components/common/ScrollTopBehavier";
+import { Admission } from "./components/Admission/Admission";
+import { WhyEdgeWood } from "./components/WhyEdgeWood/WhyEdgeWood";
+import { VisionStatement } from "./components/VisionStatement.jsx/VisionStatement";
+import { CoreValues } from "./components/CoreValues/CoreValues";
+import { DirectorMessage } from "./components/DirectorMessage/DirectorMessage";
+import { Principal } from "./components/Principal/Principal";
 function App() {
   useEffect(() => {
     Aos.init({
       duration: 1200,
     });
   }, []);
-
   return (
     <div className="main-page-wrapper">
       <Routes>
@@ -74,7 +79,12 @@ function App() {
           <Route path="home/real-estate" element={<RealEstate />} />
           <Route path="home/sass-product" element={<SassProduct />} />
           <Route path="home/app-landing" element={<AppLanding />} />
+          <Route path="/home/purpose" element={<WhyEdgeWood />} />
+          <Route path="/home/vision" element={<VisionStatement />} />
           <Route path="home/crypto" element={<Crypto />} />
+          <Route path="home/core-values" element={<CoreValues />} />
+          <Route path="home/principal" element={<Principal />} />
+          <Route path="home/executive-directors-message" element={<DirectorMessage />} />
           <Route
             path="home/personal-portfolio"
             element={<PersonalPortfolio />}
@@ -113,7 +123,7 @@ function App() {
           <Route path="login" element={<LogIn />} />
           <Route path="signup" element={<SignUp />} />
           <Route path="404" element={<NotFound />} />
-
+          <Route path="executive-speech" element={<Admission/>}></Route>
           <Route path="portfolio/portfolio-v1" element={<PortfolioV1 />} />
           <Route path="portfolio/portfolio-v2" element={<PortfolioV2 />} />
           <Route path="portfolio/portfolio-v3" element={<PortfolioV3 />} />
@@ -121,7 +131,7 @@ function App() {
           <Route path="portfolio/portfolio-v5" element={<PortfolioV5 />} />
           <Route path="portfolio/portfolio-v6" element={<PortfolioV6 />} />
           <Route path="portfolio/portfolio-v7" element={<PortfolioV7 />} />
-          <Route path="portfolio/:id" element={<DynamicPortfolioDetails />} />
+          <Route path="resource/:id" element={<DynamicPortfolioDetails />} />
 
           <Route path="blog/blog-v1" element={<BlogV1 />} />
           <Route path="blog/blog-v2" element={<BlogV2 />} />

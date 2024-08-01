@@ -2,31 +2,35 @@ export const menuItems = [
   {
     title: "Business",
     items: [
-      { title: "Insurance", link: "/" },
-      { title: "Web Hosting", link: "/home/web-hosting" },
-      { title: "Education", link: "/home/education" },
-      { title: "N.P. Charity", link: "/home/charity" },
-      { title: "Real Estate", link: "/home/real-estate" },
+      { title: "Bullying Report", link: "https://docs.google.com/forms/d/e/1FAIpQLSfnN_7Acn1m-WM_sItBtwAU38lqKmTrK-pHjv3S7NCi5tHHgA/viewform", },
+      { title: "Why Edgewood", link: "/home/purpose" },
+      { title: "Mission and Vision statement", link: "/home/vision" },
+      // { title: "N.P. Charity", link: "/home/charity" },
+      { title: "Core Values(CLASSIC)", link: "/home/core-values" },
+      { title: "Executive Director's message", link: "/home/executive-directors-message" },
+      { title: "Principal", link: "/home/principal" },
+      { title: "Meet the board of Governors", link: "/home/board-of-directors" },
+      { title: "Meet the Management Team", link: "/home/management-team" },
     ],
   },
-  {
-    title: "Landing",
-    items: [
-      { title: "Sass Product", link: "/home/sass-product" },
-      { title: "App Landing", link: "/home/app-landing" },
-      { title: "Crypto", link: "/home/crypto" },
-      { title: "Personal Portfolio", link: "/home/personal-portfolio" },
-    ],
-  },
-  {
-    title: "Agency",
-    items: [
-      { title: "Agency Modern", link: "/home/agency-modern" },
-      { title: "SEO & Digital Agency", link: "/home/seo-agency" },
-      { title: "Design Agency", link: "/home/design-agency" },
-      { title: "Lead Generation", link: "/home/lead-generation" },
-    ],
-  },
+  // {
+  //   title: "Landing",
+  //   items: [
+  //     { title: "Executive Director's message", link: "/home/sass-product" },
+  //     { title: "Principal", link: "/home/app-landing" },
+  //     { title: "Meet the board of Governors", link: "/home/crypto" },
+  //     { title: "Meet the Management Team", link: "/home/personal-portfolio" },
+  //   ],
+  // },
+  // {
+  //   title: "Agency",
+  //   items: [
+  //     { title: "Agency Modern", link: "/home/agency-modern" },
+  //     { title: "SEO & Digital Agency", link: "/home/seo-agency" },
+  //     { title: "Design Agency", link: "/home/design-agency" },
+  //     { title: "Lead Generation", link: "/home/lead-generation" },
+  //   ],
+  // },
 ];
 
 export const pagesItems = [
