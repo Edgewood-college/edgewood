@@ -22,15 +22,14 @@ const Header6 = () => {
 
   return (
     <header
-      className={`theme-main-menu sticky-menu theme-menu-ten ${
-        navbar ? "fixed" : ""
-      }`}
+      className={`theme-main-menu sticky-menu theme-menu-ten ${navbar ? "fixed" : ""
+        }`}
     >
       <div className="inner-content position-relative">
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo order-lg-0">
             <Link to="/">
-              <img src="/images/logo/logo_07.png" alt="logo" />
+              <img src="/images/assets/edgewood college.png" alt="logo" width="150px" style={{ position: "absolute", top: "-31px" }} />
             </Link>
           </div>
           {/* End logo */}

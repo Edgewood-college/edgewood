@@ -9,13 +9,18 @@ import {
 
 import { useLocation } from "react-router-dom";
 import portfolio from "@/data/portfolio";
+import { useState } from "react";
 
 const MainMenu = () => {
   const { pathname } = useLocation();
+  const [showSixth, setshowSixth] = useState(false)
   const navigate = useNavigate();
 
   const isActive = (link) => {
     return pathname.replace(/\/\d+$/, "") === link.replace(/\/\d+$/, "");
+  };
+  const handleSixthForm = () => {
+    setshowSixth(!showSixth)
   };
 
   return (
@@ -47,11 +52,13 @@ const MainMenu = () => {
           <li className="nav-item dropdown mega-dropdown-md">
             <a
               // className="nav-link dropdown-toggle active-menu"
-              href="#"
+              // href="#"
+              onClick={() => navigate("/")}
               role="button"
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
+              onMouseOver={() => setshowSixth(false)}
               className={
                 menuItems.some((menu) =>
                   menu.items.some((elm) => isActive(elm.link))
@@ -59,6 +66,7 @@ const MainMenu = () => {
                   ? "nav-link dropdown-toggle active-menu"
                   : "nav-link dropdown-toggle"
               }
+
 
             // style={{color:'green'}}
             >
@@ -80,27 +88,27 @@ const MainMenu = () => {
                           {menu.title}
                         </h6> */}
                         <hr />
-                       
+
                       </div>
-                      <ul className="style-none mega-dropdown-list" style={{display:"flex",flexDirection:"column", }}>
-                          {menu.items.map((item, index) => (
-                            <li key={index} >
-                              <Link
-                                to={item.link}
-                                className={`dropdown-item ${isActive(item.link) ? "active" : ""
-                                  }`}
-                              >
-                                <span style={{fontSize:"0.85rem"}}>{item.title}</span>
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
+                      <ul className="style-none mega-dropdown-list" style={{ display: "flex", flexDirection: "column", }}>
+                        {menu.items.map((item, index) => (
+                          <li key={index} >
+                            <Link
+                              to={item.link}
+                              className={`dropdown-item ${isActive(item.link) ? "active" : ""
+                                }`}
+                            >
+                              <span style={{ fontSize: "0.85rem" }}>{item.title}</span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   ))}
                 </div>
               </li>
             </ul>
-            
+
           </li>
           {/* End li (home mega menu) */}
 
@@ -174,33 +182,51 @@ const MainMenu = () => {
 
           <li className="nav-item dropdown">
             <a
-              className={
-                blogItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle "
-                  : "nav-link dropdown-toggle"
-              }
+              className="nav-link dropdown-toggle"
               href="#"
-              
               role="button"
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
+        
             >
               Learning
             </a>
-            <ul className="dropdown-menu ">
+            <ul className="dropdown-menu">
               <hr />
-              {blogItems.map((contact, index) => (
-                <li key={index}>
+              <div></div>
+              {/* {blogItems.map((contact, index) => (
+                <li key={index} className="dropdown-item-wrapper">
                   <Link
                     to={contact.link}
-                    className={`dropdown-item ${isActive(contact.link) ? "active" : ""
-                      }`}
+                    className={`dropdown-item ${isActive(contact.link) ? "active" : ""}`}
                   >
-                    <span style={{fontSize:"0.85rem"}}>{contact.text}</span>
+                    <span style={{ fontSize: "0.85rem" }}>{contact.text}</span>
                   </Link>
                 </li>
-              ))}
+              ))} */}
+              <Link to="/learning/secondary-school" className={`dropdown-item ${isActive("/learning/secondary-school") ? "active" : ""}`} style={{ fontSize: "0.8rem" }}       onMouseOver={() => setshowSixth(false)}>Secondary School</Link>
+              <div className="" style={{ display: "flex", alignItems: "center", cursor: "pointer" }} onMouseOver={handleSixthForm}>
+                <div className='dropdown-item' style={{ fontSize: "0.8rem" }} >Sixth Form</div>
+                <div style={{ position: "relative", right: "1rem", cursor: "pointer" }} ><img src="/images/assets/rightarrow.png" alt="arrow image" width="8px" /></div>
+              </div>
+              {
+                showSixth && (
+                  <div style={{ width: "400px", height: "150px", position: "absolute", background: "white", right: "15rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column",top:"2rem" }}>
+                    <div className="dropdown-item" style={{fontSize:"0.8rem"}}>
+                      <Link to="/learning/cambridgeA-level" className={`dropdown-item ${isActive("/learning/cambridgeA-level") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} >Cambridge A level</Link>
+                      <Link to="/learning/University-Programme" className={`dropdown-item ${isActive("/learning/University-Programme") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} >University Foundation programme</Link>
+                      <Link to="/learning/Medical-foundation-Programme" className={`dropdown-item ${isActive("/learning/Medical-foundation-Programme") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} >Medical foundaton programme</Link>
+                    </div>
+                  </div>
+                )
+              }
+              <Link to="/learning/Merit-award" className={`dropdown-item ${isActive("/learning/Merit-award") ? "active" : ""}`} style={{ fontSize: "0.8rem" }}       onMouseOver={() => setshowSixth(false)}>Merit Awards System</Link>
+              <Link to="/learning/club-activities" className={`dropdown-item ${isActive("/learning/club-activities") ? "active" : ""}`}       onMouseOver={() => setshowSixth(false)} style={{ fontSize: "0.8rem" }}>Club Activities</Link>
+              <Link to="/learning/sports" className={`dropdown-item ${isActive("/learning/sports") ? "active" : ""}`} style={{ fontSize: "0.8rem" }}       onMouseOver={() => setshowSixth(false)}>Sports & Activities</Link>
+              <Link to="/learning/arts" className={`dropdown-item ${isActive("/learning/arts") ? "active" : ""}`} style={{ fontSize: "0.8rem" }}       onMouseOver={() => setshowSixth(false)}>Arts</Link>
+              <Link to="/learning/music" className={`dropdown-item ${isActive("/learning/music") ? "active" : ""}`} style={{ fontSize: "0.8rem" }}       onMouseOver={() => setshowSixth(false)}>Music</Link>
+              <Link to="/learning/leadership-program" className={`dropdown-item ${isActive("/learning/leadership-program") ? "active" : ""}`} style={{ fontSize: "0.8rem" }}       onMouseOver={() => setshowSixth(false)}>Leadership Programs</Link>
             </ul>
           </li>
 
@@ -217,7 +243,7 @@ const MainMenu = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
-          School life
+              School life
             </a>
             <ul className="dropdown-menu" style={{}}>
               <hr />
@@ -228,7 +254,7 @@ const MainMenu = () => {
                     className={`dropdown-item ${isActive(contact.link) ? "active" : ""
                       }`}
                   >
-                    <span style={{fontSize:"0.85rem"}}>{contact.name}</span>
+                    <span style={{ fontSize: "0.85rem" }}>{contact.name}</span>
                   </Link>
                 </li>
               ))}
@@ -239,17 +265,17 @@ const MainMenu = () => {
               className={
                 contactItems.some((elm) => isActive(elm.link))
                   ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
+                  : "nav-link "
               }
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
+            // href="#"
+            // role="button"
+            // data-bs-toggle="dropdown"
+            // data-bs-auto-close="outside"
+            // aria-expanded="false"
             >
-              Contact Us
+              <Link to="/contact/contact-v2">Contact Us</Link>
             </a>
-            <ul className="dropdown-menu">
+            {/* <ul className="dropdown-menu">
               <hr />
               {contactItems.map((contact, index) => (
                 <li key={index}>
@@ -258,11 +284,11 @@ const MainMenu = () => {
                     className={`dropdown-item ${isActive(contact.link) ? "active" : ""
                       }`}
                   >
-                    <span style={{fontSize:"0.85rem"}}>{contact.text}</span>
+                    <span style={{ fontSize: "0.85rem" }}>{contact.text}</span>
                   </Link>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </li>
           {/* End li (contact) */}
         </ul>
@@ -272,7 +298,7 @@ const MainMenu = () => {
         <div className="mobile-content d-block d-lg-none">
           <div className="d-flex flex-column align-items-center justify-content-center mt-70">
             <Link
-              to="/contact/contact-v1"
+              to="/contact/contact-v2"
               className="btn-twentyOne fw-500 tran3s"
             >
               Contact us

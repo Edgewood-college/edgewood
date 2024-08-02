@@ -71,6 +71,14 @@ import { ChristianEthos } from "./components/ChristianEthos/ChristianEthos";
 import { SchoolAnthem } from "./components/SchoolAnthem/SchoolAnthem";
 import { StudentLife } from "./components/StudentLife/StudentLife";
 import { StudentLife2 } from "./components/StudentLife2/StudentLife2";
+import { ClubActivities } from "./components/ClubActivities/ClubActivities";
+import { SportsActivities } from "./components/SportsActivities/SportsActivities";
+import { Arts } from "./components/Arts/Arts";
+import { LeadershipPrograms } from "./components/Leadership Programs/LeadershipPrograms";
+import { Music } from "./components/Music/Music";
+import { CambridgeA } from "./components/SixthForm/CambridgeA";
+import { MedicalFoundation } from "./components/SixthForm/MedicalFoundation";
+import { UniversityFoundation } from "./components/SixthForm/UniversityFoundation";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -93,19 +101,28 @@ function App() {
           <Route path="home/crypto" element={<Crypto />} />
           <Route path="home/core-values" element={<CoreValues />} />
           <Route path="home/principal" element={<Principal />} />
-          <Route path="school-life/secondary-school" element={<SecondarySchool />} />
-          <Route path="/schol-life/Merit-award" element={<  MeritAward />} />
+          <Route path="learning/secondary-school" element={<SecondarySchool />} />
+          <Route path="/learning/Merit-award" element={<  MeritAward />} />
+          <Route path="/learning/club-activities" element={<  ClubActivities />} />
+          <Route path="/learning/sports" element={< SportsActivities/>} />
+          <Route path="/learning/arts" element={<  Arts />} />
+          <Route path="/learning/music" element={<  Music />} />
+          <Route path="/learning/cambridgeA-level" element={<  CambridgeA />} />
+          <Route path="/learning/Medical-foundation-Programme" element={<  MedicalFoundation />} />          
+          <Route path="/learning/University-Programme" element={<UniversityFoundation/>} />          
+          <Route path="/learning/leadership-program" element={<  LeadershipPrograms />} />
           <Route path="home/executive-directors-message" element={<DirectorMessage />} />
           <Route path="home/board-of-governors" element={<BoardOfGovernors />} />
-          <Route path="learning/school-song" element={<SchoolAnthem />} />
-          <Route path="/learning/Student-life-edgewood" element={<StudentLife />} />
-          <Route path="/learning/Student-life-edgewood-fri" element={<StudentLife2 />} />
+          <Route path="schoollife/school-song" element={<SchoolAnthem />} />
+          <Route path="/schoollife/Student-life-edgewood" element={<StudentLife />} />
+          <Route path="/schoollife/Student-life-edgewood-fri" element={<StudentLife2 />} />
           <Route path="home/management-team" element={<ManagementTeam />} />
           <Route
             path="home/personal-portfolio"
             element={<PersonalPortfolio />}
           />
-          <Route path="learning/christian-ethos" element={<ChristianEthos/>}></Route>
+
+          <Route path="schoollife/christian-ethos" element={<ChristianEthos/>}></Route>
           <Route path="home/agency-modern" element={<AgencyModern />} />
           <Route path="home/seo-agency" element={<SeoAgency />} />
           <Route path="home/design-agency" element={<DesignAgency />} />

@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import portfolioData from "../../data/portfolio";
 import PortfolioDetailsTitle from "../../components/portfolio/portfolio-details/PortfolioDetailsTitle";
 import { useParams } from "react-router-dom";
+import Header5 from "@/components/header/Header5";
 
 const DynamicPortfolioDetails = () => {
   const [portfolio, setPortfolio] = useState({});
@@ -32,7 +33,7 @@ const DynamicPortfolioDetails = () => {
       Theme Default Menu
       ============================================== 	
       --> */}
-      <DefaulHeader />
+      <Header5 />
 
       {/* 
         =============================================

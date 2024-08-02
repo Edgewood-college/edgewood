@@ -1,3 +1,4 @@
+import Header5 from "@/components/header/Header5";
 import Seo from "../../components/common/Seo";
 import BlockContact2 from "../../components/contact/BlockContact2";
 import ContactForm2 from "../../components/contact/ContactForm2";
@@ -13,7 +14,7 @@ const ContactV2 = () => {
       Theme Default Menu
       ============================================== 	
       --> */}
-      <Header />
+      <Header5 />
 
       {/* 
 		=============================================

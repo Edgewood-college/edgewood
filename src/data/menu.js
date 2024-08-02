@@ -89,10 +89,10 @@ export const pagesItems = [
 ];
 
 export const portfolioItems = [
-  { name: "Christian Ethos", link: "/learning/christian-ethos" },
-  { name: "School Song", link: "/learning/school-song" },
-  { name: "Student Life in Edgewood", link: "/learning/Student-life-edgewood" },
-  { name: "Student Life in Edgewood(FRI)", link: "/learning/Student-life-edgewood-fri" },
+  { name: "Christian Ethos", link: "/schoollife/christian-ethos" },
+  { name: "School Song", link: "/schoollife/school-song" },
+  { name: "Student Life in Edgewood", link: "/schoollife/Student-life-edgewood" },
+  { name: "Student Life in Edgewood(FRI)", link: "/schoollife/Student-life-edgewood-fri" },
   // { name: "Portfolio 05", link: "/portfolio/portfolio-v5" },
   // { name: "Portfolio 06", link: "/portfolio/portfolio-v6" },
   // { name: "Portfolio 07", link: "/portfolio/portfolio-v7" },
@@ -100,17 +100,17 @@ export const portfolioItems = [
 ];
 
 export const blogItems = [
-  { link: "/school-life/secondary-school", text: "Secondary School"},
-  { link: "/blog/blog-v2", text: "Sixth Form" },
-  { link: "/schol-life/Merit-award", text: "Merit Award" },
-  { link: "/blog/1", text: "Excursions" },
-  { link: "/blog/1", text: "Club and Activities" },
-  { link: "/blog/1", text: "Sport and Houses" },
-  { link: "/blog/1", text: "Arts" },
-  { link: "/blog/1", text: "Music" },
-  { link: "/blog/1", text: "Leadership programs" },
+  { link: "/learning/secondary-school", text: "Secondary School"},
+  { link: "/", text: "Sixth Form" },
+  { link: "/learning/Merit-award", text: "Merit Award" },
+  // { link: "/blog/1", text: "Excursions" },
+  { link: "/learning/club-activities", text: "Club and Activities" },
+  { link: "/learning/sports", text: "Sport and Houses" },
+  { link: "/learning/arts", text: "Arts" },
+  { link: "/learning/music", text: "Music" },
+  { link: "/learning/leadership-program", text: "Leadership programs" },
 ];
-export const contactItems = [
+export const contactItems = [ 
   { link: "/contact/contact-v1", text: "Contact - Insurance" },
   { link: "/contact/contact-v2", text: "Contact - Agency" },
   { link: "/contact/contact-v3", text: "Contact - Web Hosting" },

@@ -19,7 +19,7 @@ const Intro = () => {
         <p className=" m0 ps-lg-5">
           Edgewood College is an educational institution focused on developing well-rounded students into future leaders. The school emphasizes a balanced curriculum and a strong partnership with parents to nurture students' potential. It aims to cultivate students who are not only academically strong but also actively engaged and contributing members of society.
           <p>
-            <Link to="exceutive-speech">
+            <Link to="/home/executive-directors-message">
               <button className="bg-red-400 items-center flex justify-center button-director">Read more</button>
             </Link>
           </p>

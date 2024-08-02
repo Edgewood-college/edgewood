@@ -8,6 +8,7 @@ import RecentPost from "../../components/blog/RecentPost";
 import BannerPost from "../../components/blog/BannerPost";
 import Blog2 from "../../components/blog/Blog2";
 import Header6 from "@/components/header/Header6";
+import Header5 from "../header/Header5";
 
 const BoardOfGovernors = () => {
   return (
@@ -18,7 +19,7 @@ const BoardOfGovernors = () => {
       Theme Default Menu
       ============================================== 	
       --> */}
-      <Header6 />
+      <Header5 />
 
       {/* 
 			=============================================
