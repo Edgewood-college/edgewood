@@ -8,7 +8,7 @@ const Hero = () => {
           <div className="col-xl-10 m-auto">
             <div className="text-wrapper" data-aos="fade-up">
               <h1 className="hero-heading fw-500 tx-dark text-center">
-              Education that sets students apart.
+              Setting the pace for great education.
                 <span className="position-relative">
                   {/* live. */}
                   <img

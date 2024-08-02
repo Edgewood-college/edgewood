@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Footer from "../../components/home-page/home-5/footer";
 import Header5 from '../header/Header5';
 import Header6 from '../header/Header6';
@@ -57,7 +57,7 @@ export const UniversityFoundation = () => {
                                     <li>Grade C or greater in five subjects (which must include English and Mathematics, at IGCSE, O Level, GCSE or equivalent exams)</li>
                                     <li>Law</li>
                                 </ul>
-                                <p style={{fontSize:"1rem"}}>Prospective students are advised to <span style={{color:"orange",cursor:"pointer"}}>apply</span> before the completion of their secondary school education.</p>
+                                <p style={{fontSize:"1rem"}}>Prospective students are advised to <span style={{color:"orange",cursor:"pointer"}}><Link to="/Submit-SixthForm">apply</Link></span> before the completion of their secondary school education.</p>
                                 {/* <p className='fst-italic position-relative' style={{ fontWeight: "bolder" }}>Here is how to join our college</p> */}
                                 
 
