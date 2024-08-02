@@ -7,6 +7,7 @@ import Category from "../../components/blog/Category";
 import RecentPost from "../../components/blog/RecentPost";
 import BannerPost from "../../components/blog/BannerPost";
 import Blog2 from "../../components/blog/Blog2";
+import Header6 from "@/components/header/Header6";
 
 const BlogV2 = () => {
   return (
@@ -17,7 +18,7 @@ const BlogV2 = () => {
       Theme Default Menu
       ============================================== 	
       --> */}
-      <DefaulHeader />
+      <Header6 />
 
       {/* 
 			=============================================
@@ -29,11 +30,11 @@ const BlogV2 = () => {
           <div className="row">
             <div className="col-lg-7" data-aos="fade-right">
               <div className="title-style-five mb-65 lg-mb-40">
-                <div className="sc-title-two fst-italic position-relative">
+                {/* <div className="sc-title-two fst-italic position-relative">
                   Blog
-                </div>
-                <h2 className="main-title fw-500 tx-dark">
-                  Check our inside news &amp; update.
+                </div> */}
+                <h2 className="main-title fw-500 tx-dark " style={{display:"flex",alignItems:"center",justifyContent:"center",textAlign:"center"}}>
+                  Board Of Governors
                 </h2>
               </div>
             </div>
@@ -63,13 +64,13 @@ const BlogV2 = () => {
                   </div>
                 </div>
                 {/* /.blog-meta-wrapper */}
-                <div className="page-pagination-one pt-15">
+                {/* <div className="page-pagination-one pt-15">
                   <Pagination />
-                </div>
+                </div> */}
               </div>
               {/* End .col-lg-8 */}
 
-              <div className="col-lg-4 col-md-8">
+              <div className="col-lg-4 col-md-8" style={{display:"none"}}>
                 <div className="blog-sidebar md-mt-70">
                   <div className="blog-sidebar-search mb-55 md-mb-40">
                     <SearchBox />

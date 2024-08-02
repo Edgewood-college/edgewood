@@ -8,6 +8,7 @@ import {
 } from "../../data/menu";
 
 import { useLocation } from "react-router-dom";
+import portfolio from "@/data/portfolio";
 
 const MainMenu = () => {
   const { pathname } = useLocation();
@@ -63,22 +64,25 @@ const MainMenu = () => {
             >
               Home
             </a>
-            <ul className="dropdown-menu">
+            <ul className="dropdown-menu" style={{}}>
               <li>
-                <div className="row">
+                <div className="rows">
                   {menuItems.map((menu, index) => (
-                    <div className="home-hover" key={index}>
+                    <div className="home-hov" key={index}>
                       <div className="menu-column">
-                        <h6
+                        {/* <h6
                           className={
                             menu.items.some((elm) => isActive(elm.link))
                               ? "mega-menu-title active-menu"
                               : "mega-menu-title"
                           }
                         >
-                          {/* {menu.title} */}
-                        </h6>
-                        <ul className="style-nne mega-dropdown-list" style={{ display: "flex", flexWrap: "wrap", gap: "2.7vw" }}>
+                          {menu.title}
+                        </h6> */}
+                        <hr />
+                       
+                      </div>
+                      <ul className="style-none mega-dropdown-list" style={{display:"flex",flexDirection:"column", }}>
                           {menu.items.map((item, index) => (
                             <li key={index} >
                               <Link
@@ -86,17 +90,17 @@ const MainMenu = () => {
                                 className={`dropdown-item ${isActive(item.link) ? "active" : ""
                                   }`}
                               >
-                                <span >{item.title}</span>
+                                <span style={{fontSize:"0.85rem"}}>{item.title}</span>
                               </Link>
                             </li>
                           ))}
                         </ul>
-                      </div>
                     </div>
                   ))}
                 </div>
               </li>
             </ul>
+            
           </li>
           {/* End li (home mega menu) */}
 
@@ -106,7 +110,7 @@ const MainMenu = () => {
               // className="nav-link dropdown-toggle"
               className={
                 portfolioItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
+                  ? "nav-link dropdown-toggle "
                   : "nav-link "
               }
               href="https://edgewoodcollege.schulup.com/Account/Login"
@@ -139,7 +143,7 @@ const MainMenu = () => {
               // className="nav-link dropdown-toggle"
               className={
                 portfolioItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
+                  ? "nav-link dropdown-toggle "
                   : "nav-link "
               }
               href="#"
@@ -170,13 +174,13 @@ const MainMenu = () => {
 
           <li className="nav-item dropdown">
             <a
-              // className="nav-link dropdown-toggle"
               className={
                 blogItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
+                  ? "nav-link dropdown-toggle "
                   : "nav-link dropdown-toggle"
               }
               href="#"
+              
               role="button"
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
@@ -184,14 +188,27 @@ const MainMenu = () => {
             >
               Learning
             </a>
-
+            <ul className="dropdown-menu ">
+              <hr />
+              {blogItems.map((contact, index) => (
+                <li key={index}>
+                  <Link
+                    to={contact.link}
+                    className={`dropdown-item ${isActive(contact.link) ? "active" : ""
+                      }`}
+                  >
+                    <span style={{fontSize:"0.85rem"}}>{contact.text}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </li>
 
           <li className="nav-item dropdown">
             <a
               className={
                 blogItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
+                  ? "nav-link dropdown-toggle"
                   : "nav-link dropdown-toggle"
               }
               href="#"
@@ -200,17 +217,18 @@ const MainMenu = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
-              School Life
+          School life
             </a>
-            <ul className="dropdown-menu">
-              {blogItems.map((contact, index) => (
+            <ul className="dropdown-menu" style={{}}>
+              <hr />
+              {portfolioItems.map((contact, index) => (
                 <li key={index}>
                   <Link
                     to={contact.link}
                     className={`dropdown-item ${isActive(contact.link) ? "active" : ""
                       }`}
                   >
-                    <span>{contact.text}</span>
+                    <span style={{fontSize:"0.85rem"}}>{contact.name}</span>
                   </Link>
                 </li>
               ))}
@@ -232,6 +250,7 @@ const MainMenu = () => {
               Contact Us
             </a>
             <ul className="dropdown-menu">
+              <hr />
               {contactItems.map((contact, index) => (
                 <li key={index}>
                   <Link
@@ -239,7 +258,7 @@ const MainMenu = () => {
                     className={`dropdown-item ${isActive(contact.link) ? "active" : ""
                       }`}
                   >
-                    <span>{contact.text}</span>
+                    <span style={{fontSize:"0.85rem"}}>{contact.text}</span>
                   </Link>
                 </li>
               ))}

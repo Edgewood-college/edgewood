@@ -8,7 +8,7 @@ export const CoreValues = () => {
     return (
         <div>
             <Header6 />
-            <div className="fancy-feature-fortySeven zn2 position-relative pt-130 pb-160 lg-pt-200 lg-pb-100">
+            <div className="fancy-feature-fortySeven zn2 position-relative pt-130 pb-160 lg-pt-120 lg-pb-100">
                 <div className="container">
                     {/* <FilterProperty /> */}
                 </div>
@@ -27,34 +27,33 @@ export const CoreValues = () => {
                         <div className="col-xl-6 col-lg-9 ms-auto">
                             <div className="ps-xxl-5" data-aos="fade-left">
                                 {/* <h6 className="mb-30">Our History &amp; Goal.</h6> */}
-                                <p className='tx-dark ' style={{ fontWeight: "bolder" }}>
-                                    Our Cores Value
+                                <p className='tx-dark ' style={{ fontWeight: "bolder", fontSize: "1.2rem", alignItems: "center" }}>
+                                    Our Cores Values
                                 </p>
-
                                 <div>
-                                    <div >
+                                    <div style={{ marginTop: "-1vw" }}>
                                         <p className='' style={{ display: "flex", alignItems: "center" }}> <div style={{ fontWeight: "bolder" }}>C</div>hristian Ethos</p>
                                     </div>
-                                    <div >
+                                    <div style={{ marginTop: "-1vw" }}>
                                         <p className='' style={{ display: "flex", alignItems: "center" }}> <div style={{ fontWeight: "bolder" }}>L</div>eadership</p>
                                     </div>
-                                    <div >
+                                    <div style={{ marginTop: "-1vw" }}>
                                         <p className='' style={{ display: "flex", alignItems: "center" }}> <div style={{ fontWeight: "bolder" }}>A</div>cademic excellence</p>
                                     </div>
-                                    <div >
+                                    <div style={{ marginTop: "-1vw" }}>
                                         <p className='' style={{ display: "flex", alignItems: "center" }}> <div style={{ fontWeight: "bolder" }}>S</div>elf development</p>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <div >
+                                    <div style={{ marginTop: "-1vw" }}>
                                         <p className='' style={{ display: "flex", alignItems: "center" }}> <div style={{ fontWeight: "bolder" }}>S</div>elflessness</p>
                                     </div>
-                                    <div > 
-                                        <p className='' style={{display:"flex",alignItems:"center"}}> <div style={{ fontWeight: "bolder" }}>I</div>ntergrity and</p>
+                                    <div style={{ marginTop: "-1vw" }}>
+                                        <p className='' style={{ display: "flex", alignItems: "center" }}> <div style={{ fontWeight: "bolder" }}>I</div>ntergrity and</p>
                                     </div>
-                                    <div > 
-                                        <p className='' style={{display:"flex",alignItems:"center"}}> <div style={{ fontWeight: "bolder" }}>C</div>ommuinity engagement</p>
+                                    <div style={{ marginTop: "-1vw" }}>
+                                        <p className='' style={{ display: "flex", alignItems: "center" }}> <div style={{ fontWeight: "bolder" }}>C</div>ommuinity engagement</p>
                                     </div>
                                 </div>
 

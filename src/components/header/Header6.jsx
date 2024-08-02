@@ -25,7 +25,6 @@ const Header6 = () => {
       className={`theme-main-menu sticky-menu theme-menu-ten ${
         navbar ? "fixed" : ""
       }`}
-      style={{backgroundColor: "darkslategray",color:"white"}} 
     >
       <div className="inner-content position-relative">
         <div className="d-flex align-items-center justify-content-between">

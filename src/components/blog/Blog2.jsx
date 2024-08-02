@@ -4,7 +4,7 @@ import blogPosts from "../../data/blog";
 const Blog = () => {
   return (
     <>
-      {blogPosts.slice(11, 19).map((post) => (
+      {blogPosts.slice(11, 17).map((post) => (
         <div
           className="col-md-6"
           key={post.id}
@@ -13,7 +13,7 @@ const Blog = () => {
         >
           <article className="blog-meta-three mb-60 lg-mb-40">
             <figure className="post-img m0">
-              <Link to={`/blog/${post.id}`} className="w-100 d-block">
+              <Link to={``} className="w-100 d-block">
                 <img
                   src={post.imageSrc}
                   alt="blog"
@@ -22,22 +22,22 @@ const Blog = () => {
               </Link>
             </figure>
             <div className="post-data mt-30">
-              <div className="post-date opacity-75 text-uppercase">
+              {/* <div className="post-date opacity-75 text-uppercase">
                 {post.date}
-              </div>
-              <Link to={`/blog/${post.id}`} className="mt-10 mb-15">
+              </div> */}
+              <Link to={``} className="mt-10 mb-15">
                 <h4 className="tran3s blog-title fw-normal tx-dark">
                   {post.title}
                 </h4>
               </Link>
-              <div>
+              {/* <div>
                 <Link
                   to={`/blog/${post.id}`}
                   className="read-btn-two fw-500 tran3s"
                 >
                   Read More
                 </Link>
-              </div>
+              </div> */}
             </div>
           </article>
           {/* /.blog-meta-three */}

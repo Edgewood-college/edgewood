@@ -1,6 +1,5 @@
 const ProjectSlide = ({ slide }) => {
   const images = [slide?.image ?? "", slide?.image ?? "", slide?.image ?? ""];
-
   return (
     <div
       id="gallery-carousel"

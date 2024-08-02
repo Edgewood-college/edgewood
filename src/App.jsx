@@ -62,6 +62,15 @@ import { VisionStatement } from "./components/VisionStatement.jsx/VisionStatemen
 import { CoreValues } from "./components/CoreValues/CoreValues";
 import { DirectorMessage } from "./components/DirectorMessage/DirectorMessage";
 import { Principal } from "./components/Principal/Principal";
+import { SecondarySchool } from "./components/SecondarySchool/SecondarySchool";
+import { MeritAward } from "./components/MeritAward/MeritAward";
+import { Gallery } from "./components/Gallery/Gallery";
+import BoardOfGovernors from "./components/Borad of Governors/BoardOfGovernors";
+import  ManagementTeam  from "./components/ManagementTeam/ManagementTeam";
+import { ChristianEthos } from "./components/ChristianEthos/ChristianEthos";
+import { SchoolAnthem } from "./components/SchoolAnthem/SchoolAnthem";
+import { StudentLife } from "./components/StudentLife/StudentLife";
+import { StudentLife2 } from "./components/StudentLife2/StudentLife2";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -84,11 +93,19 @@ function App() {
           <Route path="home/crypto" element={<Crypto />} />
           <Route path="home/core-values" element={<CoreValues />} />
           <Route path="home/principal" element={<Principal />} />
+          <Route path="school-life/secondary-school" element={<SecondarySchool />} />
+          <Route path="/schol-life/Merit-award" element={<  MeritAward />} />
           <Route path="home/executive-directors-message" element={<DirectorMessage />} />
+          <Route path="home/board-of-governors" element={<BoardOfGovernors />} />
+          <Route path="learning/school-song" element={<SchoolAnthem />} />
+          <Route path="/learning/Student-life-edgewood" element={<StudentLife />} />
+          <Route path="/learning/Student-life-edgewood-fri" element={<StudentLife2 />} />
+          <Route path="home/management-team" element={<ManagementTeam />} />
           <Route
             path="home/personal-portfolio"
             element={<PersonalPortfolio />}
           />
+          <Route path="learning/christian-ethos" element={<ChristianEthos/>}></Route>
           <Route path="home/agency-modern" element={<AgencyModern />} />
           <Route path="home/seo-agency" element={<SeoAgency />} />
           <Route path="home/design-agency" element={<DesignAgency />} />

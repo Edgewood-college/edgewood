@@ -8,7 +8,7 @@ export const Admission = () => {
     const navigate = useNavigate()
     return (
         <div>
-            <div className="fancy-feature-fortySeven zn2 position-relative pt-130 pb-160 lg-pt-100 lg-pb-100">
+            <div className="fancy-feature-fortySeven zn2 position-relative pt-130 pb-160 lg-pt-120 lg-pb-100">
                 <Header6/>
                 <div className="container">
                     {/* <FilterProperty /> */}
