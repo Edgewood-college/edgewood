@@ -34,7 +34,6 @@ export const SubmitSixthForm = () => {
                     alt="shape"
                     className="lazy-img shapes shape-two"
                 />
-
             </div>
             <Footer />
         </div>

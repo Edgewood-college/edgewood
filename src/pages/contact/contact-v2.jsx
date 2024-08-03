@@ -2,7 +2,7 @@ import Header5 from "@/components/header/Header5";
 import Seo from "../../components/common/Seo";
 import BlockContact2 from "../../components/contact/BlockContact2";
 import ContactForm2 from "../../components/contact/ContactForm2";
-import Footer from "../../components/home-page/home-10/Footer";
+import Footer from "../../components/home-page/home-5/footer";
 import Header from "../../components/home-page/home-10/Header";
 
 const ContactV2 = () => {
@@ -72,12 +72,12 @@ const ContactV2 = () => {
         Footer
         ============================================== 
         */}
-      <div className="footer-style-one theme-basic-footer position-relative">
+      <div className="footer-style-one theme-basic-footer position-relative" style={{display:"none"}}>
         <div className="shapes shape-one" />
         <div className="container">
           <div className="inner-wrapper">
-            <Footer />
-            <div className="bottom-footer">
+         
+            <div className="bottom-footer" >
               <p className="copyright text-center m0">
                 © {new Date().getFullYear()}
                 <a
@@ -93,6 +93,7 @@ const ContactV2 = () => {
           {/* /.inner-wrapper */}
         </div>
       </div>
+      <Footer />
       {/* /.footer-style-one */}
     </>
   );

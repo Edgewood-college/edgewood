@@ -79,7 +79,7 @@ const RealEstate = () => {
           </div>
           <div className="row">
             <div className="col-xl-8 col-lg-9 ms-auto">
-              <div className="ps-xxl-5" data-aos="fade-left">
+              <div className="ps-xxl-5" data-aos="fade-up">
                 {/* <h6 className="mb-30">Our History &amp; Goal.</h6> */}
                 <p className="text- tx-dark">
                   Welcome to Edgewood College (Secondary), the leading secondary school and sixth form college with an established tradition of excellence. Alongside academic brilliance, learners are mentored to be the best they can for God and humanity. They are taught to be selfless and exemplary leaders.
@@ -149,7 +149,7 @@ const RealEstate = () => {
         <div className="container">
           <div className="line-bg-wrapper position-relative zn2 pt-250 pb-180 lg-pt-120 lg-pb-80">
             <div className="row">
-              <div className="col-md-6" data-aos="fade-right">
+              <div className="col-md-6" data-aos="fade-up">
                 <div className="title-style-five">
                   <h2 className="main-title fw-500 tx-dark" style={{ fontSize: '43px' }}>
                     A promise of <br />  excellence, our legacy.
@@ -168,7 +168,7 @@ const RealEstate = () => {
               <div className="col-xl-6 col-lg-5 col-md-6 ms-auto" >
                 <div
                   className="img-holder position-relative mt-25"
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                 >
                   <img
                     src="/images/assets/edaward.png"
@@ -221,7 +221,7 @@ const RealEstate = () => {
 
       <div className="" style={{ width: "80%", margin: "0rem auto", cursor: "pointer",marginTop:"5vw",textAlign:'center',display:"flex",alignItems:"center",justifyContent:"center"}}>
         <div className="hovercalendar" style={{backgroundColor:"orange",padding:"1rem 1rem",borderRadius:"5px",position:"relative",top:"-4vw" }} onClick={() => navigate("/Calendar-2022-2023")}>
-          <div className="" style={{fontSize:"1.2rem"}}>
+          <div className="" style={{fontSize:"1rem"}}>
             Academic Calendar for 2022/2023
           </div>
         </div>
@@ -271,7 +271,7 @@ const RealEstate = () => {
       <div className="fancy-feature-fifty position-relative mt-200 lg-mt-100">
         <div className="container">
           <div className="row">
-            <div className="col-xl-5 col-lg-6" data-aos="fade-right">
+            <div className="col-xl-5 col-lg-6" data-aos="fade-up">
               <div className="title-style-five">
                 <h2 className="main-title fw-500 tx-dark">
                   FAQ
@@ -287,7 +287,7 @@ const RealEstate = () => {
             </div>
             {/* End .col */}
 
-            <div className="col-xl-7 col-lg-6 ms-auto" data-aos="fade-left">
+            <div className="col-xl-7 col-lg-6 ms-auto" data-aos="fade-up">
               <Faq />
             </div>
             {/* End .col */}
