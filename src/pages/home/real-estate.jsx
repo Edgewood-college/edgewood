@@ -68,7 +68,7 @@ const RealEstate = () => {
             <div className="col-lg-7" data-aos="fade-right">
               <div className="title-style-five mb-65 md-mb-40">
                 <div className="sc-title-two fst-italic position-relative" style={{fontSize:"1.3rem"}}>
-                welcome to edgewood college.
+                Welcome to edgewood college.
                 </div>
                 {/* <h2 className="main-title fw-500 tx-dark">
                   We’r the top rated agency.
