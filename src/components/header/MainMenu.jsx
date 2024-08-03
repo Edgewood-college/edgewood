@@ -66,8 +66,7 @@ const MainMenu = () => {
                   ? "nav-link dropdown-toggle active-menu"
                   : "nav-link dropdown-toggle"
               }
-
-
+              style={{color: "white"}}
             // style={{color:'green'}}
             >
               Home
@@ -122,10 +121,12 @@ const MainMenu = () => {
                   : "nav-link "
               }
               href="https://edgewoodcollege.schulup.com/Account/Login"
+              style={{color: "white"}}
             // role="button"
             // data-bs-toggle="dropdown"
             // data-bs-auto-close="outside"
             // aria-expanded="false"
+            
             >
               School Portal
             </a>
@@ -159,6 +160,7 @@ const MainMenu = () => {
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
+              style={{color: "white"}}
             >
               Admission
             </div>
@@ -188,7 +190,7 @@ const MainMenu = () => {
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
-        
+              style={{color: "white"}}
             >
               Learning
             </a>
@@ -212,7 +214,7 @@ const MainMenu = () => {
               </div>
               {
                 showSixth && (
-                  <div style={{ width: "400px", height: "150px", position: "absolute", background: "white", right: "15rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column",top:"2rem" }}>
+                  <div style={{ width: "400px", height: "200px", position: "absolute", background: "white", right: "15rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column",top:"2rem" }}>
                     <div className="dropdown-item" style={{fontSize:"0.8rem"}}>
                       <Link to="/learning/cambridgeA-level" className={`dropdown-item ${isActive("/learning/cambridgeA-level") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} >Cambridge A level</Link>
                       <Link to="/learning/University-Programme" className={`dropdown-item ${isActive("/learning/University-Programme") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} >University Foundation programme</Link>
@@ -242,6 +244,7 @@ const MainMenu = () => {
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
+              style={{color: "white"}}
             >
               School life
             </a>
@@ -267,6 +270,7 @@ const MainMenu = () => {
                   ? "nav-link dropdown-toggle active-menu"
                   : "nav-link "
               }
+              style={{color: "white"}}
             // href="#"
             // role="button"
             // data-bs-toggle="dropdown"

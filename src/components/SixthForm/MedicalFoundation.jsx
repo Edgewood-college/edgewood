@@ -40,7 +40,7 @@ export const MedicalFoundation = () => {
                                     </li>
                                 </ul>
 
-                                <p style={{fontSize:"1rem"}}>Prospective students are advised to <span style={{color:"orange",cursor:"pointer"}}><Link to="/Submit-SixthForm">apply</Link></span>before the completion of their secondary school education.</p>
+                                <p style={{fontSize:"1rem"}}>Prospective students are advised to <span style={{color:"orange",cursor:"pointer"}}><Link to="/Submit-SixthForm">apply</Link></span> before the completion of their secondary school education.</p>
                             </div>
                         </div>
                     </div>

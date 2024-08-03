@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Footer from "../../components/home-page/home-5/footer";
 import Header5 from '../header/Header5';
 import Header6 from '../header/Header6';
@@ -55,11 +55,12 @@ export const SecondarySchool = () => {
                                             When learners complete the secondary school programme, they progress to the:
                                         </p>
 
-                                        <li className='tx-dark'>
-                                            Cambridge A Levels (which provides direct entry into the second year of degree programmes in Nigeria universities and the first year in universities in USA, Canada, Europe and other destinations).
+                                        <li className='tx-dark' >
+                                            <span className='' style={{ color: "orange" }}><Link to="/learning/cambridgeA-level"> Cambridge A Levels</Link></span> (which provides direct entry into the second year of degree programmes in Nigeria universities and the first year in universities in USA, Canada, Europe and other destinations).
                                         </li>
-                                        <li>University Foundation Programme</li>
-                                        <li>Medical Foundation Programme</li>
+                                        <li className='' style={{ color: "orange" }}><Link to="/learning/University-Programme">University Foundation Programme</Link></li>
+                                        <li className='' style={{ color: "orange" }}><Link to="/learning/Medical-foundation-Programme">Medical Foundation Programme</Link></li>
+                          
                                     </ul>
                                 </div>
                             </div>

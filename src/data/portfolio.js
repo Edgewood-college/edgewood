@@ -614,7 +614,7 @@ const portfolio = [
   {
     id: 52,
     category: "branding illustration",
-    image: "/images/gallery/img_01.jpg",
+    image: "/images/assets/grad girls.jpg",
     name: "Alumni",
     tag: "Our Alumni",
     projectInfo: {
@@ -626,7 +626,7 @@ const portfolio = [
   {
     id: 53,
     category: "design logo",
-    image: "/images/gallery/img_02.jpg",
+    image: "/images/assets/students boys.jpg",
     name: "Careers",
     tag: "Careers Opportunities", 
     projectInfo: {
@@ -638,7 +638,7 @@ const portfolio = [
   {
     id: 54,
     category: "branding design illustration",
-    image: "/images/gallery/img_03.jpg",
+    image: "/images/assets/grad cert.jpg",
     name: "Newsletter",
     tag: "Get the latest news",
     projectInfo: {
@@ -650,7 +650,7 @@ const portfolio = [
   {
     id: 55,
     category: "design logo",
-    image: "/images/gallery/img_04.jpg",
+    image: "/images/assets/playinf scoccer.JPG",
     name: "Gallery",
     tag: "Image Gallery",
     projectInfo: {

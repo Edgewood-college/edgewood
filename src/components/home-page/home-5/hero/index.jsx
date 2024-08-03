@@ -6,20 +6,14 @@ const Hero = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-10 m-auto">
-            <div className="text-wrapper" data-aos="fade-up">
-              <h1 className="hero-heading fw-500 tx-dark text-center">
-              Setting the pace for great education.
+            <div className="text-wrapper" data-aos="fade-up" style={{color:"red"}}>
+              <h1 className="hero-heading fw-500 tx-dark text-center" style={{color:"whitesmoke",fontWeight: "lighter"}}>
+              Setting the pace for <br/>great education.
                 <span className="position-relative">
-                  {/* live. */}
-                  <img
-                    src="/images/shape/shape_161.svg"
-                    alt="shape"
-                    className="lazy-img shapes text-shape"
-                  />
                 </span>
               </h1>
-              <p className="text-lg tx-dark mb-80 pt-35 text-center lg-pt-20 lg-mb-50">
-              An institution borne from a desire to provide a balanced educational system
+              <p className="text-lg tx-dark mb-80 pt-35 text-center lg-pt-20 lg-mb-50" style={{color:"#fff",fontWeight:"lighter"}}>
+              An institution borne from <br/> a desire to provide a balanced educational system
               </p>
             </div>
           </div>
@@ -40,11 +34,11 @@ const Hero = () => {
       </div>
       {/* /.container */}
 
-      <img
+      {/* <img
         src="/images/shape/shape_159.svg"
         alt="shape"
         className="lazy-img shapes shape-one"
-      />
+      /> */}
     </div>
   );
 };

@@ -11,10 +11,11 @@ import Blog from "../../components/home-page/home-5/Blog";
 import Faq from "../../components/home-page/home-5/Faq";
 import CallToActions from "../../components/home-page/home-5/CallToActions";
 import Footer from "../../components/home-page/home-5/footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Portfolio from "@/components/home-page/home-9/Portfolio";
 
 const RealEstate = () => {
+  const navigate = useNavigate()
   return (
     <>
       <Seo pageTitle="EDGEWOOD COLLEGE" />
@@ -67,8 +68,8 @@ const RealEstate = () => {
           <div className="row">
             <div className="col-lg-7" data-aos="fade-right">
               <div className="title-style-five mb-65 md-mb-40">
-                <div className="sc-title-two fst-italic position-relative" style={{fontSize:"1.3rem"}}>
-                welcome to edgewood college.
+                <div className="sc-title-two fst-italic position-relative" style={{ fontSize: "1.3rem" }}>
+                  welcome to edgewood college.
                 </div>
                 {/* <h2 className="main-title fw-500 tx-dark">
                   We’r the top rated agency.
@@ -150,8 +151,8 @@ const RealEstate = () => {
             <div className="row">
               <div className="col-md-6" data-aos="fade-right">
                 <div className="title-style-five">
-                  <h2 className="main-title fw-500 tx-dark">
-                    Check our client lovely words.
+                  <h2 className="main-title fw-500 tx-dark" style={{ fontSize: '43px' }}>
+                    A promise of <br />  excellence, our legacy.
                   </h2>
                 </div>
                 {/* /.title-style-five */}
@@ -164,21 +165,22 @@ const RealEstate = () => {
               </div>
               {/* End .col-md-6 */}
 
-              <div className="col-xl-6 col-lg-5 col-md-6 ms-auto">
+              <div className="col-xl-6 col-lg-5 col-md-6 ms-auto" >
                 <div
                   className="img-holder position-relative mt-25"
                   data-aos="fade-left"
                 >
                   <img
-                    src="/images/media/img_84.jpg"
+                    src="/images/assets/edaward.png"
                     alt="shape"
                     className="lazy-img ms-auto"
+                    style={{ width: "1040px", height: "540px" }}
                   />
 
-                  <div className="rating-box bg-black text-white d-flex flex-column justify-content-center align-items-center">
+                  {/* <div className="rating-box bg-black text-white d-flex flex-column justify-content-center align-items-center">
                     <strong className="fw-500">4.8</strong>
                     <span>avg rating</span>
-                  </div>
+                  </div> */}
                   {/* /.rating-box */}
 
                   <img
@@ -199,11 +201,13 @@ const RealEstate = () => {
         </div>
         {/* End .container */}
 
-        <img
+        {/* <img
           src="/images/shape/shape_169.svg"
           alt="shape"
           className="lazy-img shapes shape-three"
-        />
+        /> */}
+
+        
         <img
           src="/images/assets/sticker_03.png"
           alt="shape"
@@ -211,7 +215,17 @@ const RealEstate = () => {
           data-aos="fade-up"
         />
       </div>
+     
+
       <FancySection />
+
+      <div className="" style={{ width: "30%", margin: "0rem auto", cursor: "pointer",marginTop:"5vw",}}>
+        <div style={{ backgroundColor: "orange", padding: "1rem 2rem", cursor: "pointer",borderRadius:"5px" }} onClick={() => navigate("/Calendar-2022-2023")}>
+          <div >
+            Academic Calendar for 2022/2023
+          </div>
+        </div>
+      </div>
       {/* 
 			=============================================
 				Blog Section Six

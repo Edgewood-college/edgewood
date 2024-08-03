@@ -80,6 +80,7 @@ import { CambridgeA } from "./components/SixthForm/CambridgeA";
 import { MedicalFoundation } from "./components/SixthForm/MedicalFoundation";
 import { UniversityFoundation } from "./components/SixthForm/UniversityFoundation";
 import { SubmitSixthForm } from "./components/SixthForm/SubmitSixthForm";
+import { Calendar } from "./components/Calendar/Calendar";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -119,6 +120,7 @@ function App() {
           <Route path="/schoollife/Student-life-edgewood-fri" element={<StudentLife2 />} />
           <Route path="home/management-team" element={<ManagementTeam />} />
           <Route path="/Submit-SixthForm" element={<SubmitSixthForm />} />
+          <Route path="/Calendar-2022-2023" element={<Calendar />} />
           <Route
             path="home/personal-portfolio"
             element={<PersonalPortfolio />}

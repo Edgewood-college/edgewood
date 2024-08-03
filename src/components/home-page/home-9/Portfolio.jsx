@@ -32,44 +32,6 @@ const Portfolio = () => {
             </div>
             {/* /.title-style-five */}
           </div>
-          {/* End .col-lg-4 */}
-
-          {/* <div className="col-lg-8">
-            <ul className="style-none text-center text-lg-end isotop-menu-wrapper g-control-nav-one">
-              <li
-                className={filter === "*" ? "is-checked" : ""}
-                onClick={() => setFilter("*")}
-              >
-                All
-              </li>
-
-              <li
-                className={filter === "design" ? "is-checked" : ""}
-                onClick={() => setFilter("design")}
-              >
-                Design
-              </li>
-              <li
-                className={filter === "branding" ? "is-checked" : ""}
-                onClick={() => setFilter("branding")}
-              >
-                Branding
-              </li>
-              <li
-                className={filter === "logo" ? "is-checked" : ""}
-                onClick={() => setFilter("logo")}
-              >
-                Logo
-              </li>
-              <li
-                className={filter === "illustration" ? "is-checked" : ""}
-                onClick={() => setFilter("illustration")}
-              >
-                Illustration
-              </li>
-            </ul>
-          </div> */}
-          {/* End .col-8 */}
         </div>
         {/* End .row */}
 
@@ -82,7 +44,7 @@ const Portfolio = () => {
               >
                 <div className="portfolio-block-one mt-40 xs-mt-30">
                   <div className="img-meta">
-                    <img src={item.image} alt={item.name} className="w-100" />
+                    <img src={item.image} alt={item.name} className="w-100 " height="400px"/>
                   </div>
                   <Link
                     to={`/resource/${item.id}`}
@@ -93,6 +55,7 @@ const Portfolio = () => {
                     <span className="pj-name tran3s fw-500">{item.name}</span>
                   </Link>
                   <div className="hover-state tran3s">
+                    
                     <Item
                       original={item.image}
                       thumbnail={item.image}

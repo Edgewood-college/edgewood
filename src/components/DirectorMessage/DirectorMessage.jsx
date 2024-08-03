@@ -18,7 +18,7 @@ export const DirectorMessage = () => {
                         <div className="col-lg-7" data-aos="fade-right">
                             <div className="title-style-five mb-65 md-mb-40">
                                 <div className="sc-title-two fst-italic position-relative" onClick={() => navigate(-1)}>
-                                    Director's Messages
+                                    FOUNDER’S MESSAGE
                                 </div>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ export const DirectorMessage = () => {
                                 <p>I know there’s a limit to what a website can tell, so I hope you visit to see what a unique place Edgewood College is.</p>
                                 <div>
                                     <p style={{ fontWeight: "bolder" }}>Mrs Kehinde Phillips</p>
-                                    <div style={{position:"relative",bottom:"1vw"}}>Executive Director</div>
+                                    <div style={{ position: "relative", bottom: "1vw" }}>Executive Director</div>
                                 </div>
                             </div>
                         </div>

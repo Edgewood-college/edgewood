@@ -1,3 +1,4 @@
+import React from "react";
 import Slider from "react-slick";
 
 const Testimonial = () => {
@@ -5,23 +6,33 @@ const Testimonial = () => {
     {
       id: 1,
       icon: "/images/icon/icon_42.svg",
-      feedback:
-        "We’v 9,000 agents around the country, Find agents near your neighborhood.",
+      feedback: "/images/assets/edgewood-award2-1.png",
       name: "John Doe",
     },
     {
       id: 2,
       icon: "/images/icon/icon_42.svg",
-      feedback:
-        "We’v 9,000 agents around the country, Find agents near your neighborhood.",
+      feedback: "/images/assets/edgewood-award1-1.png",
       name: "Jane Doe",
     },
     {
       id: 3,
       icon: "/images/icon/icon_42.svg",
-      feedback:
-        "We’v 9,000 agents around the country, Find agents near your neighborhood.",
+     
+      feedback: " /images/assets/Admission.jpg",
       name: "Bob Smith",
+    },
+    {
+      id: 4,
+      icon: "/images/icon/icon_42.svg",
+      feedback: "images/assets/WhatsApp-Image-2021-10-11-at-8.56.25-AM.jpeg",
+      name: "Alice Johnson",
+    },
+    {
+      id: 5,
+      icon: "/images/icon/icon_42.svg",
+      feedback: "images/assets/edgewoodScreenshot-2022-07-12-at-23.19.08.png",
+      name: "Charlie Brown",
     },
   ];
 
@@ -29,27 +40,31 @@ const Testimonial = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    // slidesToShow: 1,
+    // slidesToScroll: 1,
     arrows: false,
+    autoplay: true,           
+    autoplaySpeed: 2000,       // 3 seconds per slide
   };
 
   return (
-    <>
+    <div style={{ position: "relative", top: "-7vw" }}>
       <Slider {...settings}>
         {testimonials.map((testimonial) => (
           <div className="item" key={testimonial.id}>
             <div className="feedback-block-twelve">
-              <div className="icon rounded-circle d-flex align-items-center justify-content-center">
-                <img src={testimonial.icon} alt="icon" />
-              </div>
-              <p className="tx-dark mt-35 lg-mt-20">{testimonial.feedback}</p>
-              <p className="tx-dark fs-16 fw-500">{testimonial.name}</p>
+              <img
+                className="tx-dark mt-0 lg-mt-20"
+                src={testimonial.feedback}
+                width="730px"
+                height="530px"
+                alt={testimonial.name} // added alt text for accessibility
+              />
             </div>
           </div>
         ))}
       </Slider>
-    </>
+    </div>
   );
 };
 
