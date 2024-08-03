@@ -254,15 +254,15 @@ const RealEstate = () => {
             <div className="col-xl-5 col-lg-6" data-aos="fade-right">
               <div className="title-style-five">
                 <h2 className="main-title fw-500 tx-dark">
-                  Question &amp; Answers.
+                  FAQ
                 </h2>
               </div>
               {/* /.title-style-five */}
               <p className="text-lg mt-40 mb-45 lg-mt-20 lg-mb-30">
-                Don’t find your answer here? just send us a message for help
+                Don’t find an answer here? just send us a message for help
               </p>
-              <Link to="/faq" className="btn-one fw-500">
-                See More
+              <Link to="/contact/" className="btn-one fw-500">
+                Send us a message
               </Link>
             </div>
             {/* End .col */}
