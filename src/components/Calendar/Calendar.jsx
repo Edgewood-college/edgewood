@@ -5,7 +5,7 @@ export const Calendar = () => {
     return (
         <div style={{ display: "flex", alignItems: "center", justifyItems: "center", flexDirection: "column", margin: "auto", gap: "3vw", margin: "5vw 0vw" }}>
             <Header5 />
-            <div style={{marginTop:"6vw"}}>
+            <div style={{marginTop:"6rem"}}>
                 <div>
                     <img src="/images/assets/AcademicCalendar.png" alt="images render" width="950px" />
                 </div>

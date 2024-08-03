@@ -34,7 +34,7 @@ const DynamicPortfolioDetails = () => {
       ============================================== 	
       --> */}
       <Header5 />
-
+          
       {/* 
         =============================================
         Feature Section Fifty One
@@ -52,7 +52,7 @@ const DynamicPortfolioDetails = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-8" data-aos="fade-right">
-                <ProjectSlide slide={portfolio} />
+                <ProjectSlide slide={portfolio} />            
                 {/* /#gallery-carousel */}
               </div>
               {/* End .col-lg-8 */}

@@ -3,23 +3,36 @@ import "photoswipe/dist/photoswipe.css";
 
 const images = [
   {
-    src: "/images/media/img_89.jpg",
+    src: "/images/assets/grad student sitting.JPG",
     width: "460",
     height: "400",
     alt: "media",
   },
   {
-    src: "/images/media/img_90.jpg",
+    src: "/images/assets/grad girls.jpg",
     width: "460",
     height: "400",
     alt: "media",
   },
   {
-    src: "/images/media/img_91.jpg",
+    src: "/images/assets/ed & student.jpg",
     width: "960",
     height: "510",
     alt: "media",
   },
+  
+  {
+    src:"images/assets/grad student sitting.JPG",
+    width: "960",
+    height: "510",
+    alt: "media",
+  },
+  {
+    src : "/images/assets/grad student  -girl .jpg",
+    width: "960",
+    height: "510",
+    alt: "media",
+  }
 ];
 
 const PortfolioGallery = () => {
@@ -31,7 +44,7 @@ const PortfolioGallery = () => {
             className={`col-12 ${index === 2 ? "" : "col-sm-6"}`}
             key={index}
           >
-            <div className="img-meta mt-30" data-aos="fade-right">
+            <div className="img-meta mt-30" data-aos="fade-up">
               <Item
                 original={image.src}
                 thumbnail={image.src}

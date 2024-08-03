@@ -81,6 +81,8 @@ import { MedicalFoundation } from "./components/SixthForm/MedicalFoundation";
 import { UniversityFoundation } from "./components/SixthForm/UniversityFoundation";
 import { SubmitSixthForm } from "./components/SixthForm/SubmitSixthForm";
 import { Calendar } from "./components/Calendar/Calendar";
+import { Alumi } from "./components/Alumi/Alumi";
+import { Career } from "./components/Career/Career";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -131,6 +133,9 @@ function App() {
           <Route path="home/seo-agency" element={<SeoAgency />} />
           <Route path="home/design-agency" element={<DesignAgency />} />
           <Route path="home/lead-generation" element={<LeadGeneration />} />
+          <Route path="alumni" element={<Alumi />} />
+          <Route path="career" element={<Career />} />
+          <Route path="gallery" element={<Gallery  />} />
 
           <Route path="pages-menu/about-us-v1" element={<AboutUsV1 />} />
           <Route path="pages-menu/about-us-v2" element={<AboutUsV2 />} />
@@ -177,7 +182,7 @@ function App() {
           <Route path="blog/:id" element={<DynamicBlogDetails />} />
 
           <Route path="contact/contact-v1" element={<ContactV1 />} />
-          <Route path="contact/contact-v2" element={<ContactV2 />} />
+          <Route path="contact/contact-v2" element={<ContactV3 />} />
           <Route path="contact/contact-v3" element={<ContactV3 />} />
           <Route path="contact/contact-v4" element={<ContactV4 />} />
 

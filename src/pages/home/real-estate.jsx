@@ -219,9 +219,9 @@ const RealEstate = () => {
 
       <FancySection />
 
-      <div className="" style={{ width: "30%", margin: "0rem auto", cursor: "pointer",marginTop:"5vw",}}>
-        <div style={{ backgroundColor: "orange", padding: "1rem 2rem", cursor: "pointer",borderRadius:"5px" }} onClick={() => navigate("/Calendar-2022-2023")}>
-          <div >
+      <div className="" style={{ width: "80%", margin: "0rem auto", cursor: "pointer",marginTop:"5vw",textAlign:'center',display:"flex",alignItems:"center",justifyContent:"center"}}>
+        <div style={{backgroundColor:"orange",padding:"1rem 1rem",borderRadius:"5px" }} onClick={() => navigate("/Calendar-2022-2023")}>
+          <div className="" style={{fontSize:"1.2rem"}}>
             Academic Calendar for 2022/2023
           </div>
         </div>

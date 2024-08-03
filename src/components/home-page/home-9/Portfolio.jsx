@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
-
 import { Link } from "react-router-dom";
 import items from "../../../data/portfolio";
 
@@ -27,7 +26,7 @@ const Portfolio = () => {
                     style={{ backgroundColor: "#D9F5F8" }}
                   />
                 </span>
-                
+
               </h2>
             </div>
             {/* /.title-style-five */}
@@ -42,12 +41,12 @@ const Portfolio = () => {
                 className={`isotop-item ${item.category} col-lg-6 col-md-6`}
                 key={index}
               >
-                <div className="portfolio-block-one mt-40 xs-mt-30">
-                  <div className="img-meta">
-                    <img src={item.image} alt={item.name} className="w-100 " height="400px"/>
+                <div className="portfolio-block-one mt-40 xs-mt-30" >
+                  <div className="img-meta" style={{ borderRadius: "5px" }}>
+                    <img src={item.image} alt={item.name} className="w-100 " height="400px" style={{ borderRadius: "5px" }} />
                   </div>
                   <Link
-                    to={`/resource/${item.id}`}
+                    to={item.link}
                     className="title tran3s d-flex flex-column justify-content-center align-items-center"
                   >
                     <span className="tag">{item.tag}</span>
@@ -55,12 +54,13 @@ const Portfolio = () => {
                     <span className="pj-name tran3s fw-500">{item.name}</span>
                   </Link>
                   <div className="hover-state tran3s">
-                    
+
                     <Item
                       original={item.image}
                       thumbnail={item.image}
                       width={800}
                       height={833}
+                      style={{borderRadius:"5px"}}
                     >
                       {({ ref, open }) => (
                         <span
@@ -69,6 +69,7 @@ const Portfolio = () => {
                           className="fancybox tran3s"
                           ref={ref}
                           onClick={open}
+                          style={{borderRadius:"5px"}}
                         >
                           <i className="bi bi-plus" />
                         </span>

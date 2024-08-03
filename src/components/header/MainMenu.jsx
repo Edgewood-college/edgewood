@@ -208,14 +208,14 @@ const MainMenu = () => {
                 </li>
               ))} */}
               <Link to="/learning/secondary-school" className={`dropdown-item ${isActive("/learning/secondary-school") ? "active" : ""}`} style={{ fontSize: "0.8rem" }}       onMouseOver={() => setshowSixth(false)}>Secondary School</Link>
-              <div className="" style={{ display: "flex", alignItems: "center", cursor: "pointer" }} onMouseOver={handleSixthForm}>
+              <div className="" style={{ display: "flex", alignItems: "center", cursor: "pointer", }} onMouseOver={handleSixthForm}>
                 <div className='dropdown-item' style={{ fontSize: "0.8rem" }} >Sixth Form</div>
                 <div style={{ position: "relative", right: "1rem", cursor: "pointer" }} ><img src="/images/assets/rightarrow.png" alt="arrow image" width="8px" /></div>
               </div>
               {
                 showSixth && (
-                  <div style={{ width: "400px", height: "200px", position: "absolute", background: "white", right: "15rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column",top:"2rem" }}>
-                    <div className="dropdown-item" style={{fontSize:"0.8rem"}}>
+                  <div style={{ width: "400px", height: "200px", position: "absolute", background: "white", right: "15rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column",top:"2rem",borderRadius:"10px",boxShadow:"inherit" }}>
+                    <div className="dropdowm-item" style={{fontSize:"0.8rem"}}>
                       <Link to="/learning/cambridgeA-level" className={`dropdown-item ${isActive("/learning/cambridgeA-level") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} >Cambridge A level</Link>
                       <Link to="/learning/University-Programme" className={`dropdown-item ${isActive("/learning/University-Programme") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} >University Foundation programme</Link>
                       <Link to="/learning/Medical-foundation-Programme" className={`dropdown-item ${isActive("/learning/Medical-foundation-Programme") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} >Medical foundaton programme</Link>

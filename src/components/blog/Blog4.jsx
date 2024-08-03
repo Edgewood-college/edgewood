@@ -54,7 +54,7 @@ const Blog4 = () => {
                     key={post.id}
                     data-aos="fade-up"
                     data-aos-delay={post.delay}
-                    style={{ display: "flex",objectFit:"cover" }}
+                    style={{ display: "flex",objectFit:"cover",alignItems:"center",justifyContent:"center" }}
                 >
                     <article className="blog-meta-three mb-60 lg-mb-40">
                         <figure className="post-img m0">

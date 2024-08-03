@@ -617,6 +617,7 @@ const portfolio = [
     image: "/images/assets/grad girls.jpg",
     name: "Alumni",
     tag: "Our Alumni",
+    link : "/alumni",
     projectInfo: {
       date: "23 July, 2020",
       clientName: "Mariona Adisson, USA",
@@ -629,6 +630,7 @@ const portfolio = [
     image: "/images/assets/students boys.jpg",
     name: "Careers",
     tag: "Careers Opportunities", 
+    link : "/career",
     projectInfo: {
       date: "23 July, 2020",
       clientName: "Mariona Adisson, USA",
@@ -653,6 +655,7 @@ const portfolio = [
     image: "/images/assets/playinf scoccer.JPG",
     name: "Gallery",
     tag: "Image Gallery",
+    link : "/gallery",
     projectInfo: {
       date: "23 July, 2020",
       clientName: "Mariona Adisson, USA",
