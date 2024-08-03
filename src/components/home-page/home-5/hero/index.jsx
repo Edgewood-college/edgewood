@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="row">
           <div className="col-xl-10 m-auto">
             <div className="text-wrapper" data-aos="fade-up" style={{color:"red"}}>
-              <h1 className="hero-heading fw-500 tx-dark text-center" style={{color:"whitesmoke",fontWeight: "lighter"}}>
+              <h1 className="hero-heading fw-500 tx-dark text-center" style={{color:"white",fontWeight: "lighter"}}>
               Setting the pace for <br/>great education.
                 <span className="position-relative">
                 </span>

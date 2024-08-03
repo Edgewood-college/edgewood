@@ -20,6 +20,9 @@
 ::-webkit-scrollbar {
   width: 5px;
 }
+.hovercalendar:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 ::-webkit-scrollbar-track {
   background: #fff;
 }
@@ -8205,8 +8208,8 @@ body .btn-twentySix:hover:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2); 
-  background: rgba(0, 0, 0, 0.35);
+  // background: rgba(255, 255, 255, 0.2); 
+  background: rgba(0, 0, 0, 0.66);
   z-index: 1;
 }
 
@@ -8807,6 +8810,9 @@ body .btn-twentySix:hover:after {
 }
 .fancy-short-banner-fifteen .form-bg {
   background: var(--prime-twelve);
+  padding: 65px 60px 55px;
+}
+.footer-partners{
   padding: 65px 60px 55px;
 }
 .fancy-short-banner-fifteen form input {

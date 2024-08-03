@@ -182,7 +182,7 @@ function App() {
           <Route path="blog/:id" element={<DynamicBlogDetails />} />
 
           <Route path="contact/contact-v1" element={<ContactV1 />} />
-          <Route path="contact/contact-v2" element={<ContactV3 />} />
+          <Route path="contact/contact-v2" element={<ContactV2 />} />
           <Route path="contact/contact-v3" element={<ContactV3 />} />
           <Route path="contact/contact-v4" element={<ContactV4 />} />
 

@@ -7,7 +7,7 @@ export const WhyEdgeWood = () => {
     const navigate = useNavigate()
     return (
         <div>
-            <Header6 />
+            <Header5 />
             <div className="fancy-feature-fortySeven zn2 position-relative pt-130 pb-160 lg-pt-120 lg-pb-100">
                 <div className="container">
                     {/* <FilterProperty /> */}

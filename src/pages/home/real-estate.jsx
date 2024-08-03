@@ -208,19 +208,19 @@ const RealEstate = () => {
         /> */}
 
         
-        <img
+        {/* <img
           src="/images/assets/sticker_03.png"
           alt="shape"
           className="lazy-img shapes shape-four"
           data-aos="fade-up"
-        />
+        /> */}
       </div>
      
 
       <FancySection />
 
       <div className="" style={{ width: "80%", margin: "0rem auto", cursor: "pointer",marginTop:"5vw",textAlign:'center',display:"flex",alignItems:"center",justifyContent:"center"}}>
-        <div style={{backgroundColor:"orange",padding:"1rem 1rem",borderRadius:"5px" }} onClick={() => navigate("/Calendar-2022-2023")}>
+        <div className="hovercalendar" style={{backgroundColor:"orange",padding:"1rem 1rem",borderRadius:"5px" }} onClick={() => navigate("/Calendar-2022-2023")}>
           <div className="" style={{fontSize:"1.2rem"}}>
             Academic Calendar for 2022/2023
           </div>
@@ -307,15 +307,7 @@ const RealEstate = () => {
 				Fancy Short Banner Fifteen
 			=====================================================
 			*/}
-      <div className="fancy-short-banner-fifteen pt-150 lg-pt-80 pb-30 position-relative zn2 mt-200 lg-mt-100">
-        <CallToActions />
-      </div>
-
-      {/* <!--
-			=====================================================
-				Footer
-			=====================================================
-			--> */}
+     
       <Footer />
     </>
   );

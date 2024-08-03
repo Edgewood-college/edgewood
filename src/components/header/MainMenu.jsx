@@ -9,13 +9,27 @@ import {
 
 import { useLocation } from "react-router-dom";
 import portfolio from "@/data/portfolio";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const MainMenu = () => {
   const { pathname } = useLocation();
   const [showSixth, setshowSixth] = useState(false)
   const navigate = useNavigate();
+  const [navbar, setNavbar] = useState(false);
 
+  const changeBackground = () => {
+    if (window.scrollY >= 10) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
   const isActive = (link) => {
     return pathname.replace(/\/\d+$/, "") === link.replace(/\/\d+$/, "");
   };
@@ -66,7 +80,7 @@ const MainMenu = () => {
                   ? "nav-link dropdown-toggle active-menu"
                   : "nav-link dropdown-toggle"
               }
-              style={{color: "white"}}
+              style={{color: !navbar ? "#6F7F99": "white"}}
             // style={{color:'green'}}
             >
               Home
@@ -121,7 +135,10 @@ const MainMenu = () => {
                   : "nav-link "
               }
               href="https://edgewoodcollege.schulup.com/Account/Login"
-              style={{color: "white"}}
+              style={{color: !navbar ? "#6F7F99": "white"}}
+
+
+
             // role="button"
             // data-bs-toggle="dropdown"
             // data-bs-auto-close="outside"
@@ -160,7 +177,7 @@ const MainMenu = () => {
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
-              style={{color: "white"}}
+              style={{color: !navbar ? "#6F7F99": "white"}}
             >
               Admission
             </div>
@@ -190,7 +207,7 @@ const MainMenu = () => {
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
-              style={{color: "white"}}
+              style={{color: !navbar ? "#6F7F99": "white"}}
             >
               Learning
             </a>
@@ -244,7 +261,7 @@ const MainMenu = () => {
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
-              style={{color: "white"}}
+              style={{color: !navbar ? "#6F7F99": "white"}}
             >
               School life
             </a>
@@ -270,7 +287,7 @@ const MainMenu = () => {
                   ? "nav-link dropdown-toggle active-menu"
                   : "nav-link "
               }
-              style={{color: "white"}}
+              style={{color: !navbar ? "#6F7F99": "white"}}
             // href="#"
             // role="button"
             // data-bs-toggle="dropdown"

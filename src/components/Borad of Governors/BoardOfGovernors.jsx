@@ -1,6 +1,7 @@
 import Seo from "../../components/common/Seo";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
+import Footer from "../../components/home-page/home-5/footer";
 import Pagination from "../../components/blog/Pagination";
 import SearchBox from "../../components/blog/SearchBox";
 import Category from "../../components/blog/Category";
@@ -105,7 +106,7 @@ const BoardOfGovernors = () => {
         Contact Section One
         ============================================== 
         */}
-      <DefaultFooter />
+      <Footer />
     </>
   );
 };

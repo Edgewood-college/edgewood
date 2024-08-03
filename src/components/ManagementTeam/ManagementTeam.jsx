@@ -1,6 +1,7 @@
 import Seo from "../../components/common/Seo";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
+import Footer from "../../components/home-page/home-5/footer";
 import Pagination from "../../components/blog/Pagination";
 import SearchBox from "../../components/blog/SearchBox";
 import Category from "../../components/blog/Category";
@@ -9,6 +10,7 @@ import BannerPost from "../../components/blog/BannerPost";
 import Blog2 from "../../components/blog/Blog2";
 import Header6 from "@/components/header/Header6";
 import Blog4 from "../blog/Blog4";
+import Header5 from "../header/Header5";
 
 const ManagementTeam = () => {
   return (
@@ -19,7 +21,7 @@ const ManagementTeam = () => {
       Theme Default Menu
       ============================================== 	
       --> */}
-      <Header6 />
+      <Header5 />
 
       {/* 
 			=============================================
@@ -107,7 +109,7 @@ const ManagementTeam = () => {
         Contact Section One
         ============================================== 
         */}
-      <DefaultFooter />
+      <Footer />
     </>
   );
 };
