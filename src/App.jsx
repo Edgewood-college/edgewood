@@ -83,6 +83,7 @@ import { SubmitSixthForm } from "./components/SixthForm/SubmitSixthForm";
 import { Calendar } from "./components/Calendar/Calendar";
 import { Alumi } from "./components/Alumi/Alumi";
 import { Career } from "./components/Career/Career";
+import { NewsLetter } from "./components/Newsletter/NewsLetter";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -127,7 +128,6 @@ function App() {
             path="home/personal-portfolio"
             element={<PersonalPortfolio />}
           />
-
           <Route path="schoollife/christian-ethos" element={<ChristianEthos/>}></Route>
           <Route path="home/agency-modern" element={<AgencyModern />} />
           <Route path="home/seo-agency" element={<SeoAgency />} />
@@ -136,12 +136,11 @@ function App() {
           <Route path="alumni" element={<Alumi />} />
           <Route path="career" element={<Career />} />
           <Route path="gallery" element={<Gallery  />} />
-
+          <Route path="newsletter" element={<NewsLetter />} />
           <Route path="pages-menu/about-us-v1" element={<AboutUsV1 />} />
           <Route path="pages-menu/about-us-v2" element={<AboutUsV2 />} />
           <Route path="pages-menu/about-us-v3" element={<AboutUsV3 />} />
           <Route path="pages-menu/about-us-v4" element={<AboutUsV4 />} />
-
           <Route path="pages-menu/service-v1" element={<ServiceV1 />} />
           <Route path="pages-menu/service-v2" element={<ServiceV2 />} />
           <Route path="pages-menu/service-v3" element={<ServiceV3 />} />

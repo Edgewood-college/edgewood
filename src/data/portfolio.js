@@ -643,6 +643,7 @@ const portfolio = [
     image: "/images/assets/grad cert.jpg",
     name: "Newsletter",
     tag: "Get the latest news",
+    link: "newsletter",
     projectInfo: {
       date: "23 July, 2020",
       clientName: "Mariona Adisson, USA",
