@@ -145,7 +145,7 @@ const RealEstate = () => {
 			Feedback Section Fourteen
 			=====================================================
 			*/}
-      <div className="feedback-section-fourteen position-relative zn2">
+      <div className="feedback-section-fourteen position-relative zn2 join-us" style={{marginBottom: '-12vw'}}>
         <div className="container">
           <div className="line-bg-wrapper position-relative zn2 pt-250 pb-180 lg-pt-120 lg-pb-80">
             <div className="row">
@@ -200,20 +200,6 @@ const RealEstate = () => {
           {/* /.line-bg-wrapper */}
         </div>
         {/* End .container */}
-
-        {/* <img
-          src="/images/shape/shape_169.svg"
-          alt="shape"
-          className="lazy-img shapes shape-three"
-        /> */}
-
-        
-        {/* <img
-          src="/images/assets/sticker_03.png"
-          alt="shape"
-          className="lazy-img shapes shape-four"
-          data-aos="fade-up"
-        /> */}
       </div>
      
 
@@ -246,7 +232,8 @@ const RealEstate = () => {
             <Portfolio />
             <div className="btn-holder text-center">
               <div className="btn-eighteen position-relative d-inline-block tx-dark">
-                <Link to="/blog/blog-v1" className="fw-500 tran3s">
+                <Link to="/home/real-estate" className="fw-500 tran3s">
+                {/* <Link to="/blog/blog-v1" className="fw-500 tran3s"> */}
                   Check our all news <i className="fa-solid fa-angle-right" />
                 </Link>
               </div>

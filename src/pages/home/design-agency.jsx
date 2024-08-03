@@ -147,7 +147,8 @@ const DesignAgency = () => {
 
             <div className="btn-holder text-center">
               <div className="btn-eighteen position-relative d-inline-block tx-dark sm-mt-60">
-                <Link to="/blog/blog-v3" className="fw-500 tran3s">
+                <Link to="/" className="fw-500 tran3s">
+                {/* <Link to="/blog/blog-v3" className="fw-500 tran3s"> */}
                   Check our all news <i className="fa-solid fa-angle-right" />
                 </Link>
               </div>
