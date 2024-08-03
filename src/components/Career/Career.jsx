@@ -11,19 +11,19 @@ export const Career = () => {
     const navigate = useNavigate()
     const images = [
         {
-            src: "/images/assets/grad girls.jpg",
+            src: "/images/assets/students boys.jpg",
             alt: "image-port1"
         },
         {
-            src: "/images/assets/grad boy and girl.jpg",
+            src: "/images/assets/career.jpg",
             alt: "image-port2"
         },
         {
-            src: "/images/assets/grad student  -girl .jpg",
+            src: "/images/assets/mama.jpg",
             alt: "image-port3"
         },
         {
-            src: "/images/assets/grad student sitting.JPG",
+            src: "/images/assets/dining1.JPG",
             alt: "image-port4"
         },
         {
@@ -187,9 +187,9 @@ export const Career = () => {
                             <p data-aos="fade-up">
                                 We emphasize hands-on experiences like internships and industry visits to provide students with valuable insights into various fields. With a curriculum designed to be both challenging and relevant, Edgewood equips students with the skills and knowledge needed to succeed in their chosen paths. Our commitment is to empower each student to build a future that reflects their true selves, turning their passions into real career opportunities.
                             </p>
-                            <div className="row">
+                            {/* <div className="row">
                                 <PortfolioGallery />
-                            </div>
+                            </div> */}
 
                             <div style={{display:"none"}}>
                                 <div
@@ -221,19 +221,20 @@ export const Career = () => {
                         </div>
                         {/* End col-xl-9 */}
 
-                        <div className="project-pagination m-auto pt-100 lg-pt-50 sm-pt-10">
+                        <div className="project-pagination m-auto pt-100 lg-pt-50 sm-pt-10"  style={{ textAlign: "center", position: "relative", right: "-19vw" }}>
                             <div className="row gx-xxl-5">
                                 <div className="col-sm-6">
                                     <div
                                         className="arrow-block position-relative zn2 mt-20"
                                         data-aos="fade-right"
                                     >
-                                        <img
-                                            src="/images/media/img_92.jpg"
+                                      <img
+                                            src="/images/assets/grad cert.jpg"
                                             alt="media"
                                             className="lazy-img w-100"
+
                                         />
-                                        <div className="hover-content tran3s position-absolute d-flex flex-column align-items-center justify-content-center">
+                                        <div className="hover-content tran3s position-absolute d-flex flex-column align-items-center justify-content-center" >
                                             <div className="text-white fw-500 pg-title" >
                                                 Prev
                                             </div>
@@ -250,7 +251,7 @@ export const Career = () => {
                                 </div>
                                 {/* End .col-6 */}
 
-                                <div className="col-sm-6">
+                                <div className="col-sm-6" style={{display:"none"}}>
                                     <div
                                         className="arrow-block position-relative zn2 mt-20"
                                         data-aos="fade-left"
