@@ -3,8 +3,7 @@ const Address = () => {
     <div className="col-lg-3 col-sm-4 mb-30">
       <h5 className="footer-title text-white fw-500">Address</h5>
       <p>
-        2190 Mirpur terrace, Lake view <br />
-        house state, 10 no road.
+      13 Sule Onabiyi Street Off Christ Avenue Off Admiralty Way (By Tantalizers) Lekki Phase 1 Lagos, Nigeria.
       </p>
     </div>
   );

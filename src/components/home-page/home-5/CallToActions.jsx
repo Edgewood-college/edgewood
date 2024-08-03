@@ -16,7 +16,10 @@ const CallToActions = () => {
             </h2>
             <p className="text-lg text-white m0">
               For furthur info &amp; support,{" "}
-              <Link to="/contact" className="text-decoration-underline">
+              <Link
+                to="/contact/contact-v2"
+                className="text-decoration-underline"
+              >
                 Contact us.
               </Link>
             </p>
@@ -24,16 +27,13 @@ const CallToActions = () => {
           {/* End .col-lg-6 */}
 
           <div className="col-lg-6" data-aos="fade-left">
-            <div className="form-bg md-mt-40 ms-lg-4">
-              <form onSubmit={handleSubmit}>
-                <div className="d-sm-flex justify-content-between">
-                  <input type="email" placeholder="Enter your email" required />
-                  <button className="text-uppercase text-white">SEND</button>
-                </div>
-                <div className="fs-14 tx-dark opacity-75 mt-15">
-                  We’ll contact you shortly
-                </div>
-              </form>
+            <img src="" alt="" srcset="" />
+            <img
+              src="/images/assets/edgewood-partners.png"
+              alt="shape"
+              className="lazy-img shapes"
+            />
+            <div className="footer-partners md-mt-40 ms-lg-4">
             </div>
             {/* /.form-bg */}
           </div>

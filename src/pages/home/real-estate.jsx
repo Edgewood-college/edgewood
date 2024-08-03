@@ -204,12 +204,6 @@ const RealEstate = () => {
           alt="shape"
           className="lazy-img shapes shape-three"
         />
-        <img
-          src="/images/assets/sticker_03.png"
-          alt="shape"
-          className="lazy-img shapes shape-four"
-          data-aos="fade-up"
-        />
       </div>
       <FancySection />
       {/* 
