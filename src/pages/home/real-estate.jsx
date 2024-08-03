@@ -220,7 +220,7 @@ const RealEstate = () => {
       <FancySection />
 
       <div className="" style={{ width: "80%", margin: "0rem auto", cursor: "pointer",marginTop:"5vw",textAlign:'center',display:"flex",alignItems:"center",justifyContent:"center"}}>
-        <div className="hovercalendar" style={{backgroundColor:"orange",padding:"1rem 1rem",borderRadius:"5px" }} onClick={() => navigate("/Calendar-2022-2023")}>
+        <div className="hovercalendar" style={{backgroundColor:"orange",padding:"1rem 1rem",borderRadius:"5px",position:"relative",top:"-4vw" }} onClick={() => navigate("/Calendar-2022-2023")}>
           <div className="" style={{fontSize:"1.2rem"}}>
             Academic Calendar for 2022/2023
           </div>
@@ -274,15 +274,15 @@ const RealEstate = () => {
             <div className="col-xl-5 col-lg-6" data-aos="fade-right">
               <div className="title-style-five">
                 <h2 className="main-title fw-500 tx-dark">
-                  Question &amp; Answers.
+                  FAQ
                 </h2>
               </div>
               {/* /.title-style-five */}
               <p className="text-lg mt-40 mb-45 lg-mt-20 lg-mb-30">
-                Don’t find your answer here? just send us a message for help
+                Don’t find an answer here? just send us a message for help
               </p>
-              <Link to="/faq" className="btn-one fw-500">
-                See More
+              <Link to="/contact/contact-v2" className="btn-one fw-500">
+                Send us a message
               </Link>
             </div>
             {/* End .col */}

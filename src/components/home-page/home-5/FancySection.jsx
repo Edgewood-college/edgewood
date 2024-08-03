@@ -7,6 +7,9 @@ const FancySection = () => {
     {
       src:"/images/assets/Bannne.jpg"
     },
+    {
+      src:"/images/assets/banner4.jpg"
+    }
   ]
   const settings = {
     dots: true,
@@ -61,11 +64,14 @@ const FancySection = () => {
     //    <div className="clip-text-two fw-bold wow fadeInUp">Jano</div>
     // </div>
 
-    <div>
+    <div style={{margin:"0rem 1rem",position:"relative",top:"-5.5vw"}}>
+       <h2 className="main-title tx-dark " style={{textAlign:"center"}}>
+       Join our college
+        </h2>
       <Slider {...settings}>
         {image.map((item, index) => (
           <div key={index}>
-            <img src={item.src} alt="Image" />
+            <img src={item.src} alt="Image" width="1300px" height="430px"/>
           </div>
         ))}
       </Slider>

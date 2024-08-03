@@ -1,28 +1,28 @@
 const accordionData = [
   {
-    question: "How does the free trial work?",
+    question: "How do I apply for admission?",
     answer:
-      "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+      "You can apply for admission by filling out our online application form on our website. After submitting the form, our admissions team will review it and contact you for the next steps, including a campus tour and interview",
   },
   {
-    question: "How do I proccess home loan from jano?",
+    question: "What is an A Level?",
     answer:
-      "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+      "The Cambridge Advanced Level (A Level) is a globally recognized qualification offered by Cambridge Assessment International Education. It is typically studied over two years and is considered equivalent to the final year of high school or pre-university education.",
   },
   {
-    question: "Do you recommend Pay as you go or Pre pay?",
+    question: " Is there an entrance exam?",
     answer:
-      "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+      "Yes, all applicants are required to take an entrance exam to assess their academic readiness. The exam covers math, reading, and writing skills.",
   },
   {
-    question: "What do I get for $0 with my plan?",
+    question: "Is the school Cambridge certified?",
     answer:
-      "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+      "Yes, our school is Cambridge certified. We follow the Cambridge International curriculum, which provides a high-quality educational framework that is recognized globally.",
   },
   {
-    question: "How to find specific property from any city?",
+    question: "What are the benefits of attending a Cambridge certified school?",
     answer:
-      "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+      " Attending a Cambridge certified school offers numerous benefits including an internationally recognized curriculum, a focus on critical thinking and problem-solving skills, and the opportunity to earn globally recognized qualifications such as IGCSEs and A Levels.",
   },
 ];
 
