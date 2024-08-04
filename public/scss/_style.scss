@@ -8205,22 +8205,27 @@ body .btn-twentySix:hover:after {
     0%, 20% {
       background: url(/images/assets/hero3.JPG) no-repeat center;
       background-size: cover;
+      object-fit: cover;
     }
     25%, 45% {
       background: url(/images/assets/hero2.JPG) no-repeat center;
       background-size: cover;
+      object-fit: cover;
     }
     50%, 70% {
       background: url(/images/assets/students.jpg) no-repeat center;
       background-size: cover;
+      object-fit: cover;
     }
     75%, 90% {
       background: url(/images/assets/hero1.jpg) no-repeat center;
       background-size: cover;
+      object-fit: cover;
     }
     92%,100% {
       background: url(/images/assets/hero4.jpg) no-repeat center;
       background-size: cover;
+      object-fit: cover;
     }
   }
 }
