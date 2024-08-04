@@ -24,12 +24,13 @@ const Header6 = () => {
     <header
       className={`theme-main-menu sticky-menu theme-menu-ten ${navbar ? "fixed" : ""
         }`}
+        style={{background: navbar ? "white" : ''}}
     >
       <div className="inner-content position-relative">
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo order-lg-0">
             <Link to="/">
-              <img src="/images/assets/edgewood college.png" alt="logo" width="150px" style={{ position: "absolute", top: "-31px" }} />
+              <img src="/images/assets/edgewood college.png" alt="logo" width="120px" style={{ position: "absolute", top: "-24px" }} />
             </Link>
           </div>
           {/* End logo */}

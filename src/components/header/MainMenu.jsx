@@ -80,7 +80,7 @@ const MainMenu = () => {
                   ? "nav-link dropdown-toggle active-menu"
                   : "nav-link dropdown-toggle"
               }
-              style={{color: !navbar ? "#6F7F99": "white"}}
+              style={{color: navbar ? "#6F7F99": "#6F7F99"}}
             // style={{color:'green'}}
             >
               Home
@@ -135,7 +135,7 @@ const MainMenu = () => {
                   : "nav-link "
               }
               href="https://edgewoodcollege.schulup.com/Account/Login"
-              style={{color: !navbar ? "#6F7F99": "white"}}
+              style={{color: navbar ? "#6F7F99": "#6F7F99"}}
 
 
 
@@ -177,7 +177,7 @@ const MainMenu = () => {
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
-              style={{color: !navbar ? "#6F7F99": "white"}}
+              style={{color: navbar ? "#6F7F99": "#6F7F99"}}
             >
               Admission
             </div>
@@ -207,7 +207,7 @@ const MainMenu = () => {
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
-              style={{color: !navbar ? "#6F7F99": "white"}}
+              style={{color: navbar ? "#6F7F99": "#6F7F99"}}
             >
               Learning
             </a>
@@ -261,7 +261,7 @@ const MainMenu = () => {
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
-              style={{color: !navbar ? "#6F7F99": "white"}}
+              style={{color: navbar ? "#6F7F99": "#6F7F99"}}
             >
               School life
             </a>
@@ -287,7 +287,7 @@ const MainMenu = () => {
                   ? "nav-link dropdown-toggle active-menu"
                   : "nav-link "
               }
-              style={{color: !navbar ? "#6F7F99": "white"}}
+              style={{color: navbar ? "#6F7F99": "#6F7F99"}}
             // href="#"
             // role="button"
             // data-bs-toggle="dropdown"
