@@ -8195,12 +8195,42 @@ body .btn-twentySix:hover:after {
   left: 0;
   top: 45%;
 }
-/*^^^^^^^^^^^^^^^^^^^^^ Theme Hero Banner Thirteen ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .hero-banner-thirteen {
-  background: url(/images/assets/students.jpg) no-repeat left bottom;
+  // background: url(/images/assets/students.jpg) no-repeat center;
   background-size: cover;
   background-position: center;
+  animation: changeBackground 18s infinite;
+
+  @keyframes changeBackground {
+    0%, 20% {
+      background: url(/images/assets/students.jpg) no-repeat center;
+      background-size: cover;
+    }
+    25%, 45% {
+      background: url(/images/assets/hero2.JPG) no-repeat center;
+      background-size: cover;
+    }
+    50%, 70% {
+      background: url(/images/assets/hero3.JPG) no-repeat center;
+      background-size: cover;
+    }
+    75%, 95% {
+      background: url(/images/assets/hero5.jpg) no-repeat center;
+      background-size: cover;
+    }
+    100% {
+      background: url(/images/assets/hero4.jpg) no-repeat center;
+      background-size: cover;
+    }
+  }
 }
+
+
+// .hero-banner-thirteen {
+//   background: url(/images/assets/students.jpg) no-repeat left bottom;
+//   background-size: cover;
+//   background-position: center;
+// }
 .hero-banner-thirteen::before {
   content: '';
   position: absolute;
@@ -8209,7 +8239,7 @@ body .btn-twentySix:hover:after {
   width: 100%;
   height: 100%;
   // background: rgba(255, 255, 255, 0.2); 
-  background: rgba(0, 0, 0, 0.66);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 

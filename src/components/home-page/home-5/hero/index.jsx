@@ -18,27 +18,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* /.row */}
-        {/* 
-        <div className="search-form-bg position-relative " data-aos="fade-up">
-          <FilterBox />
-     
-
-          <img
-            src="/images/shape/shape_160.svg"
-            alt="shape"
-            className="lazy-img shapes shape-two"
-          />
-        </div> */}
-        {/* /.search-form-bg */}
       </div>
-      {/* /.container */}
-
-      {/* <img
-        src="/images/shape/shape_159.svg"
-        alt="shape"
-        className="lazy-img shapes shape-one"
-      /> */}
     </div>
   );
 };
