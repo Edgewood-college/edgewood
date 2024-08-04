@@ -64,7 +64,7 @@ const FancySection = () => {
     //    <div className="clip-text-two fw-bold wow fadeInUp">Jano</div>
     // </div>
 
-    <div style={{margin:"0rem 1rem",position:"relative",top:"-5.5vw"}}>
+    <div style={{margin:"0rem 1rem",position:"relative",top:"-2.5vw"}}>
        {/* <h2 className="main-title tx-dark " style={{textAlign:"center"}}>
        Join our college
         </h2> */}
