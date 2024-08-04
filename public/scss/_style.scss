@@ -8199,11 +8199,11 @@ body .btn-twentySix:hover:after {
   // background: url(/images/assets/students.jpg) no-repeat center;
   background-size: cover;
   background-position: center;
-  animation: changeBackground 18s infinite;
+  animation: changeBackground 24s infinite;
 
   @keyframes changeBackground {
     0%, 20% {
-      background: url(/images/assets/students.jpg) no-repeat center;
+      background: url(/images/assets/hero3.JPG) no-repeat center;
       background-size: cover;
     }
     25%, 45% {
@@ -8211,14 +8211,14 @@ body .btn-twentySix:hover:after {
       background-size: cover;
     }
     50%, 70% {
-      background: url(/images/assets/hero3.JPG) no-repeat center;
+      background: url(/images/assets/students.jpg) no-repeat center;
       background-size: cover;
     }
-    75%, 85% {
+    75%, 90% {
       background: url(/images/assets/hero1.jpg) no-repeat center;
       background-size: cover;
     }
-    100% {
+    92%,100% {
       background: url(/images/assets/hero4.jpg) no-repeat center;
       background-size: cover;
     }
