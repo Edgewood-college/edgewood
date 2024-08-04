@@ -67,7 +67,7 @@ const MainMenu = () => {
             <a
               // className="nav-link dropdown-toggle active-menu"
               // href="#"
-              onClick={() => navigate("/")}
+              
               role="button"
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
@@ -83,7 +83,7 @@ const MainMenu = () => {
               style={{color: navbar ? "#6F7F99": "#6F7F99"}}
             // style={{color:'green'}}
             >
-              Home
+             <div onClick={() => navigate("/")}>Home</div>
             </a>
             <ul className="dropdown-menu" style={{}}>
               <li>

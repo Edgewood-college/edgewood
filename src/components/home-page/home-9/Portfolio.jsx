@@ -43,7 +43,7 @@ const Portfolio = () => {
               >
                 <div className="portfolio-block-one mt-40 xs-mt-30" >
                   <div className="img-meta" style={{ borderRadius: "5px" }}>
-                    <img src={item.image} alt={item.name} className="w-100 " height="400px" style={{ borderRadius: "5px" }} />
+                    <img src={item.image} alt={item.name} className="w-100 " style={{ borderRadius: "5px",objectFit:"cover",width:"100%",height:"400px" }} />
                   </div>
                   <Link
                     to={item.link}
