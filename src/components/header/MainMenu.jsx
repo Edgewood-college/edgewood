@@ -199,7 +199,7 @@ const MainMenu = () => {
           {/* End li (portfolio) */}
 
 
-          <li className="nav-item dropdown">
+          <li className="nav-item dropdown" >
             <a
               className="nav-link dropdown-toggle"
               href="#"
@@ -208,6 +208,7 @@ const MainMenu = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
+              onMouseOver={() => setshowSixth(false)}
             >
               Learning
             </a>
@@ -225,9 +226,9 @@ const MainMenu = () => {
                 </li>
               ))} */}
               <Link to="/learning/secondary-school" className={`dropdown-item ${isActive("/learning/secondary-school") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Secondary School</Link>
-              <div className="" style={{ display: "flex", alignItems: "center", cursor: "pointer", }} onMouseOver={handleSixthForm}>
+              <div className="" style={{ display: "flex", alignItems: "center", cursor: "pointer", }} >
                 <div className='dropdown-item' style={{ fontSize: "0.8rem" }} >Sixth Form</div>
-                <div style={{ position: "relative", right: "1rem", cursor: "pointer" }} ><img src="/images/assets/rightarrow.png" alt="arrow image" width="8px" /></div>
+                <div style={{ position: "relative", right: "1rem", cursor: "pointer" }} ><img src="/images/assets/rightarrow.png" alt="arrow image" width="8px" onMouseOver={handleSixthForm} onClick={handleSixthForm}/></div>
               </div>
               {/* width: "400px", height: "200px", position: "absolute", background: "white", right: "20vw", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", top: "2rem", borderRadius: "10px", boxShadow: "inherit",zIndex:"inherit" */}
               {
@@ -250,7 +251,7 @@ const MainMenu = () => {
             </ul>
           </li>
 
-          <li className="nav-item dropdown">
+          <li className="nav-item dropdown" onMouseOver={() => setshowSixth(false)}>
             <a
               className={
                 blogItems.some((elm) => isActive(elm.link))
@@ -266,7 +267,7 @@ const MainMenu = () => {
             >
               School life
             </a>
-            <ul className="dropdown-menu" style={{}}>
+            <ul className="dropdown-menu" style={{}} onMouseOver={() => setshowSixth(false)}>
               <hr />
               {portfolioItems.map((contact, index) => (
                 <li key={index}>
@@ -317,8 +318,8 @@ const MainMenu = () => {
         {/* End ul */}
 
         {/* Mobile Content */}
-        <div className="mobile-content d-block d-lg-none">
-          <div className="d-flex flex-column align-items-center justify-content-center mt-70">
+        <div className="mobile-content d-block d-lg-none" onClick={() => setshowSixth(false)}>
+          <div className="d-flex flex-column align-items-center justify-content-center mt-70" onMouseOver={() => setshowSixth(false)}>
             <Link
               to="/contact/contact-v2"
               className="btn-twentyOne fw-500 tran3s"

@@ -14,7 +14,8 @@
   height: 200px;
   position: absolute;
   background-color: white;
-  right: 20vw;
+  right: 19.5vw;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +25,7 @@
   box-shadow: inherit;
   z-index: inherit;
   transition: transform 0.25s;
-  transform: scale(1, 0.9);
+  // transform: scale(1, 0.9);
 }
 
 .navbar-toggler:focus {
