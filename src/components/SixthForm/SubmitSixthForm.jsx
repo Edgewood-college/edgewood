@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import Footer from "../../components/home-page/home-5/footer";
 import Header5 from '../header/Header5';
 import Header6 from '../header/Header6';
+import ContactForm2 from '../contact/ContactForm2';
+import BlockContact2 from '../contact/BlockContact2';
 export const SubmitSixthForm = () => {
     const navigate = useNavigate()
     return (
@@ -19,15 +21,150 @@ export const SubmitSixthForm = () => {
                                 <div className="sc-title-two fst-italic position-relative" onClick={() => navigate(-1)}>
                                     SIXTH FORM COLLEGE APPLICATION FORM
                                 </div>
+                                <div>
+                                    Fields marked with an <span style={{ color: "red" }}>*</span> are required
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-xl-16 col-lg-9 ms-auto">
-                            
+                        <div className="col-xl-16 col-lg-12 ms-auto">
+                            <div className="container">
+                                <div className="contact-section-two text-start mt-0 lg-mt-10">
+                                    <div className="row">
+                                        <div className="col-lg-7">
+                                            <div
+                                                className="form-style-three md-mb-60"
+                                                data-aos="fade-right"
+                                            >
+                                                <form action="#">
+                                                    <div className="messages" />
+                                                    <div className="row controls">
+                                                        <div className="col-12">
+                                                            <div className="input-group-meta form-group mb-35">
+                                                                <label className="d-block">Student's Surname<span style={{ color: "red" }}>*</span></label>
+                                                                <input
+                                                                    type="text"
+                                                                    // placeholder="Obi adedji"
+                                                                    name="name"
+                                                                    required="required"
+                                                                />
+                                                                <div className="help-block with-errors" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-12">
+                                                            <div className="input-group-meta form-group mb-40">
+                                                                <label className="d-block">Student's First Name<span style={{ color: "red" }}>*</span></label>
+                                                                <input
+                                                                    type="text"
+                                                                    // placeholder="demo@domain.com"
+                                                                    name="name"
+                                                                    required="required"
+                                                                />
+                                                                <div className="help-block with-errors" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-12">
+                                                            <div className="input-group-meta form-group mb-40">
+                                                                <label className="d-block">Student's Middle Name</label>
+                                                                <input
+                                                                    type="text"
+                                                                    // placeholder="demo@domain.com"
+                                                                    name="name"
+                                                                    required="required"
+                                                                />
+                                                                <div className="help-block with-errors" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-12">
+                                                            <div className="input-group-meta form-group mb-40">
+                                                                <label className="d-block">Country of Birth <span style={{ color: "red" }}>*</span></label>
+                                                                <input
+                                                                    type="text"
+                                                                    // placeholder="demo@domain.com"
+                                                                    name="name"
+                                                                    required="required"
+                                                                />
+                                                                <div className="help-block with-errors" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-12">
+                                                            <div className="input-group-meta form-group mb-40">
+                                                                <label className="d-block">State</label>
+                                                                <input
+                                                                    type="text"
+                                                                    // placeholder="demo@domain.com"
+                                                                    name="name"
+                                                                    required="required"
+                                                                />
+                                                                <div className="help-block with-errors" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-12">
+                                                            <div className="input-group-meta form-group mb-40">
+                                                                <label className="d-block">L. G. A. </label>
+                                                                <input
+                                                                    type="text"
+                                                                    // placeholder="demo@domain.com"
+                                                                    name="name"
+                                                                    required="required"
+                                                                />
+                                                                <div className="help-block with-errors" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-12">
+                                                            <div className="input-group-meta form-group mb-40">
+                                                                <label className="d-block">Date of Birth <span style={{ color: "red" }}>*</span> </label>
+                                                                <input
+                                                                    type="text"
+                                                                    // placeholder="demo@domain.com"
+                                                                    name="name"
+                                                                    required="required"
+                                                                />
+                                                                <div className="help-block with-errors" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-12">
+                                                            <div className="input-group-meta form-group mb-40">
+                                                                <label className="d-block">Language(s) Spoken  </label>
+                                                                <input
+                                                                    type="text"
+                                                                    // placeholder="demo@domain.com"
+                                                                    name="name"
+                                                                    required="required"
+                                                                />
+                                                                <div className="help-block with-errors" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-12">
+                                                            <div className="input-group-meta form-group mb-30">
+                                                                <label className="d-block">Message</label>
+                                                                <textarea
+                                                                    // placeholder="Your message*"
+                                                                    name="message"
+                                                                    required="required"
+                                                                    defaultValue={""}
+                                                                />
+                                                                <div className="help-block with-errors" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-12">
+                                                            <button className="btn-one fw-500 w-100 text-uppercase fs-14 d-block">
+                                                                Send Message
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* /.contact-section-two */}
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
                 <img
                     src="/images/shape/shape_172.svg"

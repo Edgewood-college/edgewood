@@ -227,7 +227,7 @@ const MainMenu = () => {
               ))} */}
               <Link to="/learning/secondary-school" className={`dropdown-item ${isActive("/learning/secondary-school") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Secondary School</Link>
               <div className="" style={{ display: "flex", alignItems: "center", cursor: "pointer", }} >
-                <div className='dropdown-item' style={{ fontSize: "0.8rem" }} >Sixth Form</div>
+                <div className='dropdown-item' style={{ fontSize: "0.8rem" }} onMouseOver={handleSixthForm} onClick={handleSixthForm}>Sixth Form</div>
                 <div style={{ position: "relative", right: "1rem", cursor: "pointer" }} ><img src="/images/assets/rightarrow.png" alt="arrow image" width="8px" onMouseOver={handleSixthForm} onClick={handleSixthForm}/></div>
               </div>
               {/* width: "400px", height: "200px", position: "absolute", background: "white", right: "20vw", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", top: "2rem", borderRadius: "10px", boxShadow: "inherit",zIndex:"inherit" */}
