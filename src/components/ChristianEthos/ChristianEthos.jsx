@@ -44,11 +44,7 @@ export const ChristianEthos = () => {
                     </div>
                 </div>
 
-                <img
-                    src="/images/shape/shape_172.svg"
-                    alt="shape"
-                    className="lazy-img shapes shape-two"
-                />
+      
 
             </div>
             <Footer />

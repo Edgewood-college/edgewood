@@ -99,24 +99,7 @@ const RealEstate = () => {
         </div>
         {/* /.container */}
 
-        <img
-          src="/images/shape/shape_171.svg"
-          alt="shape"
-          className="lazy-img shapes shape-one"
-        />
-        <img
-          src="/images/shape/shape_172.svg"
-          alt="shape"
-          className="lazy-img shapes shape-two"
-        />
-        {/* /.container */}
-
-        <img
-          src="/images/shape/shape_163.svg"
-          alt="media"
-          className="lazy-img shapes shape-one"
-          
-        />
+  
       </div>
 
       {/* 
@@ -184,16 +167,7 @@ const RealEstate = () => {
                   </div> */}
                   {/* /.rating-box */}
 
-                  <img
-                    src="/images/shape/shape_163.svg"
-                    alt="shape"
-                    className="lazy-img shapes shape-one"
-                  />
-                  <img
-                    src="/images/shape/shape_168.svg"
-                    alt="shape"
-                    className="lazy-img shapes shape-two"
-                  />
+               
                 </div>
               </div>
             </div>
@@ -244,11 +218,7 @@ const RealEstate = () => {
         </div>
         {/* End .container */}
 
-        <img
-          src="/images/shape/shape_163.svg"
-          alt="shape"
-          className="lazy-img shapes shape-one"
-        />
+  
       </div>
 
       {/* 
@@ -283,11 +253,7 @@ const RealEstate = () => {
           {/* End .row */}
         </div>
         {/* /.container */}
-        <img
-          src="/images/shape/shape_163.svg"
-          alt="shape"
-          className="lazy-img shapes shape-one"
-        />
+   
       </div>
 
       {/*

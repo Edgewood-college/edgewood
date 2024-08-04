@@ -42,11 +42,7 @@ const index = () => {
         {/* /.inner-wrapper */}
       </div>
       {/* End .container */}
-      <img
-        src="/images/shape/shape_170.svg"
-        alt="shape"
-        className="lazy-img shapes shape-one"
-      />
+
     </div>
   );
 };
