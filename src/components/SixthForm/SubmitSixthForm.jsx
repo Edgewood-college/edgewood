@@ -141,7 +141,7 @@ export const SubmitSixthForm = () => {
                                                                 <label className="d-block">Current Home Address</label>
                                                                 <textarea
                                                                     // placeholder="Your message*"
-                                                                    name="message"
+                                                                    name="Address"
                                                                     required="required"
                                                                     defaultValue={""}
                                                                 />
@@ -179,7 +179,7 @@ export const SubmitSixthForm = () => {
                                                                     <input
                                                                         type="radio"
                                                                         // placeholder="demo@domain.com"
-                                                                        name="checkbox"
+                                                                        name="Yes"
                                                                         required="required"
                                                                     />
                                                                     <div>Yes</div>
@@ -189,7 +189,7 @@ export const SubmitSixthForm = () => {
                                                                     <input
                                                                         type="radio"
                                                                         // placeholder="demo@domain.com"
-                                                                        name="checkbox"
+                                                                        name="No"
                                                                         required="required"
                                                                     />
                                                                     <div>No</div>
@@ -231,6 +231,18 @@ export const SubmitSixthForm = () => {
                                                                     // placeholder="demo@domain.com"
                                                                     name="name"
                                                                     required="required"
+                                                                />
+                                                                <div className="help-block with-errors" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-12">
+                                                            <div className="input-group-meta form-group mb-30">
+                                                                <label className="d-block">Current Home Address <span style={{color:"red"}}>*</span></label>
+                                                                <textarea
+                                                                    // placeholder="Your message*"
+                                                                    name="message"
+                                                                    required="required"
+                                                                    defaultValue={""}
                                                                 />
                                                                 <div className="help-block with-errors" />
                                                             </div>
