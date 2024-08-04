@@ -82,7 +82,7 @@ const RealEstate = () => {
               <div className="ps-xxl-5" data-aos="fade-up">
                 {/* <h6 className="mb-30">Our History &amp; Goal.</h6> */}
                 <p className="text- tx-dark">
-                  Welcome to Edgewood College (Secondary), the leading secondary school and sixth form college with an established tradition of excellence. Alongside academic brilliance, learners are mentored to be the best they can for God and humanity. They are taught to be selfless and exemplary leaders.
+                 The leading secondary school and sixth form college with an established tradition of excellence. Alongside academic brilliance, learners are mentored to be the best they can for God and humanity. They are taught to be selfless and exemplary leaders.
                 </p>
                 <p className="text- tx-dark">
                   Strong discipline, Christian values, and a culture of excellence are the hallmark of our college. Learners are taught by professional educators in the heart of Lekki Phase 1, Lagos. The Edgewood experience is both rewarding and enjoyable, as learners are given the ‘edge’ above their peers.
