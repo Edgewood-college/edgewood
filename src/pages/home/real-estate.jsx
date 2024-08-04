@@ -115,6 +115,7 @@ const RealEstate = () => {
           src="/images/shape/shape_163.svg"
           alt="media"
           className="lazy-img shapes shape-one"
+          
         />
       </div>
 
@@ -174,7 +175,7 @@ const RealEstate = () => {
                     src="/images/assets/edaward.png"
                     alt="shape"
                     className="lazy-img ms-auto"
-                    style={{ width: "1040px", height: "540px" }}
+                    style={{ width: "100%", height: "530px", objectFit: "cover" }} 
                   />
 
                   {/* <div className="rating-box bg-black text-white d-flex flex-column justify-content-center align-items-center">

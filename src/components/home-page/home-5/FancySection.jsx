@@ -71,7 +71,7 @@ const FancySection = () => {
       <Slider {...settings}>
         {image.map((item, index) => (
           <div key={index}>
-            <img src={item.src} alt="Image" width="1300px" height="430px"/>
+            <img src={item.src} alt="Image" width="1300px" style={{ width: "100%", height: "auto", objectFit: "cover" }} />
           </div>
         ))}
       </Slider>

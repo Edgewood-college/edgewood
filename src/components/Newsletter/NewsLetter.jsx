@@ -86,7 +86,7 @@ export const NewsLetter = () => {
                         className={`carousel-item ${index === 0 ? "active" : ""}`}
                         key={index}
                       >
-                        <img src={image.src} className="d-block " alt="media" width="1100px" height="600px" style={{objectFit:"center"}}/>
+                        <img src={image.src} className="d-block " alt="media" style={{ width: "100%", height: "470px", objectFit: "contain" }} />
                       </div>
                     ))}
                   </div>

@@ -56,8 +56,8 @@ const Testimonial = () => {
               <img
                 className="tx-dark mt-0 lg-mt-20"
                 src={testimonial.feedback}
-                width="730px"
-                height="530px"
+                width="1000px"
+                style={{ width: "100%", height: "370px", objectFit: "cover" }} 
                 alt={testimonial.name} // added alt text for accessibility
               />
             </div>

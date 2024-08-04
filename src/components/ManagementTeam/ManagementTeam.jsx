@@ -15,7 +15,7 @@ import Header5 from "../header/Header5";
 const ManagementTeam = () => {
   return (
     <>
-      <Seo pageTitle="Grid With Sidebar" />
+      <Seo pageTitle="EDGEWOOD" />
       {/* <!-- 
       =============================================
       Theme Default Menu
@@ -32,11 +32,11 @@ const ManagementTeam = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-0" data-aos="fade-right">
-              <div className="title-style-five mb-65 lg-mb-50">
+              <div className="title-style-five mb-65 lg-mb-50" style={{ display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center",flexDirection:"column" }}>
                 {/* <div className="sc-title-two fst-italic position-relative">
                   Blog
                 </div> */}
-                <h2 className="main-title fw-500 tx-dark " style={{ display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center" }}>
+                <h2 className="main-title fw-500 tx-dark " >
                   Meet The Team
                 </h2>
                 <p style={{ alignItems: "center" }}>Our college benefits from the skills and experience of dedicated teaching and support staff. Our staff adopt a learner-centered approach and ensure that students fulfill their potential.

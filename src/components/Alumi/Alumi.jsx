@@ -76,7 +76,7 @@ export const Alumi = () => {
                                                 className={`carousel-item ${index === 0 ? "active" : ""}`}
                                                 key={index}
                                             >
-                                                <img src={image.src} className="d-block " alt="media" width="1100px" height="400px" />
+                                                <img src={image.src} className="d-block " alt="media" width="1100px" style={{ width: "100%", height: "400px", objectFit: "cover" }} />
                                             </div>
                                         ))}
                                     </div>

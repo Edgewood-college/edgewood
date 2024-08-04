@@ -6,7 +6,7 @@ const Blog4 = () => {
     const image = [
         {
             id: 1,
-            src: "/images/assets/Mrs-Kehinde-Philips-portrait.jpg",
+            src: "/images/assets/ed pic.jpg",
             title: "MRS KEHINDE PHILIPPS",
             rep: "Director",
             delay: "100"
@@ -63,7 +63,7 @@ const Blog4 = () => {
                                     src={post.src}
                                     alt="blog"
                                     className="lazy-img tran4s"
-                                    style={{ width: "320px", height: "400px" }}
+                                    style={{ width: "300px", height: "400px", objectFit: "cover" }}
                                 />
                             </Link>
                         </figure>

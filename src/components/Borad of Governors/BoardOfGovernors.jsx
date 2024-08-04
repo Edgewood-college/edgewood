@@ -14,7 +14,7 @@ import Header5 from "../header/Header5";
 const BoardOfGovernors = () => {
   return (
     <>
-      <Seo pageTitle="Grid With Sidebar" />
+      <Seo pageTitle="EDGEWOOD" />
       {/* <!-- 
       =============================================
       Theme Default Menu

@@ -28,7 +28,7 @@ const Blog = (blog) => {
       delay: "100"
     },
     {
-      src: "/images/assets/Mrs-Kehinde-Philips-portrait.jpg",
+      src: "/images/assets/ed pic.jpg",
       title: "MRS KEHINDE PHILLIPS",
       rep: "Executive Director",
       delay : "100"
@@ -43,16 +43,16 @@ const Blog = (blog) => {
           key={post.id}
           data-aos="fade-up"
           data-aos-delay={post.delay}
-          style={{ display: "flex" }}
+          style={{display:"flex",alignItems:"center",justifyContent:"center",textAlign:"center"}}
         >
-          <article className="blog-meta-three mb-60 lg-mb-40">
+          <article className="blog-meta-three mb-60 lg-mb-40" >
             <figure className="post-img m0">
               <Link to={``} className="w-100 d-block">
                 <img
                   src={post.src}
                   alt="blog"
                   className="lazy-img tran4s"
-                  style={{ width: "320px", height: "400px" }}
+                  style={{ width: "100%", height: "400px", objectFit: "cover" }}
                 />
               </Link>
             </figure>

@@ -17,7 +17,7 @@ const index = () => {
 
       <div className="col-lg-5 order-lg-first position-relative">
         {/* <ImgGallery /> */}
-        <img src="/images/assets/ed pic.jpg" alt="executive-pic" style={{height:"430px",width:"830px"}}/>
+        <img src="/images/assets/ed pic.jpg" alt="executive-pic" style={{ width: "100%", height: "430px", objectFit: "cover" }} />
         {/* /.img-gallery */}
       </div>
       {/* End .col-lg-6 */}
