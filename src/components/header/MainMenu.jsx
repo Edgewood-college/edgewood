@@ -67,7 +67,7 @@ const MainMenu = () => {
             <a
               // className="nav-link dropdown-toggle active-menu"
               // href="#"
-              
+
               role="button"
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
@@ -80,10 +80,10 @@ const MainMenu = () => {
                   ? "nav-link dropdown-toggle active-menu"
                   : "nav-link dropdown-toggle"
               }
-              style={{color: navbar ? "#6F7F99": "#6F7F99"}}
+              style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
             // style={{color:'green'}}
             >
-             <div onClick={() => navigate("/")}>Home</div>
+              Home
             </a>
             <ul className="dropdown-menu" style={{}}>
               <li>
@@ -135,7 +135,7 @@ const MainMenu = () => {
                   : "nav-link "
               }
               href="https://edgewoodcollege.schulup.com/Account/Login"
-              style={{color: navbar ? "#6F7F99": "#6F7F99"}}
+              style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
 
 
 
@@ -143,7 +143,7 @@ const MainMenu = () => {
             // data-bs-toggle="dropdown"
             // data-bs-auto-close="outside"
             // aria-expanded="false"
-            
+
             >
               School Portal
             </a>
@@ -177,7 +177,7 @@ const MainMenu = () => {
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
-              style={{color: navbar ? "#6F7F99": "#6F7F99"}}
+              style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
             >
               Admission
             </div>
@@ -207,7 +207,7 @@ const MainMenu = () => {
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
-              style={{color: navbar ? "#6F7F99": "#6F7F99"}}
+              style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
             >
               Learning
             </a>
@@ -224,15 +224,16 @@ const MainMenu = () => {
                   </Link>
                 </li>
               ))} */}
-              <Link to="/learning/secondary-school" className={`dropdown-item ${isActive("/learning/secondary-school") ? "active" : ""}`} style={{ fontSize: "0.8rem" }}       onMouseOver={() => setshowSixth(false)}>Secondary School</Link>
+              <Link to="/learning/secondary-school" className={`dropdown-item ${isActive("/learning/secondary-school") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Secondary School</Link>
               <div className="" style={{ display: "flex", alignItems: "center", cursor: "pointer", }} onMouseOver={handleSixthForm}>
                 <div className='dropdown-item' style={{ fontSize: "0.8rem" }} >Sixth Form</div>
                 <div style={{ position: "relative", right: "1rem", cursor: "pointer" }} ><img src="/images/assets/rightarrow.png" alt="arrow image" width="8px" /></div>
               </div>
+              {/* width: "400px", height: "200px", position: "absolute", background: "white", right: "20vw", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", top: "2rem", borderRadius: "10px", boxShadow: "inherit",zIndex:"inherit" */}
               {
                 showSixth && (
-                  <div style={{ width: "400px", height: "200px", position: "absolute", background: "white", right: "15rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column",top:"2rem",borderRadius:"10px",boxShadow:"inherit" }}>
-                    <div className="dropdowm-item" style={{fontSize:"0.8rem"}}>
+                  <div className="sixthForm_dropdown">
+                    <div className="dropdowm-item" style={{ fontSize: "0.8rem" }}>
                       <Link to="/learning/cambridgeA-level" className={`dropdown-item ${isActive("/learning/cambridgeA-level") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} >Cambridge A level</Link>
                       <Link to="/learning/University-Programme" className={`dropdown-item ${isActive("/learning/University-Programme") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} >University Foundation programme</Link>
                       <Link to="/learning/Medical-foundation-Programme" className={`dropdown-item ${isActive("/learning/Medical-foundation-Programme") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} >Medical foundaton programme</Link>
@@ -240,12 +241,12 @@ const MainMenu = () => {
                   </div>
                 )
               }
-              <Link to="/learning/Merit-award" className={`dropdown-item ${isActive("/learning/Merit-award") ? "active" : ""}`} style={{ fontSize: "0.8rem" }}       onMouseOver={() => setshowSixth(false)}>Merit Awards System</Link>
-              <Link to="/learning/club-activities" className={`dropdown-item ${isActive("/learning/club-activities") ? "active" : ""}`}       onMouseOver={() => setshowSixth(false)} style={{ fontSize: "0.8rem" }}>Club Activities</Link>
-              <Link to="/learning/sports" className={`dropdown-item ${isActive("/learning/sports") ? "active" : ""}`} style={{ fontSize: "0.8rem" }}       onMouseOver={() => setshowSixth(false)}>Sports & Activities</Link>
-              <Link to="/learning/arts" className={`dropdown-item ${isActive("/learning/arts") ? "active" : ""}`} style={{ fontSize: "0.8rem" }}       onMouseOver={() => setshowSixth(false)}>Arts</Link>
-              <Link to="/learning/music" className={`dropdown-item ${isActive("/learning/music") ? "active" : ""}`} style={{ fontSize: "0.8rem" }}       onMouseOver={() => setshowSixth(false)}>Music</Link>
-              <Link to="/learning/leadership-program" className={`dropdown-item ${isActive("/learning/leadership-program") ? "active" : ""}`} style={{ fontSize: "0.8rem" }}       onMouseOver={() => setshowSixth(false)}>Leadership Programs</Link>
+              <Link to="/learning/Merit-award" className={`dropdown-item ${isActive("/learning/Merit-award") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Merit Awards System</Link>
+              <Link to="/learning/club-activities" className={`dropdown-item ${isActive("/learning/club-activities") ? "active" : ""}`} onMouseOver={() => setshowSixth(false)} style={{ fontSize: "0.8rem" }}>Club Activities</Link>
+              <Link to="/learning/sports" className={`dropdown-item ${isActive("/learning/sports") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Sports & Activities</Link>
+              <Link to="/learning/arts" className={`dropdown-item ${isActive("/learning/arts") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Arts</Link>
+              <Link to="/learning/music" className={`dropdown-item ${isActive("/learning/music") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Music</Link>
+              <Link to="/learning/leadership-program" className={`dropdown-item ${isActive("/learning/leadership-program") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Leadership Programs</Link>
             </ul>
           </li>
 
@@ -261,7 +262,7 @@ const MainMenu = () => {
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
-              style={{color: navbar ? "#6F7F99": "#6F7F99"}}
+              style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
             >
               School life
             </a>
@@ -287,7 +288,7 @@ const MainMenu = () => {
                   ? "nav-link dropdown-toggle active-menu"
                   : "nav-link "
               }
-              style={{color: navbar ? "#6F7F99": "#6F7F99"}}
+              style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
             // href="#"
             // role="button"
             // data-bs-toggle="dropdown"
