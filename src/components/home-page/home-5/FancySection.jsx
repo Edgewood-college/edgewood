@@ -65,9 +65,9 @@ const FancySection = () => {
     // </div>
 
     <div style={{margin:"0rem 1rem",position:"relative",top:"-5.5vw"}}>
-       <h2 className="main-title tx-dark " style={{textAlign:"center"}}>
+       {/* <h2 className="main-title tx-dark " style={{textAlign:"center"}}>
        Join our college
-        </h2>
+        </h2> */}
       <Slider {...settings}>
         {image.map((item, index) => (
           <div key={index}>
