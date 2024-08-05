@@ -95,15 +95,15 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<RealEstate />} />
-          <Route path="home/web-hosting" element={<WebHosting />} />
-          <Route path="home/education" element={<Education />} />
-          <Route path="home/charity" element={<Charity />} />
+          {/* <Route path="home/web-hosting" element={<WebHosting />} /> */}
+          {/* <Route path="home/education" element={<Education />} /> */}
+          {/* <Route path="home/charity" element={<Charity />} /> */}
           <Route path="home/real-estate" element={<RealEstate />} />
-          <Route path="home/sass-product" element={<SassProduct />} />
-          <Route path="home/app-landing" element={<AppLanding />} />
+          {/* <Route path="home/sass-product" element={<SassProduct />} /> */}
+          {/* <Route path="home/app-landing" element={<AppLanding />} /> */}
           <Route path="/home/purpose" element={<WhyEdgeWood />} />
           <Route path="/home/vision" element={<VisionStatement />} />
-          <Route path="home/crypto" element={<Crypto />} />
+          {/* <Route path="home/crypto" element={<Crypto />} /> */}
           <Route path="home/core-values" element={<CoreValues />} />
           <Route path="home/principal" element={<Principal />} />
           <Route path="learning/secondary-school" element={<SecondarySchool />} />
