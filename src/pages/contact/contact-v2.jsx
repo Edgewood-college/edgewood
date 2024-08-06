@@ -8,7 +8,7 @@ import Header from "../../components/home-page/home-10/Header";
 const ContactV2 = () => {
   return (
     <>
-      <Seo pageTitle="Contact v2" />
+      <Seo pageTitle="Contact" />
       {/* <!-- 
       =============================================
       Theme Default Menu
@@ -42,7 +42,7 @@ const ContactV2 = () => {
                 <div className="col-lg-7">
                   <div
                     className="form-style-three md-mb-60"
-                    data-aos="fade-right"
+                    data-aos="fade-up"
                   >
                     <ContactForm2 />
                   </div>
@@ -52,7 +52,7 @@ const ContactV2 = () => {
 
                 <div
                   className="col-xl-4 col-lg-5  ms-auto"
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                 >
                   <BlockContact2 />
                 </div>

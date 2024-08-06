@@ -147,7 +147,7 @@ const BlockContact2 = () => {
   ]
 
   return (
-    <>
+    <div style={{height:"550px",overflow:"auto"}}>
       {addressBlocks.map((block, index) => (
         <div className="" key={index}>
           {/* <div className="icon">
@@ -175,7 +175,7 @@ const BlockContact2 = () => {
         </div>
 
       ))}
-    </>
+    </div>
   );
 };
 

@@ -9941,6 +9941,7 @@ body .btn-twentySix:hover:after {
   color: #000;
   background: transparent;
 }
+
 .user-data-section .input-group-meta label {
   font-size: 14px;
   font-weight: normal;
@@ -10084,8 +10085,18 @@ body .btn-twentySix:hover:after {
 }
 .form-style-three .input-group-meta label {
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.5);
+  // color: rgba(0, 0, 0, 0.5);
   margin-bottom: 7px;
+}
+.form-style-three .input-group-meta select {
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  padding: 0 5px 0 25px;
+  appearance: none;
+  color: #000;
+  font-size: 17px;
 }
 .form-style-three .input-group-meta input {
   width: 100%;
@@ -10096,6 +10107,7 @@ body .btn-twentySix:hover:after {
   color: #000;
   font-size: 17px;
 }
+
 .form-style-three .input-group-meta textarea {
   width: 100%;
   max-width: 100%;
