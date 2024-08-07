@@ -4,7 +4,7 @@ const Hero = () => {
   const images = [
     "/images/assets/hero4.jpg",
     "/images/assets/hero2.JPG",
-    "/images/assets/students.jpg",
+    "/images/assets/studentsedited.jpg",
     "/images/assets/hero1.jpg",
     "/images/assets/hero4.jpg",
     "/images/assets/hero3.JPG",
