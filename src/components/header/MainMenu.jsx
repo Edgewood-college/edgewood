@@ -128,22 +128,19 @@ const MainMenu = () => {
 
           <li className="nav-item dropdown">
             <a
-              // className="nav-link dropdown-toggle"
-              className={
-                portfolioItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle "
-                  : "nav-link "
-              }
+              className="nav-link"
+              // className={
+              //   portfolioItems.some((elm) => isActive(elm.link))
+              //     ? "nav-link dropdown-toggle "
+              //     : "nav-link "
+              // }
+
               href="https://edgewoodcollege.schulup.com/Account/Login"
-              style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
-
-
-
+              style={{ color: navbar ? "#6F7F99" : "#6F7F99", }}
             // role="button"
             // data-bs-toggle="dropdown"
             // data-bs-auto-close="outside"
             // aria-expanded="false"
-
             >
               School Portal
             </a>
@@ -169,7 +166,7 @@ const MainMenu = () => {
               // className="nav-link dropdown-toggle"
               className={
                 portfolioItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle "
+                  ? "nav-link  "
                   : "nav-link "
               }
               href="#"
@@ -253,17 +250,14 @@ const MainMenu = () => {
 
           <li className="nav-item dropdown" onMouseOver={() => setshowSixth(false)}>
             <a
-              className={
-                blogItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle"
-                  : "nav-link dropdown-toggle"
-              }
+              className="nav-link dropdown-toggle"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
+              onMouseOver={() => setshowSixth(false)}
             >
               School life
             </a>
@@ -285,16 +279,16 @@ const MainMenu = () => {
           <li className="nav-item dropdown">
             <a
               className={
-                contactItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
+                portfolioItems.some((elm) => isActive(elm.link))
+                  ? "nav-link  "
                   : "nav-link "
               }
+              // href="#"
+              // role="button"
+              // data-bs-toggle="dropdown"
+              // data-bs-auto-close="outside"
+              // aria-expanded="false"
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
-            // href="#"
-            // role="button"
-            // data-bs-toggle="dropdown"
-            // data-bs-auto-close="outside"
-            // aria-expanded="false"
             >
               <Link to="/contact/contact-v2">Contact Us</Link>
             </a>
@@ -318,7 +312,7 @@ const MainMenu = () => {
         {/* End ul */}
 
         {/* Mobile Content */}
-        <div className="mobile-content d-block d-lg-none" onClick={() => setshowSixth(false)}>
+        {/* <div className="mobile-content d-block d-lg-none" onClick={() => setshowSixth(false)}>
           <div className="d-flex flex-column align-items-center justify-content-center mt-70" onMouseOver={() => setshowSixth(false)}>
             <Link
               to="/contact/contact-v2"
@@ -327,7 +321,7 @@ const MainMenu = () => {
               Contact us
             </Link>
           </div>
-        </div>
+        </div> */}
         {/* /.mobile-content */}
       </div>
     </nav>
