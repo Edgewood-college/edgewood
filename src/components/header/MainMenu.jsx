@@ -212,7 +212,7 @@ const MainMenu = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
-              onMouseOver={() => setshowTeaching(false) && setshowSixth(false)}
+              
             >
               <span style={{ fontSize: "1rem" }}>Our Campus</span>
             </a>
@@ -257,7 +257,7 @@ const MainMenu = () => {
               <div className="" style={{ display: "flex", alignItems: "center", cursor: "pointer", }} >
 
                 <div className='dropdown-item' style={{ fontSize: "0.8rem" }} onMouseOver={handleTeaching} onClick={handleTeaching}>Teaching & Learning</div>
-                <div style={{ position: "relative", right: "1rem", cursor: "pointer" }} ><img src="/images/assets/rightarrow.png" alt="arrow image" width="6px" onMouseOver={handleSixthForm} onClick={handleSixthForm} /></div>
+                <div style={{ position: "relative", right: "1rem", cursor: "pointer" }} ><img src="/images/assets/rightarrow.png" alt="arrow image" width="6px" onMouseOver={handleTeaching} onClick={handleTeaching} /></div>
               </div>
               {
                 showTeaching && (
