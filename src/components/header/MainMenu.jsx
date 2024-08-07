@@ -83,7 +83,7 @@ const MainMenu = () => {
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
             // style={{color:'green'}}
             >
-              Home
+            Home
             </a>
             <ul className="dropdown-menu" style={{}}>
               <li>
@@ -207,7 +207,7 @@ const MainMenu = () => {
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
               onMouseOver={() => setshowSixth(false)}
             >
-              Learning
+              Our Campus
             </a>
             <ul className="dropdown-menu">
               <hr />

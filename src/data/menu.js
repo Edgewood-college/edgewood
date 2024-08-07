@@ -2,7 +2,7 @@ export const menuItems = [
   {
     title: "Business",
     items: [
-      { title: "Bullying Report", link: "https://docs.google.com/forms/d/e/1FAIpQLSfnN_7Acn1m-WM_sItBtwAU38lqKmTrK-pHjv3S7NCi5tHHgA/viewform", },
+
       { title: "Why Edgewood", link: "/home/purpose" },
       { title: "Mission and Vision statement", link: "/home/vision" },
       // { title: "N.P. Charity", link: "/home/charity" },
@@ -11,6 +11,7 @@ export const menuItems = [
       { title: "Principal", link: "/home/principal" },
       { title: "Meet the board of Governors", link: "/home/board-of-governors" },
       { title: "Meet the Management Team", link: "/home/management-team" },
+      { title: "Bullying Report", link: "https://docs.google.com/forms/d/e/1FAIpQLSfnN_7Acn1m-WM_sItBtwAU38lqKmTrK-pHjv3S7NCi5tHHgA/viewform", },
     ],
   },
   // {
