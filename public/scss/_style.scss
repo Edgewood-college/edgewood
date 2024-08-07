@@ -8196,38 +8196,40 @@ body .btn-twentySix:hover:after {
   top: 45%;
 }
 .hero-banner-thirteen {
-  // background: url(/images/assets/students.jpg) no-repeat center;
+  background: url(/images/assets/students.jpg) no-repeat center;
   background-size: cover;
   background-position: center;
-  animation: changeBackground 24s infinite;
+  transition: background-image 2s ease-in-out, opacity 1s ease-in-out;
 
-  @keyframes changeBackground {
-    0%, 20% {
-      background: url(/images/assets/hero3.JPG) no-repeat center;
-      background-size: cover;
-      object-fit: cover;
-    }
-    25%, 45% {
-      background: url(/images/assets/hero2.JPG) no-repeat center;
-      background-size: cover;
-      object-fit: cover;
-    }
-    50%, 70% {
-      background: url(/images/assets/students.jpg) no-repeat center;
-      background-size: cover;
-      object-fit: cover;
-    }
-    75%, 90% {
-      background: url(/images/assets/hero1.jpg) no-repeat center;
-      background-size: cover;
-      object-fit: cover;
-    }
-    92%,100% {
-      background: url(/images/assets/hero4.jpg) no-repeat center;
-      background-size: cover;
-      object-fit: cover;
-    }
-  }
+  // animation: changeBackground 24s infinite;
+
+  // @keyframes changeBackground {
+  //   0%, 20% {
+  //     background: url(/images/assets/hero3.JPG) no-repeat center;
+  //     background-size: cover;
+  //     object-fit: cover;
+  //   }
+  //   25%, 45% {
+  //     background: url(/images/assets/hero2.JPG) no-repeat center;
+  //     background-size: cover;
+  //     object-fit: cover;
+  //   }
+  //   50%, 70% {
+  //     background: url(/images/assets/students.jpg) no-repeat center;
+  //     background-size: cover;
+  //     object-fit: cover;
+  //   }
+  //   75%, 90% {
+  //     background: url(/images/assets/hero1.jpg) no-repeat center;
+  //     background-size: cover;
+  //     object-fit: cover;
+  //   }
+  //   92%,100% {
+  //     background: url(/images/assets/hero4.jpg) no-repeat center;
+  //     background-size: cover;
+  //     object-fit: cover;
+  //   }
+  // }
 }
 
 

@@ -1,6 +1,42 @@
 import FilterBox from "./FilterBox";
 
 const Hero = () => {
+  const images = [
+    "/images/assets/hero4.jpg",
+    "/images/assets/hero2.JPG",
+    "/images/assets/students.jpg",
+    "/images/assets/hero1.jpg",
+    "/images/assets/hero4.jpg",
+    "/images/assets/hero3.JPG",
+  ];
+  
+  let currentIndex = 0;
+  
+  
+  const preloadImages = (imageArray) => {
+    imageArray.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  };
+  
+  preloadImages(images);
+  
+  const changeBackground = () => {
+    const heroBanner = document.querySelector('.hero-banner-thirteen');
+    heroBanner.style.backgroundImage = `url(${images[currentIndex]})`;
+    currentIndex = (currentIndex + 1) % images.length;
+    console.log(currentIndex)
+  };
+  
+  setInterval(changeBackground, 6000); // Change every 6 seconds
+  
+  // changeBackground();
+  
+  
+  
+
+  
   return (
     <div className="hero-banner-thirteen position-relative zn2 pt-190 pb-225 lg-pb-150 lg-pt-150 md-pb-80">
       <div className="container">
