@@ -164,7 +164,7 @@ function App() {
           <Route path="pages-menu/testimonials" element={<Testimonials />} />
           <Route path="login" element={<LogIn />} />
           <Route path="signup" element={<SignUp />} />
-          <Route path="404" element={<NotFound />} />
+          <Route path="404" element={<NotFound />} />       
           <Route path="executive-speech" element={<Admission/>}></Route>
           <Route path="portfolio/portfolio-v1" element={<PortfolioV1 />} />
           <Route path="portfolio/portfolio-v2" element={<PortfolioV2 />} />

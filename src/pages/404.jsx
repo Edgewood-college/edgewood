@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Seo from "../components/common/Seo";
 import DefaulHeader from "../components/header/DefaulHeader";
+import Header5 from "@/components/header/Header5";
 
 const NotFound = () => {
   return (
@@ -20,6 +21,7 @@ const NotFound = () => {
 			============================================== 
 			*/}
       <div className="error-page-content pt-8 d-flex align-items-center justify-content-center">
+        <Header5/>
         <div className="container">
           <div className="row">
             <div className="col-xxl-6 col-lg-7 m-auto">
