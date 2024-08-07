@@ -9,12 +9,30 @@
   background: var(--prime-one);
 }
               /* width: "400px", height: "200px", position: "absolute", background: "white", right: "20vw", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", top: "2rem", borderRadius: "10px", boxShadow: "inherit",zIndex:"inherit" */
+.teaching_dropdown {
+  width: 250px;
+  height: 110px;
+  position: absolute;
+  background-color: white;
+  right: 17.5vw;
+  padding: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 21rem;
+  border-radius: 10px;
+  box-shadow: inherit;
+  z-index: inherit;
+  transition: transform 0.25s;
+  // transform: scale(1, 0.9);
+}
 .sixthForm_dropdown {
   width: 400px;
   height: 200px;
   position: absolute;
   background-color: white;
-  right: 19.5vw;
+  right: 17.5vw;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -342,6 +360,7 @@ width: 360px;
   .navbar {
     padding: 0;
   }
+
   .navbar-collapse .logo {
     margin-bottom: 8vh;
   }

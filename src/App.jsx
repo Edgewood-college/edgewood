@@ -90,6 +90,10 @@ import { Facilities } from "./components/Facilities/Facilities";
 import { Founder } from "./components/Founder/Founder";
 import { BoardMember } from "./components/BoardMember/BoardMember";
 import { HeadOfSchool } from "./components/HeadOfSchool/HeadOfSchool";
+import { Curriculum } from "./components/Curriculum/Curriculum";
+import { Regulations } from "./components/Regulations/Regulations";
+import { Grooming } from "./components/Grooming/Grooming";
+import { E_policy } from "./components/E-policy/E_policy";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -123,6 +127,7 @@ function App() {
           <Route path="/learning/Medical-foundation-Programme" element={<  MedicalFoundation />} />
           <Route path="/learning/University-Programme" element={<UniversityFoundation />} />
           <Route path="/learning/leadership-program" element={<  LeadershipPrograms />} />
+          <Route path="/learning/school-curriculum" element={< Curriculum />} />
           <Route path="home/executive-directors-message" element={<DirectorMessage />} />
           <Route path="home/board-of-governors" element={<BoardOfGovernors />} />
           <Route path="schoollife/school-song" element={<SchoolAnthem />} />
@@ -131,6 +136,9 @@ function App() {
           <Route path="home/management-team" element={<ManagementTeam />} />
           <Route path="/Submit-SixthForm" element={<SubmitSixthForm />} />
           <Route path="/Calendar-2022-2023" element={<Calendar />} />
+          <Route path="/policy/rule-regulation" element={<Regulations />} />
+          <Route path="/policy/grooming-policy" element={<Grooming />} />
+          <Route path="/policy/safety-policy" element={<E_policy />} />
           <Route
             path="home/personal-portfolio"
             element={<PersonalPortfolio />}

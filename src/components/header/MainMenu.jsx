@@ -6,6 +6,7 @@ import {
   About,
   blogItems,
   contactItems,
+  policy,
 } from "../../data/menu";
 
 import { useLocation } from "react-router-dom";
@@ -15,6 +16,7 @@ import { useEffect, useState } from "react";
 const MainMenu = () => {
   const { pathname } = useLocation();
   const [showSixth, setshowSixth] = useState(false)
+  const [showTeaching, setshowTeaching] = useState(false)
   const navigate = useNavigate();
   const [navbar, setNavbar] = useState(false);
 
@@ -36,6 +38,10 @@ const MainMenu = () => {
   };
   const handleSixthForm = () => {
     setshowSixth(!showSixth)
+  };
+
+  const handleTeaching = () => {
+    setshowTeaching(!showTeaching)
   };
 
   return (
@@ -84,7 +90,7 @@ const MainMenu = () => {
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
             // style={{color:'green'}}
             >
-               <span style={{ fontSize: "1rem" }}>Home</span>
+              <span style={{ fontSize: "1rem" }}>Home</span>
             </a>
             <ul className="dropdown-menu" style={{}}>
               <li>
@@ -206,7 +212,7 @@ const MainMenu = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
-              onMouseOver={() => setshowSixth(false)}
+              onMouseOver={() => setshowTeaching(false) && setshowSixth(false)}
             >
               <span style={{ fontSize: "1rem" }}>Our Campus</span>
             </a>
@@ -225,9 +231,10 @@ const MainMenu = () => {
               ))} */}
               <Link to="/learning/secondary-school" className={`dropdown-item ${isActive("/learning/secondary-school") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Secondary School</Link>
               <div className="" style={{ display: "flex", alignItems: "center", cursor: "pointer", }} >
-                <div className='dropdown-item' style={{ fontSize: "0.8rem" }} onMouseOver={handleSixthForm} onClick={handleSixthForm}>Sixth Form</div>
-                <div style={{ position: "relative", right: "1rem", cursor: "pointer" }} ><img src="/images/assets/rightarrow.png" alt="arrow image" width="8px" onMouseOver={handleSixthForm} onClick={handleSixthForm} /></div>
+                <div className='dropdown-item' style={{ fontSize: "0.8rem" }} onMouseOver={handleSixthForm} onClick={handleSixthForm} >Sixth Form</div>
+                <div style={{ position: "relative", right: "1rem", cursor: "pointer" }} ><img src="/images/assets/rightarrow.png" alt="arrow image" width="6px" onMouseOver={handleSixthForm} onClick={handleSixthForm} /></div>
               </div>
+
               {/* width: "400px", height: "200px", position: "absolute", background: "white", right: "20vw", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", top: "2rem", borderRadius: "10px", boxShadow: "inherit",zIndex:"inherit" */}
               {
                 showSixth && (
@@ -240,12 +247,29 @@ const MainMenu = () => {
                   </div>
                 )
               }
+
               <Link to="/learning/Merit-award" className={`dropdown-item ${isActive("/learning/Merit-award") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Merit Awards System</Link>
               <Link to="/learning/club-activities" className={`dropdown-item ${isActive("/learning/club-activities") ? "active" : ""}`} onMouseOver={() => setshowSixth(false)} style={{ fontSize: "0.8rem" }}>Club Activities</Link>
               <Link to="/learning/sports" className={`dropdown-item ${isActive("/learning/sports") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Sports & Activities</Link>
               <Link to="/learning/arts" className={`dropdown-item ${isActive("/learning/arts") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Arts</Link>
               <Link to="/learning/music" className={`dropdown-item ${isActive("/learning/music") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Music</Link>
-              <Link to="/learning/leadership-program" className={`dropdown-item ${isActive("/learning/leadership-program") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Leadership Programs</Link>
+              <Link to="/learning/leadership-program" className={`dropdown-item ${isActive("/learning/leadership-program") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowTeaching(false) && setshowSixth(false)}>Leadership Programs</Link>
+              <div className="" style={{ display: "flex", alignItems: "center", cursor: "pointer", }} >
+
+                <div className='dropdown-item' style={{ fontSize: "0.8rem" }} onMouseOver={handleTeaching} onClick={handleTeaching}>Teaching & Learning</div>
+                <div style={{ position: "relative", right: "1rem", cursor: "pointer" }} ><img src="/images/assets/rightarrow.png" alt="arrow image" width="6px" onMouseOver={handleSixthForm} onClick={handleSixthForm} /></div>
+              </div>
+              {
+                showTeaching && (
+                  <div className="teaching_dropdown">
+                    <div className="dropdowm-item" style={{ fontSize: "0.8rem" }}>
+                      {/* <hr /> */}
+                      <Link to="/learning/merit-award" className={`dropdown-item ${isActive("/learning/merit-award") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} >Merit Award</Link>
+                      <Link to="/learning/school-curriculum" className={`dropdown-item ${isActive("/learning/school-curriculum") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} >School Curriculum</Link>
+                    </div>
+                  </div>
+                )
+              }
             </ul>
           </li>
 
@@ -260,7 +284,7 @@ const MainMenu = () => {
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
               onMouseOver={() => setshowSixth(false)}
             >
-               <span style={{ fontSize: "1rem" }}>School Life</span>
+              <span style={{ fontSize: "1rem" }}>School Life</span>
             </a>
             <ul className="dropdown-menu" style={{}} onMouseOver={() => setshowSixth(false)}>
               <hr />
@@ -288,7 +312,7 @@ const MainMenu = () => {
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
               onMouseOver={() => setshowSixth(false)}
             >
-                 <span style={{ fontSize: "1rem" }}>About Us</span>
+              <span style={{ fontSize: "1rem" }}>About Us</span>
             </a>
             <ul className="dropdown-menu " style={{}} onMouseOver={() => setshowSixth(false)}>
               <hr />
@@ -316,18 +340,18 @@ const MainMenu = () => {
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
               onMouseOver={() => setshowSixth(false)}
             >
-               <span style={{ fontSize: "1rem" }}>Policy</span>
+              <span style={{ fontSize: "1rem" }}>Policy</span>
             </a>
             <ul className="dropdown-menu " style={{}} onMouseOver={() => setshowSixth(false)}>
               <hr />
-              {About.map((contact, index) => (
+              {policy.map((contact, index) => (
                 <li key={index}>
                   <Link
                     to={contact.link}
                     className={`dropdown-item ${isActive(contact.link) ? "active" : ""
                       }`}
                   >
-                    <span style={{ fontSize: "0.78rem" }}>{contact.name}</span>
+                    <span style={{ fontSize: "0.78rem" }}>{contact.text}</span>
                   </Link>
                 </li>
               ))}
@@ -347,7 +371,9 @@ const MainMenu = () => {
               // aria-expanded="false"
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
             >
-              <Link to="/contact/contact-v2">Contact Us</Link>
+              <Link to="/contact/contact-v2">
+                <span style={{ fontSize: "1rem" }}>Contact Us</span>
+              </Link>
             </a>
             {/* <ul className="dropdown-menu">
               <hr />

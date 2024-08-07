@@ -113,6 +113,13 @@ export const About = [
 ];
 
 
+export const policy = [
+  { link: "/policy/rule-regulation", text: "School rules & regulations"},
+  { link: "/policy/grooming-policy", text: "Grooming policy" },
+  // { link: "/blog/1", text: "Excursions" },
+  { link: "/policy/safety-policy", text: "E-safety policy" },
+];
+
 export const blogItems = [
   { link: "/learning/secondary-school", text: "Secondary School"},
   { link: "/", text: "Sixth Form" },

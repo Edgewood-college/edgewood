@@ -45,6 +45,14 @@ const ContactForm2 = () => {
             Send Message
           </button>
         </div>
+        <div className="contact_button" style={{}}>
+          <div className="" style={{}}>
+            <a href="https://wa.me/08035854737" target="_blank">Admissions Enquiries</a>
+          </div>
+          <div className="">
+            <a href="https://wa.me/08035854737" target="_blank">General Enquiries</a>
+          </div>
+        </div>
       </div>
     </form>
   );

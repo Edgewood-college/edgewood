@@ -18,13 +18,13 @@ const Blog4 = () => {
             rep: "Vice principal secondary school",
             delay: "100"
         },
-        {
-            id: 3,
-            src: "/images/assets/Oloruntoba-Jide-e1543515567315-portrait.jpg",
-            title: "Mr Jide Oloruntoba",
-            rep: "Key Stage Coordinator",
-            delay: "100"
-        },
+        // {
+        //     id: 3,
+        //     src: "/images/assets/Oloruntoba-Jide-e1543515567315-portrait.jpg",
+        //     title: "Mr Jide Oloruntoba",
+        //     rep: "Key Stage Coordinator",
+        //     delay: "100"
+        // },
         {
             id: 4,
             src: "/images/assets/Mr-Kole-portrait.jpg",

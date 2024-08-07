@@ -9,8 +9,6 @@ export const MeritAward = () => {
         <div>
             <div>
                 <Header6 />
-                
-                
                 {/* <Footer /> */}
             </div>
         </div>

@@ -8,3 +8,8 @@ export const Facilities = () => {
     </div>
   )
 }
+
+/**
+ * whatsapp button on the contact us page- 2 buttons admissions and general 
+ * teacing and learning - with sub lists
+ */
