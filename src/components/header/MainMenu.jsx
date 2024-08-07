@@ -84,7 +84,7 @@ const MainMenu = () => {
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
             // style={{color:'green'}}
             >
-              Home
+               <span style={{ fontSize: "1rem" }}>Home</span>
             </a>
             <ul className="dropdown-menu" style={{}}>
               <li>
@@ -143,7 +143,7 @@ const MainMenu = () => {
             // data-bs-auto-close="outside"
             // aria-expanded="false"
             >
-              School Portal
+              <span style={{ fontSize: "1rem" }}>School portal</span>
             </a>
             {/* <ul className="dropdown-menu">
               {portfolioItems.map((item, index) => (
@@ -177,7 +177,7 @@ const MainMenu = () => {
               aria-expanded="false"
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
             >
-              Admission
+              <span style={{ fontSize: "1rem" }}>Admission</span>
             </div>
             {/* <ul className="dropdown-menu">
               {portfolioItems.map((item, index) => (
@@ -208,7 +208,7 @@ const MainMenu = () => {
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
               onMouseOver={() => setshowSixth(false)}
             >
-              Our Campus
+              <span style={{ fontSize: "1rem" }}>Our Campus</span>
             </a>
             <ul className="dropdown-menu">
               <hr />
@@ -260,7 +260,7 @@ const MainMenu = () => {
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
               onMouseOver={() => setshowSixth(false)}
             >
-              School life
+               <span style={{ fontSize: "1rem" }}>School Life</span>
             </a>
             <ul className="dropdown-menu" style={{}} onMouseOver={() => setshowSixth(false)}>
               <hr />
@@ -288,7 +288,35 @@ const MainMenu = () => {
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
               onMouseOver={() => setshowSixth(false)}
             >
-              About Us
+                 <span style={{ fontSize: "1rem" }}>About Us</span>
+            </a>
+            <ul className="dropdown-menu " style={{}} onMouseOver={() => setshowSixth(false)}>
+              <hr />
+              {About.map((contact, index) => (
+                <li key={index}>
+                  <Link
+                    to={contact.link}
+                    className={`dropdown-item ${isActive(contact.link) ? "active" : ""
+                      }`}
+                  >
+                    <span style={{ fontSize: "0.78rem" }}>{contact.name}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </li>
+          <li className="nav-item dropdown" onMouseOver={() => setshowSixth(false)}>
+            <a
+              className="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+              style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
+              onMouseOver={() => setshowSixth(false)}
+            >
+               <span style={{ fontSize: "1rem" }}>Policy</span>
             </a>
             <ul className="dropdown-menu " style={{}} onMouseOver={() => setshowSixth(false)}>
               <hr />

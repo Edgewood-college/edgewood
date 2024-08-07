@@ -101,13 +101,13 @@ export const portfolioItems = [
 ];
 
 export const About = [
-  { name: "Our Story", link: "/about-us/our-story" },
+  { name: "Our Story", link: "/about/our-story" },
   { name: "Edgewood", link: "/about/edgewood" },
-  { name: "Vision/mission", link: "/about/vision-mission" },
-  { name: "Our CoreValue" ,  link: "/about/core-value" },
+  { name: "Vision/mission", link: "/about/vision" },
+  { name: "Our CoreValue" ,  link: "/about/core-values" },
   { name: "Our Facilities" ,  link: "/about/facilites" },
-  { name: "Our Founders/Executive Director" ,  link: "/about/executive" },
-  { name: "Board Members" ,  link: "/about/members" },
+  { name: "Our Founders/Executive Director" ,  link: "/about/founders" },
+  { name: "Board Members" ,  link: "/about/board-members" },
   { name: "Head of School" ,  link: "/about/head-of-school" },
   { name: "Bullying Report", link: "https://docs.google.com/forms/d/e/1FAIpQLSfnN_7Acn1m-WM_sItBtwAU38lqKmTrK-pHjv3S7NCi5tHHgA/viewform", },
 ];

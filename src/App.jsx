@@ -66,7 +66,7 @@ import { SecondarySchool } from "./components/SecondarySchool/SecondarySchool";
 import { MeritAward } from "./components/MeritAward/MeritAward";
 import { Gallery } from "./components/Gallery/Gallery";
 import BoardOfGovernors from "./components/Borad of Governors/BoardOfGovernors";
-import  ManagementTeam  from "./components/ManagementTeam/ManagementTeam";
+import ManagementTeam from "./components/ManagementTeam/ManagementTeam";
 import { ChristianEthos } from "./components/ChristianEthos/ChristianEthos";
 import { SchoolAnthem } from "./components/SchoolAnthem/SchoolAnthem";
 import { StudentLife } from "./components/StudentLife/StudentLife";
@@ -84,6 +84,12 @@ import { Calendar } from "./components/Calendar/Calendar";
 import { Alumi } from "./components/Alumi/Alumi";
 import { Career } from "./components/Career/Career";
 import { NewsLetter } from "./components/Newsletter/NewsLetter";
+import { OurStory } from "./components/Our-story/OurStory";
+import { Edgewood } from "./components/Edgewood/Edgewood";
+import { Facilities } from "./components/Facilities/Facilities";
+import { Founder } from "./components/Founder/Founder";
+import { BoardMember } from "./components/BoardMember/BoardMember";
+import { HeadOfSchool } from "./components/HeadOfSchool/HeadOfSchool";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -103,18 +109,19 @@ function App() {
           {/* <Route path="home/app-landing" element={<AppLanding />} /> */}
           <Route path="/home/purpose" element={<WhyEdgeWood />} />
           <Route path="/home/vision" element={<VisionStatement />} />
+          <Route path="/about/vision" element={<VisionStatement />} />
           {/* <Route path="home/crypto" element={<Crypto />} /> */}
           <Route path="home/core-values" element={<CoreValues />} />
           <Route path="home/principal" element={<Principal />} />
           <Route path="learning/secondary-school" element={<SecondarySchool />} />
           <Route path="/learning/Merit-award" element={<  MeritAward />} />
           <Route path="/learning/club-activities" element={<  ClubActivities />} />
-          <Route path="/learning/sports" element={< SportsActivities/>} />
+          <Route path="/learning/sports" element={< SportsActivities />} />
           <Route path="/learning/arts" element={<  Arts />} />
           <Route path="/learning/music" element={<  Music />} />
           <Route path="/learning/cambridgeA-level" element={<  CambridgeA />} />
-          <Route path="/learning/Medical-foundation-Programme" element={<  MedicalFoundation />} />          
-          <Route path="/learning/University-Programme" element={<UniversityFoundation/>} />          
+          <Route path="/learning/Medical-foundation-Programme" element={<  MedicalFoundation />} />
+          <Route path="/learning/University-Programme" element={<UniversityFoundation />} />
           <Route path="/learning/leadership-program" element={<  LeadershipPrograms />} />
           <Route path="home/executive-directors-message" element={<DirectorMessage />} />
           <Route path="home/board-of-governors" element={<BoardOfGovernors />} />
@@ -128,15 +135,22 @@ function App() {
             path="home/personal-portfolio"
             element={<PersonalPortfolio />}
           />
-          <Route path="schoollife/christian-ethos" element={<ChristianEthos/>}></Route>
+          <Route path="schoollife/christian-ethos" element={<ChristianEthos />}></Route>
           <Route path="home/agency-modern" element={<AgencyModern />} />
           <Route path="home/seo-agency" element={<SeoAgency />} />
           <Route path="home/design-agency" element={<DesignAgency />} />
           <Route path="home/lead-generation" element={<LeadGeneration />} />
           <Route path="alumni" element={<Alumi />} />
           <Route path="career" element={<Career />} />
-          <Route path="gallery" element={<Gallery  />} />
+          <Route path="gallery" element={<Gallery />} />
           <Route path="newsletter" element={<NewsLetter />} />
+          <Route path="/about/our-story" element={<OurStory />} />
+          <Route path="/about/core-values" element={<CoreValues />} />
+          <Route path="/about/facilites" element={<Facilities/>} />
+          <Route path="/about/founders" element={<Founder/>} />
+          <Route path="/about/board-members" element={<BoardMember/>} />
+          <Route path="/about/head-of-school" element={<HeadOfSchool/>} />
+          <Route path="/about/edgewood" element={<Edgewood />} />
           <Route path="pages-menu/about-us-v1" element={<AboutUsV1 />} />
           <Route path="pages-menu/about-us-v2" element={<AboutUsV2 />} />
           <Route path="pages-menu/about-us-v3" element={<AboutUsV3 />} />
@@ -149,7 +163,7 @@ function App() {
             path="pages-menu/service-details"
             element={<ServiceDetails />}
           />
-
+          
           <Route path="pages-menu/team-v1" element={<TeamV1 />} />
           <Route path="pages-menu/team-v2" element={<TeamV2 />} />
 
@@ -164,8 +178,8 @@ function App() {
           <Route path="pages-menu/testimonials" element={<Testimonials />} />
           <Route path="login" element={<LogIn />} />
           <Route path="signup" element={<SignUp />} />
-          <Route path="404" element={<NotFound />} />       
-          <Route path="executive-speech" element={<Admission/>}></Route>
+          <Route path="404" element={<NotFound />} />
+          <Route path="executive-speech" element={<Admission />}></Route>
           <Route path="portfolio/portfolio-v1" element={<PortfolioV1 />} />
           <Route path="portfolio/portfolio-v2" element={<PortfolioV2 />} />
           <Route path="portfolio/portfolio-v3" element={<PortfolioV3 />} />
