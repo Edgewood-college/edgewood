@@ -27,7 +27,7 @@ const changeBackground = () => {
   currentIndex = (currentIndex + 1) % images.length;
 };
 
-setInterval(changeBackground, 6000); // Change every 6 seconds
+setInterval(changeBackground, 7000); // Change every 6 seconds
 
   
   
