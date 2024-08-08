@@ -41,7 +41,7 @@
 
 .contact_button {
   border: none;
-  color: white;
+  color:  black;
   border-radius: 30px;
   cursor: pointer;
   text-align: center;
@@ -56,8 +56,10 @@
 }
 
 .contact_button div {
-  background-color: purple;
-  color: white;
+  background-color: #0df99b;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: black;
   padding: 1vw 2vw;
   border-radius: 10px;
   width: 60%;
