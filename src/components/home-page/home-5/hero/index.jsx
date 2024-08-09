@@ -1,12 +1,13 @@
+import { UploadWiget } from "@/components/UploadWiget";
 import FilterBox from "./FilterBox";
 
 const Hero = () => {
   const images = [
-    "/images/assets/hero3edited.jpg",
-    "/images/assets/hero2edited.jpg",
-    "/images/assets/studentsedited.jpg",
-    "/images/assets/heroedited.jpg",
-    "/images/assets/hero4edited.jpg"
+    "/images/assets/hero3.JPG",
+    "/images/assets/hero2.JPG",
+    "/images/assets/students.jpg",
+    "/images/assets/hero1.jpg",
+    "/images/assets/hero4.jpg"
   ];
 
   let currentIndex = 0;
@@ -46,7 +47,7 @@ const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg tx-dark mb-80 pt-35 text-center lg-pt-20 lg-mb-50" style={{ color: "#fff", fontWeight: "lighter" }}>
-                An institution borne from <br /> a desire to provide a balanced educational system
+                An institution borne from <br /> a desire to provide a balanced educational system<UploadWiget/>
               </p>
             </div>
           </div>

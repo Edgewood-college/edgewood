@@ -94,6 +94,7 @@ import { Curriculum } from "./components/Curriculum/Curriculum";
 import { Regulations } from "./components/Regulations/Regulations";
 import { Grooming } from "./components/Grooming/Grooming";
 import { E_policy } from "./components/E-policy/E_policy";
+import { UploadWiget } from "./components/UploadWiget";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -102,6 +103,7 @@ function App() {
   }, []);
   return (
     <div className="main-page-wrapper">
+      
       <Routes>
         <Route path="/">
           <Route index element={<RealEstate />} />
