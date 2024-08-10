@@ -3,11 +3,11 @@ import FilterBox from "./FilterBox";
 
 const Hero = () => {
   const images = [
-    "/images/assets/hero3.JPG",
-    "/images/assets/hero2.JPG",
-    "/images/assets/students.jpg",
-    "/images/assets/hero1.jpg",
-    "/images/assets/hero4.jpg"
+    "/images/assets/hero3edited.jpg",
+    "/images/assets/hero2edited.jpg",
+    "/images/assets/studentsedited.jpg",
+    "/images/assets/heroedited.jpg",
+    "/images/assets/hero4edited.jpg"
   ];
 
   let currentIndex = 0;
