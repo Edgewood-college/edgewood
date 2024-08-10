@@ -47,7 +47,8 @@ const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg tx-dark mb-80 pt-35 text-center lg-pt-20 lg-mb-50" style={{ color: "#fff", fontWeight: "lighter" }}>
-                An institution borne from <br /> a desire to provide a balanced educational system<UploadWiget/>
+                An institution borne from <br /> a desire to provide a balanced educational system
+                {/* <UploadWiget/> */}
               </p>
             </div>
           </div>
