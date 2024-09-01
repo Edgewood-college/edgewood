@@ -68,8 +68,8 @@ const RealEstate = () => {
           <div className="row">
             <div className="col-lg-7" data-aos="fade-right">
               <div className="title-style-five mb-65 md-mb-40">
-                <div className="sc-title-two fst-italic position-relative" style={{fontSize:"1.3rem"}}>
-                Welcome to edgewood college.
+                <div className="sc-title-two fst-italic position-relative" style={{ fontSize: "1.3rem" }}>
+                  Welcome to edgewood college.
                 </div>
                 {/* <h2 className="main-title fw-500 tx-dark">
                   We’r the top rated agency.
@@ -82,7 +82,7 @@ const RealEstate = () => {
               <div className="ps-xxl-5" data-aos="fade-up">
                 {/* <h6 className="mb-30">Our History &amp; Goal.</h6> */}
                 <p className="text- tx-dark">
-                 The leading secondary school and sixth form college with an established tradition of excellence. Alongside academic brilliance, learners are mentored to be the best they can for God and humanity. They are taught to be selfless and exemplary leaders.
+                  The leading secondary school and sixth form college with an established tradition of excellence. Alongside academic brilliance, learners are mentored to be the best they can for God and humanity. They are taught to be selfless and exemplary leaders.
                 </p>
                 <p className="text- tx-dark">
                   Strong discipline, Christian values, and a culture of excellence are the hallmark of our college. Learners are taught by professional educators in the heart of Lekki Phase 1, Lagos. The Edgewood experience is both rewarding and enjoyable, as learners are given the ‘edge’ above their peers.
@@ -99,7 +99,7 @@ const RealEstate = () => {
         </div>
         {/* /.container */}
 
-  
+
       </div>
 
       {/* 
@@ -129,7 +129,7 @@ const RealEstate = () => {
 			Feedback Section Fourteen
 			=====================================================
 			*/}
-      <div className="feedback-section-fourteen position-relative zn2 join-us" style={{marginBottom: '-12vw'}}>
+      <div className="feedback-section-fourteen position-relative zn2 join-us" style={{ marginBottom: '-12vw' }}>
         <div className="container">
           <div className="line-bg-wrapper position-relative zn2 pt-250 pb-180 lg-pt-120 lg-pb-80">
             <div className="row">
@@ -158,7 +158,7 @@ const RealEstate = () => {
                     src="/images/assets/edaward.png"
                     alt="shape"
                     className="lazy-img ms-auto"
-                    style={{ width: "100%", height: "530px", objectFit: "cover" }} 
+                    style={{ width: "100%", height: "530px", objectFit: "cover" }}
                   />
 
                   {/* <div className="rating-box bg-black text-white d-flex flex-column justify-content-center align-items-center">
@@ -167,7 +167,7 @@ const RealEstate = () => {
                   </div> */}
                   {/* /.rating-box */}
 
-               
+
                 </div>
               </div>
             </div>
@@ -176,13 +176,13 @@ const RealEstate = () => {
         </div>
         {/* End .container */}
       </div>
-     
+
 
       <FancySection />
 
-      <div className="" style={{ width: "80%", margin: "0rem auto", cursor: "pointer",marginTop:"5vw",textAlign:'center',display:"flex",alignItems:"center",justifyContent:"center"}}>
-        <div className="hovercalendar" style={{backgroundColor:"orange",padding:"1rem 1rem",borderRadius:"5px",position:"relative",top:"-4vw" }} onClick={() => navigate("/Calendar-2022-2023")}>
-          <div className="" style={{fontSize:"1rem"}}>
+      <div className="" style={{ width: "80%", margin: "0rem auto", cursor: "pointer", marginTop: "5vw", textAlign: 'center', display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div className="hovercalendar" style={{ backgroundColor: "#354459", padding: "1rem 1rem", borderRadius: "5px", position: "relative", top: "-4vw",color:"white" }} onClick={() => navigate("/Calendar-2022-2023")}>
+          <div className="" style={{ fontSize: "1rem" }}>
             Academic Calendar for 2022/2023
           </div>
         </div>
@@ -208,7 +208,7 @@ const RealEstate = () => {
             <div className="btn-holder text-center">
               <div className="btn-eighteen position-relative d-inline-block tx-dark">
                 <Link to="/home/real-estate" className="fw-500 tran3s">
-                {/* <Link to="/blog/blog-v1" className="fw-500 tran3s"> */}
+                  {/* <Link to="/blog/blog-v1" className="fw-500 tran3s"> */}
                   Check our all news <i className="fa-solid fa-angle-right" />
                 </Link>
               </div>
@@ -218,7 +218,7 @@ const RealEstate = () => {
         </div>
         {/* End .container */}
 
-  
+
       </div>
 
       {/* 
@@ -253,7 +253,7 @@ const RealEstate = () => {
           {/* End .row */}
         </div>
         {/* /.container */}
-   
+
       </div>
 
       {/*
@@ -261,7 +261,7 @@ const RealEstate = () => {
 				Fancy Short Banner Fifteen
 			=====================================================
 			*/}
-     
+
       <Footer />
     </>
   );

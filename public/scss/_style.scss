@@ -24,7 +24,7 @@
 @media screen and (max-width : 768px) {
   .contact_button {
     width: 100%;
-   
+
     // margin: 1rem 0;
   }
 
@@ -35,13 +35,13 @@
     justify-content: center;
     align-items: center;
     height: 3rem;
-    
+
   }
 }
 
 .contact_button {
   border: none;
-  color:  black;
+  color: black;
   border-radius: 30px;
   cursor: pointer;
   text-align: center;
@@ -583,7 +583,8 @@ p {
 
 .title-style-five .sc-title-two {
   font-size: 17px;
-  color: var(--prime-ten);
+  // color: var(--prime-ten);
+  color: #d7232e;
   padding-left: 40px;
   margin-bottom: 20px;
 }
@@ -593,7 +594,7 @@ p {
   position: absolute;
   width: 24px;
   height: 1px;
-  background: var(--prime-ten);
+  background: #d7232e;
   left: 0;
   top: 14px;
 }
@@ -824,12 +825,26 @@ body .btn-one {
   border-radius: 5px;
   padding: 0 32px;
   position: relative;
-  background: #000;
+  background: #354459;
   transition: all 0.3s ease-in-out;
 }
 
+body .btn-one_1 {
+  color: #fff;
+  line-height: 50px;
+  border-radius: 5px;
+  padding: 0 32px;
+  position: relative;
+  background: #d7232e;
+  transition: all 0.3s ease-in-out;
+}
+body .btn-one_1:hover {
+  background: #354459;
+}
+
 body .btn-one:hover {
-  background: var(--prime-one);
+  background: #354459;
+  opacity: 90%;
 }
 
 body .btn-two {
@@ -838,12 +853,13 @@ body .btn-two {
   border-radius: 30px;
   padding: 0 50px;
   position: relative;
-  background: #000;
+  background: #354459;
   transition: all 0.3s ease-in-out;
 }
 
 body .btn-two:hover {
-  background: var(--prime-one);
+  background: #354459;
+  opacity: 90%;
 }
 
 body .btn-three {
@@ -852,12 +868,13 @@ body .btn-three {
   border-radius: 28px;
   padding: 0 40px;
   position: relative;
-  background: var(--prime-two);
+  background: #354459;
   transition: all 0.3s ease-in-out;
 }
 
 body .btn-three:hover {
-  background: #090f32;
+  background: #354459;
+  opacity: 90%;
 }
 
 body .btn-four {
@@ -11869,7 +11886,7 @@ body .btn-twentySix:hover:after {
 
 /*^^^^^^^^^^^^^^^^^^^^^ Theme Inner Banner Three ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .inner-banner-three .bg-wrapper {
-  background: url(/images/assets/bg-16.svg) no-repeat center;
+  // background: url(/images/assets/bg-16.svg) no-repeat center;
   background-size: cover;
   padding: 150px 0 108px;
   position: relative;

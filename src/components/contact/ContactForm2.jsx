@@ -38,15 +38,15 @@ const ContactForm2 = () => {
           </div>
         </div>
         <div className="col-12" >
-          <button className="btn-one fw-500 w-100 text-uppercase fs-14 d-block" style={{ backgroundColor: "#002147", color: "white" }} >
+          <button className="btn-one_1 fw-500 w-100 text-uppercase fs-14 d-block"  >
             Send Message
           </button>
         </div>
         <div className="contact_button" style={{}}>
-          <div className="" style={{ backgroundColor: "#002147", color: "white" }}>
+          <div className="btn-one_1" >
             <a href="https://wa.me/+2348035854737" target="_blank">Admissions Enquiries</a>
           </div>
-          <div className="" style={{ backgroundColor: "#002147", color: "white" }}>
+          <div className="btn-one_1" >
             <a href="https://wa.me/+2348035854737" target="_blank">General Enquiries</a>
           </div>
         </div>

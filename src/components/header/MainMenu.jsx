@@ -57,7 +57,6 @@ const MainMenu = () => {
       >
         <span />
       </button>
-      {/* End mobile collapse menu */}
 
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
@@ -68,7 +67,6 @@ const MainMenu = () => {
               </Link>
             </div>
           </li>
-          {/* End li */}
 
           <li className="nav-item dropdown mega-dropdown-md">
             <a
@@ -84,7 +82,7 @@ const MainMenu = () => {
                 menuItems.some((menu) =>
                   menu.items.some((elm) => isActive(elm.link))
                 )
-                  ? "nav-link dropdown-toggle active-menu"
+                  ? "nav-link dropdown-toggle "
                   : "nav-link dropdown-toggle"
               }
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}

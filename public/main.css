@@ -16729,14 +16729,18 @@ p {
 }
 
 .button-director {
-  padding: 0.5vw 3vw;
+  padding: 0.5vw 3vw ;
   display: flex;
   align-items: center;
   border-radius: 0.4vw;
   margin: 1rem auto;
   text-align: center;
-  background-color: rgb(245, 166, 19);
+  background-color: #354459;
   color: black;
+}
+
+.button-director:hover {
+  background-color: #293449;
 }
 
 .scroll-top:after {

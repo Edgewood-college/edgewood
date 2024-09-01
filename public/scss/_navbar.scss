@@ -231,7 +231,8 @@
 .navbar .dropdown-menu .dropdown:hover > .dropdown-item,
 .navbar .dropdown-menu .dropdown-item.active,
 .navbar .dropdown-menu .dropdown-item:hover {
-  color: var(--prime-one);
+  // color: var(--prime-one);
+  color: #d7232e;
 }
 .navbar .dropdown-toggle::after {
   content: "\f282";

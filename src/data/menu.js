@@ -104,7 +104,7 @@ export const About = [
   { name: "Our Story", link: "/about/our-story" },
   { name: "Edgewood", link: "/about/edgewood" },
   { name: "Vision/mission", link: "/about/vision" },
-  { name: "Our CoreValue" ,  link: "/about/core-values" },
+  { name: "Our Core Value" ,  link: "/about/core-values" },
   { name: "Our Facilities" ,  link: "/about/facilites" },
   { name: "Our Founders/Executive Director" ,  link: "/about/founders" },
   { name: "Board Members" ,  link: "/about/board-members" },
