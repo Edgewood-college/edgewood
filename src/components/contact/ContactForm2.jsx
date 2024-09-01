@@ -10,7 +10,6 @@ const ContactForm2 = () => {
             <label className="d-block">Name*</label>
             <input
               type="text"
-              placeholder="Rashed Kabir"
               name="name"
               required="required"
             />
@@ -22,7 +21,6 @@ const ContactForm2 = () => {
             <label className="d-block">Email*</label>
             <input
               type="email"
-              placeholder="demo@domain.com"
               name="email"
               required="required"
             />
@@ -32,7 +30,6 @@ const ContactForm2 = () => {
         <div className="col-12">
           <div className="input-group-meta form-group mb-30">
             <textarea
-              placeholder="Your message*"
               name="message"
               required="required"
               defaultValue={""}
@@ -40,16 +37,16 @@ const ContactForm2 = () => {
             <div className="help-block with-errors" />
           </div>
         </div>
-        <div className="col-12">
-          <button className="btn-one fw-500 w-100 text-uppercase fs-14 d-block">
+        <div className="col-12" >
+          <button className="btn-one fw-500 w-100 text-uppercase fs-14 d-block" style={{ backgroundColor: "#002147", color: "white" }} >
             Send Message
           </button>
         </div>
         <div className="contact_button" style={{}}>
-          <div className="" style={{}}>
+          <div className="" style={{ backgroundColor: "#002147", color: "white" }}>
             <a href="https://wa.me/+2348035854737" target="_blank">Admissions Enquiries</a>
           </div>
-          <div className="">
+          <div className="" style={{ backgroundColor: "#002147", color: "white" }}>
             <a href="https://wa.me/+2348035854737" target="_blank">General Enquiries</a>
           </div>
         </div>

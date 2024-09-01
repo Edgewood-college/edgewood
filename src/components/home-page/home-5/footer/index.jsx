@@ -22,11 +22,11 @@ const index = () => {
               <p className="text-white fs-18 mt-30 mb-40 md-mt-10 md-mb-20 pe-xxl-5">
                 Setting the pace for great education.
               </p>
-              <div style={{lineHeight: '50px'}}>
-              <Social />
-              <p className=""> 
-            Copyright © - {currentYear} Edgewood College.
-          </p>
+              <div style={{ lineHeight: '50px' }}>
+                <Social />
+                <p className="">
+                  Copyright © - {currentYear} Edgewood College.
+                </p>
               </div>
             </div>
             {/* End .col-lg-3 logo_01.png  */}

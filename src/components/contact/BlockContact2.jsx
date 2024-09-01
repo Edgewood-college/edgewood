@@ -41,18 +41,6 @@ const BlockContact2 = () => {
         </>
       ),
     },
-    {
-      icon: "/images/icon/icon_163.svg",
-      title: "Email(office)",
-      content: (
-        <>
-          info@edgewoodcollege.org.ng <br />
-          <div className="webaddress">
-            www.supportlive.com
-          </div>
-        </>
-      ),
-    },
 
     {
       icon: "/images/icon/icon_162.svg",

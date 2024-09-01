@@ -26,6 +26,7 @@ const accordionData = [
   },
 ];
 
+
 const Faq = () => {
   return (
     <div className="accordion accordion-style-seven md-mt-60" id="accordionOne">
