@@ -10,13 +10,14 @@ import {
 } from "../../data/menu";
 
 import { useLocation } from "react-router-dom";
-import portfolio from "@/data/portfolio";
+
 import { useEffect, useState } from "react";
 
 const MainMenu = () => {
   const { pathname } = useLocation();
   const [showSixth, setshowSixth] = useState(false)
   const [showTeaching, setshowTeaching] = useState(false)
+  const [showAboutUs, setShowAboutUs] = useState(false);
   const navigate = useNavigate();
   const [navbar, setNavbar] = useState(false);
 
@@ -27,15 +28,21 @@ const MainMenu = () => {
       setNavbar(false);
     }
   };
+
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
     return () => {
       window.removeEventListener("scroll", changeBackground);
     };
   }, []);
+
+  const handleMouseOverAboutUs = () => setShowAboutUs(true);
+  const handleMouseLeaveAboutUs = () => setShowAboutUs(false);
+
   const isActive = (link) => {
     return pathname.replace(/\/\d+$/, "") === link.replace(/\/\d+$/, "");
   };
+
   const handleSixthForm = () => {
     setshowSixth(!showSixth)
   };
@@ -58,8 +65,13 @@ const MainMenu = () => {
         <span />
       </button>
 
+
+
       <div className="collapse navbar-collapse" id="navbarNav">
+
+
         <ul className="navbar-nav">
+
           <li className="d-block d-lg-none">
             <div className="logo">
               <Link to="/" className="d-block">
@@ -67,67 +79,84 @@ const MainMenu = () => {
               </Link>
             </div>
           </li>
-
-          <li className="nav-item dropdown mega-dropdown-md">
-            <a
-              // className="nav-link dropdown-toggle active-menu"
-              // href="#"
-
+          <div className="nav-item dropdown">
+            <div onClick={() => navigate("/")}
+              // className="nav-link dropdown-toggle"
+              className={
+                portfolioItems.some((elm) => isActive(elm.link))
+                  ? "nav-link  "
+                  : "nav-link "
+              }
+              href="#"
               role="button"
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
-              onMouseOver={() => setshowSixth(false)}
+              style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
+            >
+              <span style={{ fontSize: "0.9rem" }}>Home</span>
+            </div>
+          </div>
+          <li
+            className="nav-item dropdown mega-dropdown-md"
+            onMouseOver={handleMouseOverAboutUs}
+            onClick={() => setShowAboutUs(!showAboutUs)}
+            onMouseLeave={handleMouseLeaveAboutUs}
+          >
+            <a
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
               className={
                 menuItems.some((menu) =>
                   menu.items.some((elm) => isActive(elm.link))
                 )
-                  ? "nav-link dropdown-toggle "
+                  ? "nav-link dropdown-toggle"
                   : "nav-link dropdown-toggle"
               }
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
-            // style={{color:'green'}}
             >
-              <span style={{ fontSize: "1rem" }}>Home</span>
+              <span style={{ fontSize: "0.9rem" }}>About Us</span>
             </a>
-            <ul className="dropdown-menu" style={{}}>
-              <li>
-                <div className="rows">
-                  {menuItems.map((menu, index) => (
-                    <div className="home-hov" key={index}>
-                      <div className="menu-column">
-                        {/* <h6
-                          className={
-                            menu.items.some((elm) => isActive(elm.link))
-                              ? "mega-menu-title active-menu"
-                              : "mega-menu-title"
-                          }
-                        >
-                          {menu.title}
-                        </h6> */}
-                        <hr />
-
-                      </div>
-                      <ul className="style-none mega-dropdown-list" style={{ display: "flex", flexDirection: "column", }}>
-                        {menu.items.map((item, index) => (
-                          <li key={index} >
-                            <Link
-                              to={item.link}
-                              className={`dropdown-item ${isActive(item.link) ? "active" : ""
-                                }`}
-                            >
-                              <span style={{ fontSize: "0.85rem" }}>{item.title}</span>
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
+            {
+              showAboutUs && (
+                <ul
+                  className={`dropdown-menu about_Us_container ${showAboutUs ? "show" : ""
+                    }`}
+              
+                >
+                  <hr />
+                  <li  style={{ transition: "ease-out", transitionDuration: "0.3s" }}>
+                    <div className="rows about_Us">
+                      {menuItems.map((menu, index) => (
+                        <div className="home-hov" key={index}>
+                          <div className="menu-column"></div>
+                          <ul className="style-none mega-dropdown-list">
+                            <div style={{ display: "flex", flexDirection: "column" }}>
+                              {menu.items.map((item, index) => (
+                                <li key={index}>
+                                  <Link
+                                    to={item.link}
+                                    className={`dropdown-item ${isActive(item.link) ? "active" : ""
+                                      }`}
+                                  >
+                                    <span style={{ fontSize: "0.8rem" }}>{item.title}</span>
+                                  </Link>
+                                </li>
+                              ))}
+                            </div>
+                          </ul>
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
-              </li>
-            </ul>
-
+                  </li>
+                </ul>
+              )
+            }
           </li>
+
+
           {/* End li (home mega menu) */}
 
 
@@ -147,7 +176,7 @@ const MainMenu = () => {
             // data-bs-auto-close="outside"
             // aria-expanded="false"
             >
-              <span style={{ fontSize: "1rem" }}>School portal</span>
+              <span style={{ fontSize: "0.9rem" }}>School portal</span>
             </a>
             {/* <ul className="dropdown-menu">
               {portfolioItems.map((item, index) => (
@@ -167,7 +196,7 @@ const MainMenu = () => {
           {/* End li (pages) */}
 
           <div className="nav-item dropdown">
-            <div onClick={() => navigate("/executive-speech")}
+            <div onClick={() => navigate("/admissions")}
               // className="nav-link dropdown-toggle"
               className={
                 portfolioItems.some((elm) => isActive(elm.link))
@@ -181,25 +210,9 @@ const MainMenu = () => {
               aria-expanded="false"
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
             >
-              <span style={{ fontSize: "1rem" }}>Admission</span>
+              <span style={{ fontSize: "0.9rem" }}>Admission</span>
             </div>
-            {/* <ul className="dropdown-menu">
-              {portfolioItems.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    to={item.link}
-                    className={`dropdown-item ${
-                      isActive(item.link) ? "active" : ""
-                    }`}
-                  >
-                    <span>{item.name}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul> */}
           </div>
-          {/* End li (portfolio) */}
-
 
           <li className="nav-item dropdown" >
             <a
@@ -210,23 +223,13 @@ const MainMenu = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
-              
+
             >
-              <span style={{ fontSize: "1rem" }}>Our Campus</span>
+              <span style={{ fontSize: "0.9rem" }}>Our Campus</span>
             </a>
             <ul className="dropdown-menu">
               <hr />
               <div></div>
-              {/* {blogItems.map((contact, index) => (
-                <li key={index} className="dropdown-item-wrapper">
-                  <Link
-                    to={contact.link}
-                    className={`dropdown-item ${isActive(contact.link) ? "active" : ""}`}
-                  >
-                    <span style={{ fontSize: "0.85rem" }}>{contact.text}</span>
-                  </Link>
-                </li>
-              ))} */}
               <Link to="/learning/secondary-school" className={`dropdown-item ${isActive("/learning/secondary-school") ? "active" : ""}`} style={{ fontSize: "0.8rem" }} onMouseOver={() => setshowSixth(false)}>Secondary School</Link>
               <div className="" style={{ display: "flex", alignItems: "center", cursor: "pointer", }} >
                 <div className='dropdown-item' style={{ fontSize: "0.8rem" }} onMouseOver={handleSixthForm} onClick={handleSixthForm} >Sixth Form</div>
@@ -271,7 +274,7 @@ const MainMenu = () => {
             </ul>
           </li>
 
-          <li className="nav-item dropdown" onMouseOver={() => setshowSixth(false)}>
+          <li className="nav-item dropdown " onMouseOver={() => setshowSixth(false)}>
             <a
               className="nav-link dropdown-toggle"
               href="#"
@@ -282,7 +285,7 @@ const MainMenu = () => {
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
               onMouseOver={() => setshowSixth(false)}
             >
-              <span style={{ fontSize: "1rem" }}>School Life</span>
+              <span style={{ fontSize: "0.9rem" }}>School Life</span>
             </a>
             <ul className="dropdown-menu" style={{}} onMouseOver={() => setshowSixth(false)}>
               <hr />
@@ -299,7 +302,7 @@ const MainMenu = () => {
               ))}
             </ul>
           </li>
-          <li className="nav-item dropdown" onMouseOver={() => setshowSixth(false)}>
+          {/* <li className="nav-item dropdown " onMouseOver={() => setshowSixth(false)}>
             <a
               className="nav-link dropdown-toggle"
               href="#"
@@ -326,7 +329,7 @@ const MainMenu = () => {
                 </li>
               ))}
             </ul>
-          </li>
+          </li> */}
           <li className="nav-item dropdown" onMouseOver={() => setshowSixth(false)}>
             <a
               className="nav-link dropdown-toggle"
@@ -338,7 +341,7 @@ const MainMenu = () => {
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
               onMouseOver={() => setshowSixth(false)}
             >
-              <span style={{ fontSize: "1rem" }}>Policy</span>
+              <span style={{ fontSize: "0.9rem" }}>Policy</span>
             </a>
             <ul className="dropdown-menu " style={{}} onMouseOver={() => setshowSixth(false)}>
               <hr />
@@ -370,7 +373,7 @@ const MainMenu = () => {
               style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
             >
               <Link to="/contact/contact-v2">
-                <span style={{ fontSize: "1rem" }}>Contact Us</span>
+                <span style={{ fontSize: "0.9rem" }}>Contact Us</span>
               </Link>
             </a>
             {/* <ul className="dropdown-menu">

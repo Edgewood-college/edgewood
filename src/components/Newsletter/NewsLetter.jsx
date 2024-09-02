@@ -56,7 +56,7 @@ export const NewsLetter = () => {
                       <div className="col-lg-7" data-aos="fade-right">
                         <div className="title-style-five mb-65 lg-mb-40">
                           <div className="sc-title-two fst-italic position-relative" onClick={() => navigate(-1)}>
-                           Newsletter
+                            Newsletter
                           </div>
                           {/* <h2 className="main-title fw-500 tx-dark" style={{fontSize:"28px"}}>Our Distinguished <br></br> Alumni</h2> */}
                         </div>
@@ -157,7 +157,7 @@ export const NewsLetter = () => {
             </div>
             {/* End .row */}
 
-            <div className="col-xl-9  mt-120 lg-mt-80" style={{display:'none'}}>
+            <div className="col-xl-9  mt-120 lg-mt-80" style={{ display: 'none' }}>
               <div
                 className="title-style-twelve mb-45 lg-mb-30"
                 data-aos="fade-up"

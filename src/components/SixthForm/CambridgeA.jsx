@@ -56,9 +56,9 @@ export const CambridgeA = () => {
                   <li>Five credits or higher in relevant subjects (which must include English and Mathematics) or</li>
                   <li>Grade C or greater in five subjects (which must include English and Mathematics, at IGCSE, O Level, GCSE or equivalent exams)</li>
                 </ul>
-                <p style={{ fontSize: "1rem" }}>Prospective students are advised to <span style={{color:"orange",cursor:"pointer"}}><Link to="/Submit-SixthForm">apply</Link></span> before the completion of their secondary school education.</p>
-                <p>Most popular come up with my essay specialist that assurances appropriate distribution. Sequence on line academic document benefit for individuals. Appropriately explored & top quality tailor made authored projects. Vital place of work for authors <span style={{color:"orange",cursor:"pointer"}}> <a href="https://www.ozessay.com.au/term-paper-writing-service">writing paper</a></span></p>
-                <p>Incredibly best craft my essay services that makes certain well timed delivery. Get around the web scholastic cardstock can help for college students. Properly explored & exceptional professional published responsibilities. Precious work place for writers <span   style={{color:"orange",cursor:"pointer"}}> <a href="https://www.ozessay.com.au/">essay writers</a></span></p>
+                <p style={{ fontSize: "1rem" }}>Prospective students are advised to <span style={{color:"#d7232e",cursor:"pointer"}}><Link to="/Submit-SixthForm">apply</Link></span> before the completion of their secondary school education.</p>
+                <p>Most popular come up with my essay specialist that assurances appropriate distribution. Sequence on line academic document benefit for individuals. Appropriately explored & top quality tailor made authored projects. Vital place of work for authors <span style={{color:"#d7232e",cursor:"pointer"}}> <a href="https://www.ozessay.com.au/term-paper-writing-service" target='_blank'>writing paper</a></span></p>
+                <p>Incredibly best craft my essay services that makes certain well timed delivery. Get around the web scholastic cardstock can help for college students. Properly explored & exceptional professional published responsibilities. Precious work place for writers <span   style={{color:"#d7232e",cursor:"pointer"}}> <a href="https://www.ozessay.com.au/" target='_blank'>essay writers</a></span></p>
               </div>
             </div>
           </div>

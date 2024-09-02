@@ -1,5 +1,4 @@
-import { UploadWiget } from "@/components/UploadWiget";
-import FilterBox from "./FilterBox";
+
 
 const Hero = () => {
   const images = [
@@ -12,15 +11,6 @@ const Hero = () => {
 
   let currentIndex = 0;
 
-  // Preload images
-  // const preloadImages = (imageArray) => {
-  //   imageArray.forEach((src) => {
-  //     const img = new Image();
-  //     img.src = src;
-  //   });
-  // };
-
-  // preloadImages(images);
 
   const changeBackground = () => {
     const heroBanner = document.querySelector('.hero-banner-thirteen');
@@ -42,7 +32,7 @@ const Hero = () => {
           <div className="col-xl-10 m-auto">
             <div className="text-wrapper" data-aos="fade-up" style={{ color: "red" }}>
               <h1 className="hero-heading fw-500 tx-dark text-center" style={{ color: "white", fontWeight: "lighter" }}>
-                Setting the pace for <br />great education.
+                Setting The Pace For <br />Great Education.
                 <span className="position-relative">
                 </span>
               </h1>

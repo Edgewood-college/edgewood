@@ -207,10 +207,10 @@ const RealEstate = () => {
             <Portfolio />
             <div className="btn-holder text-center">
               <div className="btn-eighteen position-relative d-inline-block tx-dark">
-                <Link to="/home/real-estate" className="fw-500 tran3s">
-                  {/* <Link to="/blog/blog-v1" className="fw-500 tran3s"> */}
+                {/* <Link to="/home/real-estate" className="fw-500 tran3s">
+                  <Link to="/blog/blog-v1" className="fw-500 tran3s">
                   Check our all news <i className="fa-solid fa-angle-right" />
-                </Link>
+                </Link> */}
               </div>
             </div>
             {/* End btn-holder */}

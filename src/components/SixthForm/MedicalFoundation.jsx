@@ -2,12 +2,11 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Footer from "../../components/home-page/home-5/footer";
 import Header5 from '../header/Header5';
-import Header6 from '../header/Header6';
 export const MedicalFoundation = () => {
     const navigate = useNavigate()
     return (
         <div>
-            <Header6 />
+            <Header5 />
             <div className="fancy-feature-fortySeven zn2 position-relative pt-130 pb-160 lg-pt-120 lg-pb-100">
                 <div className="container">
                     {/* <FilterProperty /> */}
@@ -40,7 +39,7 @@ export const MedicalFoundation = () => {
                                     </li>
                                 </ul>
 
-                                <p style={{fontSize:"1rem"}}>Prospective students are advised to <span style={{color:"orange",cursor:"pointer"}}><Link to="/Submit-SixthForm">apply</Link></span> before the completion of their secondary school education.</p>
+                                <p style={{fontSize:"1rem"}}>Prospective students are advised to <span style={{color:"#d7232e",cursor:"pointer"}}><Link to="/Submit-SixthForm">apply</Link></span> before the completion of their secondary school education.</p>
                             </div>
                         </div>
                     </div>

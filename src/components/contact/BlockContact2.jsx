@@ -41,21 +41,6 @@ const BlockContact2 = () => {
         </>
       ),
     },
-
-    {
-      icon: "/images/icon/icon_162.svg",
-      title: "Telephone(Office)",
-      content: (
-        <>
-          Open a chat or give us call at <br />
-          <div className="">
-            +2348125805503
-            +2348140976177
-            (7:30am to 5pm on weekdays)
-          </div>
-        </>
-      ),
-    },
     {
       icon: "/images/icon/icon_162.svg",
       title: "Email(Office)",

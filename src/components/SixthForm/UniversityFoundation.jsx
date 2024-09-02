@@ -57,7 +57,7 @@ export const UniversityFoundation = () => {
                                     <li>Grade C or greater in five subjects (which must include English and Mathematics, at IGCSE, O Level, GCSE or equivalent exams)</li>
                                     <li>Law</li>
                                 </ul>
-                                <p style={{fontSize:"1rem"}}>Prospective students are advised to <span style={{color:"orange",cursor:"pointer"}}><Link to="/Submit-SixthForm">apply</Link></span> before the completion of their secondary school education.</p>
+                                <p style={{fontSize:"1rem"}}>Prospective students are advised to <span style={{color:"#d7232e",cursor:"pointer"}}><Link to="/Submit-SixthForm">apply</Link></span> before the completion of their secondary school education.</p>
                                 {/* <p className='fst-italic position-relative' style={{ fontWeight: "bolder" }}>Here is how to join our college</p> */}
                                 
 

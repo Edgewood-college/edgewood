@@ -139,6 +139,7 @@ function App() {
           <Route path="/Submit-SixthForm" element={<SubmitSixthForm />} />
           <Route path="/Calendar-2022-2023" element={<Calendar />} />
           <Route path="/policy/rule-regulation" element={<Regulations />} />
+          <Route path="/policy/laptop-policy" element={<Regulations />} />
           <Route path="/policy/grooming-policy" element={<Grooming />} />
           <Route path="/policy/safety-policy" element={<E_policy />} />
           <Route
@@ -189,7 +190,7 @@ function App() {
           <Route path="login" element={<LogIn />} />
           <Route path="signup" element={<SignUp />} />
           <Route path="404" element={<NotFound />} />
-          <Route path="executive-speech" element={<Admission />}></Route>
+          <Route path="/admissions" element={<Admission />}></Route>
           <Route path="portfolio/portfolio-v1" element={<PortfolioV1 />} />
           <Route path="portfolio/portfolio-v2" element={<PortfolioV2 />} />
           <Route path="portfolio/portfolio-v3" element={<PortfolioV3 />} />

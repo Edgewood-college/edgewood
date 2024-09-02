@@ -21,20 +21,28 @@
   width: 5px;
 }
 
-@media screen and (max-width : 768px) {
+.calendar_img {
+  width: 950px;
+}
+@media screen and (max-width : 1020px) {
   .contact_button {
     width: 100%;
 
     // margin: 1rem 0;
   }
 
+  .calendar_img {
+    width: 100vw;
+    object-fit: cover;
+  }
+
   .contact_button div {
-    font-size: 3vw;
-    padding: 0rem 2vw;
+    font-size: 1vw;
+    padding: 0rem 0vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3rem;
+    // height: 3rem;
 
   }
 }
@@ -2673,7 +2681,7 @@ body .btn-twentySix:hover:after {
 .footer-style-one .footer-nav-link a:hover,
 .footer-style-one .email:hover,
 .footer-style-one .mobile:hover {
-  color: var(--prime-one);
+  color: #d7232e;
 }
 
 .footer-style-one .social-icon a {
@@ -3513,7 +3521,7 @@ body .btn-twentySix:hover:after {
 }
 
 .footer-style-two .footer-nav-link a:hover {
-  color: var(--prime-two);
+  color: #d7232e;
   text-decoration: underline;
 }
 
@@ -4715,7 +4723,7 @@ body .btn-twentySix:hover:after {
 }
 
 .portfolio-block-one .title:hover .pj-name {
-  color: var(--prime-three);
+  color: #d7232e;
 }
 
 .portfolio-block-one .hover-state {
@@ -8097,7 +8105,7 @@ body .btn-twentySix:hover:after {
 
 .footer-style-nine .footer-nav-link a:hover,
 .footer-style-nine .bottom-footer .footer-nav a:hover {
-  color: var(--prime-eight);
+  color: #d7232e;
 }
 
 .footer-style-nine .form-widget form input {
@@ -8721,7 +8729,7 @@ body .btn-twentySix:hover:after {
 }
 
 .footer-style-ten .footer-nav-link a:hover {
-  color: var(--prime-ten);
+  color: #d7232e;
 }
 
 .footer-style-ten .social-icon a {
@@ -9669,7 +9677,7 @@ body .btn-twentySix:hover:after {
 }
 
 .footer-style-eleven .footer-nav-link a:hover {
-  color: var(--prime-two);
+  color: #d7232e;
 }
 
 .footer-style-eleven .form-widget form input {
@@ -10573,7 +10581,7 @@ body .btn-twentySix:hover:after {
 }
 
 .theme-basic-footer.footer-style-twelve .footer-nav-link a:hover {
-  color: var(--prime-twelve);
+  color: #d7232e;
   text-decoration: underline;
 }
 
@@ -11931,7 +11939,7 @@ body .btn-twentySix:hover:after {
   background: #fff;
   border-radius: 20px;
   padding: 60px 80px 85px;
-  box-shadow: 0px 35px 70px rgba(0, 104, 31, 0.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 .form-style-three .input-group-meta label {

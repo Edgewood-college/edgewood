@@ -11,27 +11,23 @@ export const menuItems = [
       { title: "Principal", link: "/home/principal" },
       { title: "Meet the board of Governors", link: "/home/board-of-governors" },
       { title: "Meet the Management Team", link: "/home/management-team" },
-      { title: "Bullying Report", link: "https://docs.google.com/forms/d/e/1FAIpQLSfnN_7Acn1m-WM_sItBtwAU38lqKmTrK-pHjv3S7NCi5tHHgA/viewform", },
+
     ],
   },
-  // {
-  //   title: "Landing",
-  //   items: [
-  //     { title: "Executive Director's message", link: "/home/sass-product" },
-  //     { title: "Principal", link: "/home/app-landing" },
-  //     { title: "Meet the board of Governors", link: "/home/crypto" },
-  //     { title: "Meet the Management Team", link: "/home/personal-portfolio" },
-  //   ],
-  // },
-  // {
-  //   title: "Agency",
-  //   items: [
-  //     { title: "Agency Modern", link: "/home/agency-modern" },
-  //     { title: "SEO & Digital Agency", link: "/home/seo-agency" },
-  //     { title: "Design Agency", link: "/home/design-agency" },
-  //     { title: "Lead Generation", link: "/home/lead-generation" },
-  //   ],
-  // },
+  {
+    title: "Landing",
+    items:[
+      { title: "Our Story", link: "/about/our-story" },
+      { title: "Edgewood", link: "/about/edgewood" },
+      // { title: "Vision/mission", link: "/about/vision" },
+      // { title: "Our Core Values", link: "/about/core-values" },
+      { title: "Our Facilities", link: "/about/facilites" },
+      { title: "Our Founders/Executive Director", link: "/about/founders" },
+      { title: "Board Members", link: "/about/board-members" },
+      { title: "Head of School", link: "/about/head-of-school" },
+      // { name: "Bullying Report", link: "https://docs.google.com/forms/d/e/1FAIpQLSfnN_7Acn1m-WM_sItBtwAU38lqKmTrK-pHjv3S7NCi5tHHgA/viewform", },
+    ]
+  },
 ];
 
 export const pagesItems = [
@@ -104,24 +100,26 @@ export const About = [
   { name: "Our Story", link: "/about/our-story" },
   { name: "Edgewood", link: "/about/edgewood" },
   { name: "Vision/mission", link: "/about/vision" },
-  { name: "Our Core Value" ,  link: "/about/core-values" },
-  { name: "Our Facilities" ,  link: "/about/facilites" },
-  { name: "Our Founders/Executive Director" ,  link: "/about/founders" },
-  { name: "Board Members" ,  link: "/about/board-members" },
-  { name: "Head of School" ,  link: "/about/head-of-school" },
-  { name: "Bullying Report", link: "https://docs.google.com/forms/d/e/1FAIpQLSfnN_7Acn1m-WM_sItBtwAU38lqKmTrK-pHjv3S7NCi5tHHgA/viewform", },
+  { name: "Our Core Values", link: "/about/core-values" },
+  { name: "Our Facilities", link: "/about/facilites" },
+  { name: "Our Founders/Executive Director", link: "/about/founders" },
+  { name: "Board Members", link: "/about/board-members" },
+  { name: "Head of School", link: "/about/head-of-school" },
+  // { name: "Bullying Report", link: "https://docs.google.com/forms/d/e/1FAIpQLSfnN_7Acn1m-WM_sItBtwAU38lqKmTrK-pHjv3S7NCi5tHHgA/viewform", },
 ];
 
 
 export const policy = [
-  { link: "/policy/rule-regulation", text: "School rules & regulations"},
+  { link: "/policy/rule-regulation", text: "School rules & regulations" },
+  { text: "Bullying Report", link: "https://docs.google.com/forms/d/e/1FAIpQLSfnN_7Acn1m-WM_sItBtwAU38lqKmTrK-pHjv3S7NCi5tHHgA/viewform", },
   { link: "/policy/grooming-policy", text: "Grooming policy" },
+  { link: "/policy/laptop-policy", text: "Laptop policy" },
   // { link: "/blog/1", text: "Excursions" },
   { link: "/policy/safety-policy", text: "E-safety policy" },
 ];
 
 export const blogItems = [
-  { link: "/learning/secondary-school", text: "Secondary School"},
+  { link: "/learning/secondary-school", text: "Secondary School" },
   { link: "/", text: "Sixth Form" },
   { link: "/learning/Merit-award", text: "Merit Award" },
   // { link: "/blog/1", text: "Excursions" },
@@ -131,7 +129,7 @@ export const blogItems = [
   { link: "/learning/music", text: "Music" },
   { link: "/learning/leadership-program", text: "Leadership programs" },
 ];
-export const contactItems = [ 
+export const contactItems = [
   { link: "/contact/contact-v1", text: "Contact - Insurance" },
   { link: "/contact/contact-v2", text: "Contact - Agency" },
   { link: "/contact/contact-v3", text: "Contact - Web Hosting" },

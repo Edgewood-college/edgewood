@@ -44,10 +44,10 @@ const ContactForm2 = () => {
         </div>
         <div className="contact_button" style={{}}>
           <div className="btn-one_1" >
-            <a href="https://wa.me/+2348035854737" target="_blank">Admissions Enquiries</a>
+            <a href="https://wa.me/+2348025526510" target="_blank">Admissions Enquiries</a>
           </div>
           <div className="btn-one_1" >
-            <a href="https://wa.me/+2348035854737" target="_blank">General Enquiries</a>
+            <a href="https://wa.me/+2349124242517" target="_blank">General Enquiries</a>
           </div>
         </div>
       </div>

@@ -55,7 +55,7 @@ const Portfolio = () => {
                   </Link>
                   <div className="hover-state tran3s">
 
-                    <Item
+                    {/* <Item
                       original={item.image}
                       thumbnail={item.image}
                       width={800}
@@ -74,7 +74,7 @@ const Portfolio = () => {
                           <i className="bi bi-plus" />
                         </span>
                       )}
-                    </Item>
+                    </Item> */}
                   </div>
                 </div>
               </div>

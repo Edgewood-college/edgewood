@@ -14,7 +14,7 @@ const CallToActions = () => {
             <h2 className="title fw-500 text-white mb-20">
               Let’s get started with us.
             </h2>
-            <p className="text-lg text-white m0">
+            {/* <p className="text-lg text-white m0">
               For furthur info &amp; support,{" "}
               <Link
                 to="/contact/contact-v2"
@@ -22,7 +22,7 @@ const CallToActions = () => {
               >
                 Contact us.
               </Link>
-            </p>
+            </p> */}
           </div>
           {/* End .col-lg-6 */}
 
