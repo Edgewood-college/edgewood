@@ -6,7 +6,7 @@ export const menuItems = [
       { title: "Why Edgewood", link: "/home/purpose" },
       { title: "Mission and Vision statement", link: "/home/vision" },
       // { title: "N.P. Charity", link: "/home/charity" },
-      { title: "Core Values(CLASSIC)", link: "/home/core-values" },
+      { title: "Core Values (CLASSIC)", link: "/home/core-values" },
       { title: "Executive Director's message", link: "/home/executive-directors-message" },
       { title: "Principal", link: "/home/principal" },
       { title: "Meet the board of Governors", link: "/home/board-of-governors" },

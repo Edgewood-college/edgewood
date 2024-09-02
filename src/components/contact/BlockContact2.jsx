@@ -75,8 +75,8 @@ const BlockContact2 = () => {
         <>
           Open a chat or give us call at <br />
           <div className="">
-            +2348022800686
-            +2347031086599 (7:30am to 5pm on weekdays)
+            +2348025526510
+            +2349124242517 (7:30am to 5pm on weekdays)
           </div>
         </>
       ),
@@ -120,7 +120,7 @@ const BlockContact2 = () => {
   ]
 
   return (
-    <div style={{height:"550px",overflow:"auto"}}>
+    <div style={{ height: "550px", overflow: "auto" }}>
       {addressBlocks.map((block, index) => (
         <div className="" key={index}>
           {/* <div className="icon">

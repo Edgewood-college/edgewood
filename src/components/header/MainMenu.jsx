@@ -97,64 +97,7 @@ const MainMenu = () => {
               <span style={{ fontSize: "0.9rem" }}>Home</span>
             </div>
           </div>
-          <li
-            className="nav-item dropdown mega-dropdown-md"
-            onMouseOver={handleMouseOverAboutUs}
-            onClick={() => setShowAboutUs(!showAboutUs)}
-            onMouseLeave={handleMouseLeaveAboutUs}
-          >
-            <a
-              role="button"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
-              className={
-                menuItems.some((menu) =>
-                  menu.items.some((elm) => isActive(elm.link))
-                )
-                  ? "nav-link dropdown-toggle"
-                  : "nav-link dropdown-toggle"
-              }
-              style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
-            >
-              <span style={{ fontSize: "0.9rem" }}>About Us</span>
-            </a>
-            {
-              showAboutUs && (
-                <ul
-                  className={`dropdown-menu about_Us_container ${showAboutUs ? "show" : ""
-                    }`}
-              
-                >
-                  <hr />
-                  <li  style={{ transition: "ease-out", transitionDuration: "0.3s" }}>
-                    <div className="rows about_Us">
-                      {menuItems.map((menu, index) => (
-                        <div className="home-hov" key={index}>
-                          <div className="menu-column"></div>
-                          <ul className="style-none mega-dropdown-list">
-                            <div style={{ display: "flex", flexDirection: "column" }}>
-                              {menu.items.map((item, index) => (
-                                <li key={index}>
-                                  <Link
-                                    to={item.link}
-                                    className={`dropdown-item ${isActive(item.link) ? "active" : ""
-                                      }`}
-                                  >
-                                    <span style={{ fontSize: "0.8rem" }}>{item.title}</span>
-                                  </Link>
-                                </li>
-                              ))}
-                            </div>
-                          </ul>
-                        </div>
-                      ))}
-                    </div>
-                  </li>
-                </ul>
-              )
-            }
-          </li>
+
 
 
           {/* End li (home mega menu) */}
@@ -357,6 +300,64 @@ const MainMenu = () => {
                 </li>
               ))}
             </ul>
+          </li>
+          <li
+            className="nav-item dropdown mega-dropdown-md"
+            onMouseOver={handleMouseOverAboutUs}
+            onClick={() => setShowAboutUs(!showAboutUs)}
+            onMouseLeave={handleMouseLeaveAboutUs}
+          >
+            <a
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+              className={
+                menuItems.some((menu) =>
+                  menu.items.some((elm) => isActive(elm.link))
+                )
+                  ? "nav-link dropdown-toggle"
+                  : "nav-link dropdown-toggle"
+              }
+              style={{ color: navbar ? "#6F7F99" : "#6F7F99" }}
+            >
+              <span style={{ fontSize: "0.9rem" }}>About Us</span>
+            </a>
+            {
+              showAboutUs && (
+                <ul
+                  className={`dropdown-menu about_Us_container ${showAboutUs ? "show" : ""
+                    }`}
+              
+                >
+                  <hr />
+                  <li  style={{ transition: "ease-out", transitionDuration: "0.3s" }}>
+                    <div className="rows about_Us">
+                      {menuItems.map((menu, index) => (
+                        <div className="home-hov" key={index}>
+                          <div className="menu-column"></div>
+                          <ul className="style-none mega-dropdown-list">
+                            <div style={{ display: "flex", flexDirection: "column" }}>
+                              {menu.items.map((item, index) => (
+                                <li key={index}>
+                                  <Link
+                                    to={item.link}
+                                    className={`dropdown-item ${isActive(item.link) ? "active" : ""
+                                      }`}
+                                  >
+                                    <span style={{ fontSize: "0.8rem" }}>{item.title}</span>
+                                  </Link>
+                                </li>
+                              ))}
+                            </div>
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  </li>
+                </ul>
+              )
+            }
           </li>
           <li className="nav-item dropdown">
             <a
