@@ -34,8 +34,8 @@ const BlockContact2 = () => {
         <>
           Open a chat or give us call at <br />
           <div className="">
-            +2348125805503
-            +2348140976177
+            +2348025526510
+            +2349124242517
             (7:30am to 5pm on weekdays)
           </div>
         </>
@@ -88,7 +88,7 @@ const BlockContact2 = () => {
         <>
           Open a chat or give us call at <br />
           <div className="">
-            +2348025526510/+2348170874770 (8am to 5pm on weekdays)
+            +2348025526510/+2349124242517 (8am to 5pm on weekdays)
           </div>
         </>
       ),
