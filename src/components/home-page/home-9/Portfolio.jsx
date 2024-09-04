@@ -17,15 +17,9 @@ const Portfolio = () => {
         <div className="row align-items-center">
           <div className="col-lg-4">
             <div className="title-style-five text-center text-lg-start md-mb-20">
-              <h2 className="main-title font-recoleta fw-500 tx-dark">
-                Discover &
-                <span className="d-inline-block position-relative">
-                  Explore
-                  <span
-                    className="mark-bg"
-                    style={{ backgroundColor: "#D9F5F8" }}
-                  />
-                </span>
+              <h2 className="main-title font-recoleta fw-500 tx-dark" style={{whiteSpace:"nowrap"}}>
+                Discover & Explore
+               
 
               </h2>
             </div>
