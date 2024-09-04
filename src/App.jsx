@@ -95,6 +95,7 @@ import { Regulations } from "./components/Regulations/Regulations";
 import { Grooming } from "./components/Grooming/Grooming";
 import { E_policy } from "./components/E-policy/E_policy";
 import { UploadWiget } from "./components/UploadWiget";
+import { Laptop_Policy } from "./components/Laptop-Policy/Laptop_Policy";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -139,7 +140,7 @@ function App() {
           <Route path="/Submit-SixthForm" element={<SubmitSixthForm />} />
           <Route path="/Calendar-2022-2023" element={<Calendar />} />
           <Route path="/policy/rule-regulation" element={<Regulations />} />
-          <Route path="/policy/laptop-policy" element={<Regulations />} />
+          <Route path="/policy/laptop-policy" element={<Laptop_Policy />} />
           <Route path="/policy/grooming-policy" element={<Grooming />} />
           <Route path="/policy/safety-policy" element={<E_policy />} />
           <Route
