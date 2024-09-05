@@ -47,7 +47,7 @@ export const Admission = () => {
                                     2.    Fill and complete an application form online at <span style={{color:"#d7232e",cursor:"pointer"}}><Link to="/Submit-SixthForm">Secondary School Application Form</Link></span> or print and fill the attached copy
                                 </p>
                                 <p className="text- tx-dark">
-                                    3.    Submit the form using the child’s name and prospective class as the subject line, and send the evidence of payment along with the following documents via email to <span><a href="admissions@edgewoodcollege.org.ng" style={{color:"#d7232e"}} target="_blank" rel="noopener noreferrer">admissions@edgewoodcollege.org.ng</a></span> before the examination day.
+                                    3.    Submit the form using the child’s name and prospective class as the subject line, and send the evidence of payment along with the following documents via email to <span><a href="mailto: admissions@edgewoodcollege.org.ng" style={{color:"#d7232e"}} target="_blank" rel="noopener noreferrer">admissions@edgewoodcollege.org.ng</a></span> before the examination day.
                                 </p>
 
                                 <p className='tx-dark'>
