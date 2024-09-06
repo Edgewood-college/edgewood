@@ -2,7 +2,6 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import Footer from "../../components/home-page/home-5/footer";
 import Header5 from '../header/Header5';
-import { Link } from 'react-router-dom';
 export const MeritAward = () => {
     const navigate = useNavigate()
     return (
@@ -14,7 +13,6 @@ export const MeritAward = () => {
                         {/* <FilterProperty /> */}
                     </div>
                     <div className="container">
-
                         <div className="row">
                             <div className="col-lg-7" data-aos="fade-right">
                                 <div className="title-style-five mb-65 md-mb-40">
@@ -42,8 +40,6 @@ export const MeritAward = () => {
                             </div>
                         </div>
                     </div>
-
-
                 </div>
                 <Footer />
             </div>

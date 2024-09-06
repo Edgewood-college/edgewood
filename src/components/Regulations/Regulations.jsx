@@ -24,7 +24,7 @@ export const Regulations = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-xl-16 col-lg-8 ms-auto">
+            <div className="col-xl-16 col-lg-9 ms-auto">
               <div className="ps-xxl-5" data-aos="fade-left">
                 <ul className=' tx-dark '>
                   <p className='' style={{ fontWeight: "bold" }}> All students must:</p>
