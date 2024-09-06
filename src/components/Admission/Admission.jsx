@@ -12,7 +12,6 @@ export const Admission = () => {
             <div className="fancy-feature-fortySeven zn2 position-relative pt-130 pb-160 lg-pt-120 lg-pb-100">
                 <Header5 />
                 <div className="container">
-                    {/* <FilterProperty /> */}
                 </div>
                 <div className="container">
                     <div className="row">
@@ -21,25 +20,16 @@ export const Admission = () => {
                                 <div className="sc-title-two fst-italic position-relative" onClick={() => navigate(-1)}>
                                     Admission.
                                 </div>
-                                {/* <h2 className="main-title fw-500 tx-dark">
-              We’r the top rated agency.
-            </h2> */}
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-xl-16 col-lg-9 ms-auto">
                             <div className="ps-xxl-5" data-aos="fade-left">
-
-                                {/* <h6 className="mb-30">Our History &amp; Goal.</h6> */}
                                 <p className="text- tx-dark" style={{ fontWeight: "revert" }}>
                                     Edgewood College has a thriving secondary school and sixth form college. Every year, prospective students join the community of future leaders who are trained to value excellence.
                                 </p>
                                 <p className='fst-italic position-relative' style={{ fontWeight: "bolder" }}>The step-by-step process to secure an Edgewood College admission for your child either as a new or transfer student</p>
-                                {/* <p className=' tx-dark '>
-                                    1.
-                                    Those who seek admission into the secondary school, complete the  <span style={{color:"#d7232e",cursor:"pointer"}}><Link to="/Submit-SixthForm">Secondary School Application Form</Link></span> Prospective sixth-formers complete the  <span style={{color:"#d7232e",cursor:"pointer"}}><Link to="/Submit-SixthForm">Sixth form Application Form</Link></span>.
-                                </p> */}
                                 <p className="text- tx-dark">
                                     1.    Pay ₦30,000 for the application form for each child by making payment via transfer into the college's account - 0008979824, Edgewood College, GTBank.
                                 </p>
@@ -93,10 +83,6 @@ export const Admission = () => {
                                 <p>Admissions office:</p>
                                 <p>Email: admissions@edgewoodcollege.org.ng</p>
                                 <p>Telephone: +2348025526510, +2348170874770 (8am to 5pm on weekdays)</p>
-                                {/* <div className="row">
-              <Counter />
-            </div> */}
-                               
                             </div>
                         </div>
                     </div>

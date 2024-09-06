@@ -56,10 +56,10 @@ export const SecondarySchool = () => {
                                         </p>
 
                                         <li className='tx-dark' >
-                                            <span className='' style={{ color: "orange" }}><Link to="/learning/cambridgeA-level"> Cambridge A Levels</Link></span> (which provides direct entry into the second year of degree programmes in Nigeria universities and the first year in universities in USA, Canada, Europe and other destinations).
+                                            <span className='' style={{color:"#d7232e",cursor:"pointer"}}><Link to="/learning/cambridgeA-level"> Cambridge A Levels</Link></span> (which provides direct entry into the second year of degree programmes in Nigeria universities and the first year in universities in USA, Canada, Europe and other destinations).
                                         </li>
-                                        <li className='' style={{ color: "orange" }}><Link to="/learning/University-Programme">University Foundation Programme</Link></li>
-                                        <li className='' style={{ color: "orange" }}><Link to="/learning/Medical-foundation-Programme">Medical Foundation Programme</Link></li>
+                                        <li className='' style={{color:"#d7232e",cursor:"pointer"}}><Link to="/learning/University-Programme">University Foundation Programme</Link></li>
+                                        <li className='' style={{color:"#d7232e",cursor:"pointer"}}><Link to="/learning/Medical-foundation-Programme">Medical Foundation Programme</Link></li>
                           
                                     </ul>
                                 </div>
