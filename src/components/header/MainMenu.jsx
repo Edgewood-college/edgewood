@@ -239,7 +239,7 @@ const MainMenu = () => {
                     className={`dropdown-item ${isActive(contact.link) ? "active" : ""
                       }`}
                   >
-                    <span style={{ fontSize: "0.85rem" }}>{contact.name}</span>
+                    <span style={{ fontSize: "0.75rem" }}>{contact.name}</span>
                   </Link>
                 </li>
               ))}
@@ -328,7 +328,6 @@ const MainMenu = () => {
                 <ul
                   className={`dropdown-menu about_Us_container ${showAboutUs ? "show" : ""
                     }`}
-              
                 >
                   <hr />
                   <li  style={{ transition: "ease-out", transitionDuration: "0.3s" }}>
